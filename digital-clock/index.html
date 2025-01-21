@@ -1,13 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
         <title>New Tab</title>
         <script src="js/vendor.js"></script>
+        <style>
+            .get-extension {
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                place-items: center;
+                gap: 0.5em;
+                top: 0;
+                left: 0;
+                padding: var(--padding);
+
+                * {
+                    color: black;
+                }
+            }
+            .text {
+                display: none;
+            }
+            .links {
+                display: flex;
+                gap: 1px;
+
+                z-index: 1000;
+
+                a {
+                    display: flex;
+                    gap: 0.3em;
+                    place-items: center;
+                    background: rgba(255, 255, 255, 0.2);
+                    text-decoration: none;
+                    padding: var(--padding) calc(var(--padding) * 2);
+                    transition: background 0.2s;
+
+                    &:first-child {
+                        border-top-left-radius: var(--radius);
+                        border-bottom-left-radius: var(--radius);
+                    }
+                    &:last-child {
+                        border-top-right-radius: var(--radius);
+                        border-bottom-right-radius: var(--radius);
+                    }
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.3);
+                    }
+
+                    img {
+                        width: 1.35em;
+                    }
+                    span {
+                        padding-bottom: 0.1em;
+                    }
+                }
+            }
+        </style>
     </head>
 
     <body class="extension-newtab">
         <div id="root"></div>
         <script src="js/newtab.js"></script>
+        <div class="get-extension">
+            <div class="text">Get extension for:</div>
+            <div class="links">
+                <a
+                    href="https://chromewebstore.google.com/detail/digital-clock-in-a-new-ta/jigadjkijhkamfmjfjnjlgojkdednakp"
+                >
+                    <img src="./chrome-web-store.svg" />
+                    <span>Chrome</span></a
+                >
+                <a
+                    href="https://addons.mozilla.org/en-US/firefox/addon/digital-clock-in-a-new-tab/"
+                >
+                    <img src="./firefox-logo.svg" />
+                    <span>Firefox</span></a
+                >
+            </div>
+        </div>
     </body>
 </html>

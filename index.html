@@ -10,7 +10,20 @@
                 margin: 10vmin 12vmin;
             }
             p {
-                font-size: max(2rem, 2vmin);
+                --space: 0.55em;
+                --word-spacing: calc(var(--space) * -0.5);
+                font-size: max(1.5rem, 2vmin);
+                line-height: 1.5;
+                letter-spacing: -0.035em;
+            }
+            a {
+                text-decoration-thickness: 0.065em;
+                text-underline-offset: 0.1em;
+                text-decoration-color: color-mix(
+                    in srgb,
+                    currentColor 25%,
+                    transparent 75%
+                );
             }
         </style>
     </head>
@@ -18,8 +31,18 @@
         <p>
             Hello.<br />
             Sergey Yakunin is here.<br />
-            Watch this:<br />
-            → <a href="/digital-clock/">Digital Clock</a>
+            <br />
+            → <a href="/digital-clock/">Digital Clock in New Tab</a> browser
+            extension<br />
+            →
+            <a href="https://github.com/yakunins/language-indicator"
+                >Language Indicator</a
+            ><br />
+            →
+            <a href="https://v1.anvil.servicetitan.com/">Anvil Design System</a
+            ><br />
+            → <a href="https://dataobjects.net">dataobjects.net</a> web design
+            and development<br />
         </p>
     </body>
 </html>
