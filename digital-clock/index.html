@@ -14,27 +14,28 @@
                 top: 0;
                 left: 0;
                 padding: var(--padding);
+                z-index: 1000;
 
                 * {
                     color: black;
                 }
             }
             .text {
-                display: none;
+                _display: none;
             }
             .links {
                 display: flex;
                 gap: 1px;
 
-                z-index: 1000;
-
                 a {
+                    backdrop-filter: blur(0.5em);
                     display: flex;
                     gap: 0.3em;
                     place-items: center;
                     background: rgba(255, 255, 255, 0.2);
                     text-decoration: none;
-                    padding: var(--padding) calc(var(--padding) * 2);
+                    padding: calc(var(--padding) * 1.25)
+                        calc(var(--padding) * 2);
                     transition: background 0.2s;
 
                     &:first-child {
@@ -51,9 +52,7 @@
 
                     img {
                         width: 1.35em;
-                    }
-                    span {
-                        padding-bottom: 0.1em;
+                        margin-bottom: -1px;
                     }
                 }
             }
@@ -64,7 +63,7 @@
         <div id="root"></div>
         <script src="js/newtab.js"></script>
         <div class="get-extension">
-            <div class="text">Get extension for:</div>
+            <div class="text">Get extension ———</div>
             <div class="links">
                 <a
                     href="https://chromewebstore.google.com/detail/digital-clock-in-a-new-ta/jigadjkijhkamfmjfjnjlgojkdednakp"
