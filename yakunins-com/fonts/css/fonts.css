@@ -1,0 +1,89 @@
+@import url("../../css/fonts/r/stylesheet.css");
+@import url("../../css/fonts/b/stylesheet.css");
+@import url("../../css/fonts/l/stylesheet.css");
+@import url("../../css/fonts/i/stylesheet.css");
+
+html {
+	font-size: 17px;
+}
+
+body {
+	font-size: 18px;
+	font-size: 1.2rem;
+	line-height: 1.35em;
+	text-rendering: optimizeLegibility;
+}
+
+
+body {font-family: Arial, sans-serif;}
+body {font-family: "rayonlight", Arial, sans-serif;}
+body {font-family: "rayonbold", Arial, sans-serif;}
+body {font-family: "rayonregular", Arial, sans-serif;}
+body {font-family: "rayonitalic", Arial, sans-serif;}
+
+
+h3 {
+	font-size: 24px;
+	font-size: 1.8rem;
+}
+h2 {
+	font-size: 24px;
+	font-size: 1.8rem;
+}
+h1 {
+	font-size: 36px;
+	font-size: 2.4rem;
+}
+body h1, body h2, body h3 {
+	font-weight: normal;
+}
+h4 {
+	font-weight: bold;
+	font-size: 103%;
+}
+h1, h2, h3 {
+	margin: 1em 0;
+	font-weight: bold;
+	line-height: 100%;
+	max-width: 20em;
+}
+
+
+.caps, .all-caps {
+	text-transform: uppercase;
+}
+.fake-small-caps, .fsc {
+	text-transform: uppercase;
+	font-size: .94em;
+	font-style: normal;
+}
+
+.small-caps, .sc {
+	-moz-font-feature-settings: "smcp" on;
+	-ms-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	-o-font-feature-settings: "smcp";	
+	font-feature-settings: "smcp";
+}
+
+
+
+.large, .biggest {
+	font-size: 280%;
+}
+.big, .bigger {
+	font-size: 180%;
+}
+.small, .smaller {
+	font-size: 60%;
+	max-width: 36em;
+}
+.smallest {
+	font-size: 40%;
+	max-width: 40em;
+}
+.tiny {
+	font-size: 35%;
+}
+
+

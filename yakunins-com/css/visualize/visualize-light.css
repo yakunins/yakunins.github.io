@@ -1,0 +1,43 @@
+table.skills {
+	visibility: hidden;
+	display: none;
+}
+
+/*visualize extension styles*/
+.visualize {
+    background: transparent;
+    border: none;
+}
+.visualize {}
+.visualize canvas {}
+.visualize-labels-x, .visualize-labels-y {
+	z-index: 20;
+}
+
+.visualize-radar .visualize-labels { position: absolute; top: 0; left: 0;}
+.visualize-radar .visualize-key-label,
+.visualize-radar .visualize-labels li span {
+	color: #000;
+	opacity: .5;
+	font-size: 85% !important;
+	font-weight: normal;
+}
+.visualize-radar li:first-child .visualize-key-label {
+	opacity: 1 !important;
+}
+
+.visualize ul.visualize-key li {
+	display: block !important;
+	float: none;
+}
+
+
+.visualize .visualize-info,
+.visualize .visualize-title,
+.visualize ul.visualize-key {
+	line-height: 100%;
+}
+
+.visualize .visualize-title {
+	display: none;
+}

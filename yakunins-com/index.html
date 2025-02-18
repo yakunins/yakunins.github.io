@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+
+        <title>Sergey Yakunin, web designer</title>
+        <link
+            href="img/sergey-yakunin-photo.png"
+            rel="shortcut icon"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/jbox.css" />
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv/html5shiv.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/modernizr.custom.16590.js"></script>
+        <script src="js/jBox-0.3.2/Source/jBox.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/jquery.browserLanguage.js"></script>
+        <script>
+            $.browserLanguage(function (language, acceptHeader) {
+                if (
+                    acceptHeader.indexOf("ru") > -1 &&
+                    $.cookie("language") != "EN"
+                ) {
+                    $.cookie("language", "RU");
+                    window.location = "index-ru.html";
+                }
+            });
+        </script>
+    </head>
+
+    <body style="background-color: #f5f5f5" class="home-page">
+        <header id="top">
+            <a name="top"></a>
+            <table class="breadcrumbs">
+                <tr>
+                    <td class="breadcrumbs-item">
+                        <a href="index.html">
+                            <i>Sergey&nbsp;Yakunin</i><br />
+                            web&nbsp;designer
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="right-menu">
+                <a id="eng" href="index.html" class="active"><i>En</i></a>
+                <a id="rus" href="index-ru.html"><i>Ru</i></a>
+            </div>
+            <script>
+                $("#rus").click(function () {
+                    $.cookie("language", "RU");
+                });
+                $("#eng").click(function () {
+                    event.stopPropagation();
+                    return false;
+                });
+            </script>
+
+            <div class="indicator">
+                <div class="hi-res">1281px</div>
+                <div class="med-res">481px to 1280px</div>
+                <div class="low-res">480px</div>
+                <div class="touch-device-indicator">touch device</div>
+            </div>
+        </header>
+
+        <article>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <a
+                        id="auto"
+                        class="gallery-link"
+                        href="auto.html"
+                        data-mouse-traveled-prev="0"
+                        data-mouse-traveled="0"
+                    >
+                        <span class="gallery-padding"></span>
+                        <span class="gallery-caption"
+                            ><i>Works for Auto.ru</i></span
+                        >
+                    </a>
+                    <ul class="gallery-controls">
+                        <li class="prev"><a href="#prev">Previous</a></li>
+                        <li class="next"><a href="#next">Next</a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <a
+                        id="web"
+                        class="gallery-link"
+                        href="web.html"
+                        data-mouse-traveled-prev="0"
+                        data-mouse-traveled="0"
+                    >
+                        <span class="gallery-padding"></span>
+                        <span class="gallery-caption"><i>Web</i></span>
+                    </a>
+                    <ul class="gallery-controls">
+                        <li class="prev"><a href="#prev">Previous</a></li>
+                        <li class="next"><a href="#next">Next</a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <a
+                        id="fonts"
+                        class="gallery-link"
+                        href="fonts.html"
+                        data-mouse-traveled-prev="0"
+                        data-mouse-traveled="0"
+                    >
+                        <span class="gallery-padding"></span>
+                        <span class="gallery-caption"
+                            ><i>Logos and fonts</i></span
+                        >
+                    </a>
+                    <ul class="gallery-controls">
+                        <li class="prev"><a href="#prev">Previous</a></li>
+                        <li class="next"><a href="#next">Next</a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <a
+                        id="vector"
+                        class="gallery-link"
+                        href="graphics.html"
+                        data-mouse-traveled-prev="0"
+                        data-mouse-traveled="0"
+                    >
+                        <span class="gallery-padding"></span>
+                        <span class="gallery-caption"
+                            ><i>Icons, vector graphics</i></span
+                        >
+                    </a>
+                    <ul class="gallery-controls">
+                        <li class="prev"><a href="#prev">Previous</a></li>
+                        <li class="next"><a href="#next">Next</a></li>
+                    </ul>
+                </div>
+                <div class="gallery">
+                    <a
+                        id="retouch"
+                        class="gallery-link"
+                        href="retouch.html"
+                        data-mouse-traveled-prev="0"
+                        data-mouse-traveled="0"
+                    >
+                        <span class="gallery-padding"></span>
+                        <span class="gallery-caption"
+                            ><i>Banners, retouching</i></span
+                        >
+                    </a>
+                    <ul class="gallery-controls">
+                        <li class="prev"><a href="#prev">Previous</a></li>
+                        <li class="next"><a href="#next">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+
+            <style type="text/css">
+                #auto {
+                    background-image: url("img/g/jpg/auto-ru-report-bg.jpg");
+                }
+                #web {
+                    background-image: url("img/g/jpg/web-bg.jpg");
+                }
+                #fonts {
+                    background-image: url("img/g/jpg/fonts-bg.jpg");
+                }
+                #vector {
+                    background-image: url("img/g/jpg/vector-bg.jpg");
+                }
+                #retouch {
+                    background-image: url("img/g/jpg/retouch-bg.jpg");
+                }
+            </style>
+
+            <script>
+                $(".gallery-link")
+                    .mouseenter(function (e) {
+                        var enteredAtX =
+                            e.pageX - $(this).parent().offset().left;
+                        $(this).attr("data-mouse-entered-at", enteredAtX);
+                    })
+                    .mouseleave(function (e) {
+                        var traveledPrev = $(this).attr("data-mouse-traveled");
+                        $(this).attr("data-mouse-traveled-prev", traveledPrev);
+                    });
+
+                $(".gallery-link").mousemove(function (e) {
+                    var parentOffset = $(this).parent().offset();
+                    var relPosX = e.pageX - parentOffset.left;
+
+                    var enteredAt = parseInt(
+                        $(this).attr("data-mouse-entered-at")
+                    );
+                    var traveledPrev = parseInt(
+                        $(this).attr("data-mouse-traveled-prev")
+                    );
+
+                    var traveledX = traveledPrev + (relPosX - enteredAt);
+                    $(this).attr("data-mouse-traveled", traveledX);
+
+                    var bgOffset = -320 * Math.round(traveledX / 32); // each image width is 320px, shift every 32px of mouse distance travelled
+                    $(this).css("background-position", bgOffset + "px 0px");
+                });
+
+                $(".gallery .gallery-controls .prev").click(function () {
+                    event.preventDefault();
+                    $(this)
+                        .parent()
+                        .siblings(".gallery-link")
+                        .css("background-position-x", "+=320px");
+                });
+                $(".gallery .gallery-controls .next").click(function () {
+                    event.preventDefault();
+                    $(this)
+                        .parent()
+                        .siblings(".gallery-link")
+                        .css("background-position-x", "-=320px");
+                });
+            </script>
+
+            <p>
+                I&nbsp;am web designer with solid knowledge of
+                <span class="fsc">HTML</span> and <span class="fsc">CSS</span>.
+                I&nbsp;am&nbsp;an expert in&nbsp;Adobe Photo&shy;shop,
+                Illustrator, Indesign, Fontlab.
+            </p>
+            <p>
+                <a href="pdf/cv.pdf"><i>cv.pdf</i></a>
+            </p>
+            <p>
+                My professional interests are: web interfaces, information
+                architecture, usability and <span class="fsc">UX</span>, layout
+                and typography, fonts and vector graphics.
+            </p>
+
+            <p>
+                <a href="#stats" id="expand-stats" class="tip"
+                    ><i>Work experience</i></a
+                >
+            </p>
+
+            <div style="display: none" id="content-stats">
+                <div class="timeline">
+                    <div class="scale">
+                        <div class="gradient-container">
+                            <div class="gradient left"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2003</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2004</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2005</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2006</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2007</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2008</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2009</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2010</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2011</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2012</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2013</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2014</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="year">
+                            <div class="year-number">2015</div>
+                            <div class="segment"></div>
+                        </div>
+                        <div class="gradient-container">
+                            <div class="gradient right"></div>
+                        </div>
+                    </div>
+
+                    <div class="workflow">
+                        <div
+                            class="work-range description-bottom"
+                            style="width: 10%"
+                        >
+                            <div class="work-description">
+                                <span class="time-place"
+                                    ><a
+                                        href="http://urfu.ru/en/about-the-university/"
+                                        ><i>Urals State University</i></a
+                                    ></span
+                                >
+                                <span class="time-span"
+                                    >1998&thinsp;&minus;&thinsp;2004</span
+                                >
+                            </div>
+                            <div
+                                class="work-pointer"
+                                style="border-right-color: #ddd"
+                            ></div>
+                            <div
+                                class="fill"
+                                style="background-color: #ddd"
+                            ></div>
+                        </div>
+                        <div class="work-range" style="width: 1%"></div>
+                        <div class="work-range" style="width: 3.5%">
+                            <div class="work-description">
+                                <span class="time-span"
+                                    >09.2004&thinsp;&minus;&thinsp;04.2005</span
+                                >
+                                <span class="time-place"
+                                    ><a href="http://itex.ru"
+                                        ><i>Itex.ru</i></a
+                                    ></span
+                                >
+                            </div>
+                            <div class="work-pointer"></div>
+                            <div class="fill"></div>
+                        </div>
+                        <div class="work-range" style="width: 4%"></div>
+                        <div class="work-range" style="width: 7%">
+                            <div class="work-description">
+                                <span class="time-span"
+                                    >01.2006&thinsp;&minus;&thinsp;03.2007</span
+                                >
+                                <span class="time-place"
+                                    ><a href="http://x-tensive.com"
+                                        ><i>X-tensive.com</i></a
+                                    ></span
+                                >
+                            </div>
+                            <div class="work-pointer"></div>
+                            <div class="fill"></div>
+                        </div>
+                        <div class="work-range" style="width: 0.5%"></div>
+                        <div
+                            class="work-range description-bottom"
+                            style="width: 5%"
+                        >
+                            <div class="work-description">
+                                <span class="time-place">Freelance</span>
+                                <span class="time-span"
+                                    >05.2007&thinsp;&minus;&thinsp;02.2008</span
+                                >
+                            </div>
+                            <div class="work-pointer"></div>
+                            <div class="fill"></div>
+                        </div>
+                        <div class="work-range" style="width: 0.5%"></div>
+                        <div class="work-range" style="width: 30.5%">
+                            <div class="work-description">
+                                <span class="time-span"
+                                    >03.2008&thinsp;&minus;&thinsp;04.2013</span
+                                >
+                                <span class="time-place">X-tensive.com</span>
+                            </div>
+                            <div class="work-pointer"></div>
+                            <div class="fill"></div>
+                        </div>
+                        <div class="work-range" style="width: 1.5%"></div>
+                        <div class="work-range" style="width: 7.5%">
+                            <div class="work-description">
+                                <span class="time-span"
+                                    >07.2013&thinsp;&minus;&thinsp;10.2014</span
+                                >
+                                <span class="time-place"
+                                    ><a href="http://auto.ru"
+                                        ><i>Auto.ru</i></a
+                                    ></span
+                                >
+                            </div>
+                            <div class="work-pointer"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-bottom: 0.25em">File archive stats:</p>
+                <span id="chart" style="display: inline-block"></span>
+                <div class="stats-container">
+                    <div
+                        class="stat-item"
+                        style="
+                            background-color: #333;
+                            color: #31abf0;
+                            width: 7.65em;
+                            height: 7.65em;
+                        "
+                    >
+                        <div class="container">
+                            <span class="stat-header counter">3468 </span><br />
+                            <span class="stat-description">.psd</span>
+                        </div>
+                    </div>
+                    <div
+                        class="stat-item"
+                        style="
+                            background-color: #333;
+                            color: #ff7f18;
+                            width: 5em;
+                            height: 5em;
+                        "
+                    >
+                        <div class="container">
+                            <span class="stat-header counter">1448 </span><br />
+                            <span class="stat-description">.ai</span>
+                        </div>
+                    </div>
+                    <div
+                        class="stat-item"
+                        style="
+                            background-color: #333;
+                            color: #ff408c;
+                            width: 4em;
+                            height: 4em;
+                        "
+                    >
+                        <div class="container">
+                            <span class="stat-header counter">923 </span><br />
+                            <span class="stat-description">.indd</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                $("#expand-stats").click(function () {
+                    event.preventDefault();
+                    $("#content-stats").slideToggle("fast");
+                });
+            </script>
+        </article>
+
+        <footer>
+            <p>
+                <a href="mailto:s@yakunins.com">s@yakunins.com</a>
+                &middot;
+                <a href="http://facebook.com/yakunins"><i>Facebook</i></a>
+                &middot;
+                <a href="http://www.linkedin.com/pub/sergey-yakunin/1/782/5a2"
+                    ><i>LinkedIn</i></a
+                >
+                &middot;
+                <a href="http://www.quora.com/Sergey-Yakunin"><i>Quora</i></a>
+                &middot;
+                <a
+                    href="http://graphicdesign.stackexchange.com/users/5791/yakunins"
+                    ><i>Stackexchange</i></a
+                >
+            </p>
+        </footer>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-23378586-1"]);
+            _gaq.push(["_trackPageview"]);
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src =
+                    ("https:" == document.location.protocol
+                        ? "https://ssl"
+                        : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>

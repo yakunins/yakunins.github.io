@@ -1,0 +1,183 @@
+body {
+  overflow-y: scroll; 
+  -webkit-transition: background 200ms linear;
+  -moz-transition: background 200ms linear;
+  -ms-transition: background 200ms linear;
+  -o-transition: background 200ms linear;
+  transition: background 200ms linear;
+
+  -webkit-transition: color 100ms linear;
+  -moz-transition: color 100ms linear;
+  -ms-transition: color 100ms linear;
+  -o-transition: color 100ms linear;
+  transition: color 100ms linear;
+}
+
+
+body.font-rayon-light {
+  font-family: "rayonlight", Arial, sans-serif;
+}
+body.font-rayon-light-italic {
+}
+body.font-rayon-semilight {
+}
+body.font-rayon-semilight-italic {
+}
+body.font-rayon-regular {
+  font-family: "rayonregular", Arial, sans-serif;
+}
+body.font-rayon-regular-italic {
+  font-family: "rayonitalic", Arial, sans-serif;
+}
+body.font-rayon-medium {
+}
+body.font-rayon-medium-italic {
+}
+body.font-rayon-bold {
+  font-family: "rayonbold", Arial, sans-serif;
+}
+body.font-rayon-bold-italic {
+}
+body.font-rayon-black {
+}
+body.font-rayon-black-italic {
+}
+
+
+.fixed {
+  position: fixed;
+  z-index: 100;
+}
+.gray-shadow {
+  background-color: #cce4ff;
+  border-radius: 0;
+  outline: 2px solid #cce4ff;
+}
+#control-panel {
+  color: #000;
+  top: 40px;
+  right: 40px;
+  width: 200px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-rendering: geometricPrecision;
+}
+#control-panel,
+#control-panel input,
+#control-panel select {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+#control-panel div.panel-header,
+#control-panel div.item {
+  margin: 10px;
+}
+.expandable-trigger {
+  position: relative;
+}
+.expandable-trigger .small-trigger {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+.expandable-trigger .small-trigger .helper {
+  opacity: .35;
+  position: absolute;
+  right: 0;
+  display: inline-block;
+}
+.expandable-trigger .small-trigger .helper.hide {
+  display: none;
+}
+a.button {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, .35);
+  background-color: transparent;
+  display: inline-block;
+  margin-bottom: .75em;
+  margin-right: .5em;
+  padding: .3em 1em;
+  padding-top: .4em;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .65);
+  border-radius: 2px;
+  color: #555;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+a.button:hover {
+  color: #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+  opacity: 1;
+}
+
+.styled-select {
+  background: transparent;
+  background-color: rgba(255, 255, 255, .35);
+  border: none;
+  border-radius: 1px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .65);  
+  padding: .3em .25em;
+  padding-top: .4em;
+}
+.styled-select option {
+  padding: 6px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+#control-panel hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 2px 0;
+  opacity: .1;
+}
+.panel-header:first-child {
+  border-top: none;
+}
+#ctrl-fontsize, #ctrl-spacing {
+}
+
+#ctrl-scale input, #ctrl-more input {
+}
+#ctrl-weight, #ctrl-color {
+}
+
+.helper.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.options-container {
+  overflow: hidden;
+  max-height: 20em;
+  -webkit-transition: all .1s ease-in;
+  -moz-transition:    all .1s ease-in;
+  -ms-transition:     all .1s ease-in;
+  -o-transition:      all .1s ease-in;
+  transition:         all .1s ease-in;
+}
+.options-container.hidden {
+  max-height: 0;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition:    all .1s ease-out;
+  -ms-transition:     all .1s ease-out;
+  -o-transition:      all .1s ease-out;
+  transition:         all .1s ease-out;
+}
+#control-panel .options-container div.item:first-child {
+  margin-top: .25em;
+}
+
+
+
+

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+
+        <title>Сергей Якунин — отчет о работе в Авто.ру</title>
+        <link
+            href="img/favicon-auto.png"
+            rel="shortcut icon"
+            type="image/x-icon"
+        />
+
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/jbox.css" />
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv/html5shiv.js"></script>
+            <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/modernizr.custom.16590.js"></script>
+        <script src="js/jBox-0.3.2/Source/jBox.min.js"></script>
+        <script src="js/masonry-master/dist/masonry.pkgd.min.js"></script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/scrollnav/scrollNav.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script src="js/slippry-1.2.1/dist/slippry.min.js"></script>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="js/slippry-1.2.1/dist/slippry.css" />
+    </head>
+
+    <body style="background-color: #f5f5f5">
+        <header id="top">
+            <a name="top"></a>
+            <table class="breadcrumbs">
+                <tr>
+                    <td class="breadcrumbs-item">
+                        <a href="index-ru.html">
+                            <i>Сергей&nbsp;Якунин</i><br />
+                            веб-дизайнер
+                        </a>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span class="arrow arrow-right"></span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span>Отчет о&nbsp;работе в&nbsp;Авто.ру</span>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="indicator">
+                <div class="hi-res">1281px</div>
+                <div class="med-res">481px to 1280px</div>
+                <div class="low-res">480px</div>
+                <div class="touch-device-indicator">touch device</div>
+            </div>
+        </header>
+
+        <article>
+            <h3 id="m.auto.ru">
+                Редизайн <a href="http://m.auto.ru"><i>m.auto.ru</i></a>
+            </h3>
+            <p>
+                Я провёл исследование сайта и отметил основные проблемы&nbsp;—
+                <a
+                    href="https://docs.google.com/presentation/d/1lMxxLwYWNmI9PtJgmUO1N8cyCaFa4Cio82pIsTIH2hY/edit?usp=sharing"
+                    ><i>в&nbsp;этой презентации</i></a
+                >. После обсуждения
+                <a href="img/auto/m/m-home-1-s.png"><i>первых набросков</i></a>
+                я&nbsp;сделал макеты главной страницы, расширенного поиска,
+                а&nbsp;также нескольких страниц параметров поиска.
+            </p>
+
+            <table class="m">
+                <tr>
+                    <td>
+                        <img
+                            class="i-phone"
+                            src="img/auto/m/m-home.png"
+                            alt=""
+                        />
+                    </td>
+                    <td>
+                        <img
+                            class="i-phone s"
+                            style="margin-bottom: 2em"
+                            src="img/auto/m/m-clearance.png"
+                            alt=""
+                        />
+                        <br />
+                        <img
+                            class="i-phone s"
+                            style=""
+                            src="img/auto/m/m-search.png"
+                            alt=""
+                        />
+                    </td>
+                    <td>
+                        <img
+                            class="i-phone"
+                            src="img/auto/m/m-menu.png"
+                            alt=""
+                        />
+                    </td>
+                </tr>
+            </table>
+            <style type="text/css">
+                table.m {
+                    max-width: 48em;
+                }
+                table.m td {
+                    padding-right: 1em;
+                    vertical-align: top;
+                }
+                .i-phone {
+                    vertical-align: top;
+                    width: 100%;
+                    display: inline-block;
+                    max-width: 265px;
+                }
+                .i-phone.s {
+                    max-width: 203px;
+                }
+            </style>
+            <hr />
+
+            <h3 id="office">
+                «Офис»&nbsp;— система для&nbsp;работы с&nbsp;автосалонами
+            </h3>
+            <p>
+                Система состоит из двух основных частей&nbsp;— клиентской части
+                и&nbsp;офиса администратора. Мы сделали cхему интерфейса сервиса
+                со&nbsp;ссылками на&nbsp;описания и&nbsp;макеты всех страниц.
+            </p>
+            <img
+                class="screenshot"
+                style="max-width: 480px; margin-bottom: 1em"
+                src="img/auto/office/office-ui-gliffy.png"
+                alt=""
+            />
+
+            <p>
+                В клиентской части менеджеры автосалонов могут управлять
+                объявлениями и&nbsp;контактной информацией, настроить
+                автоматическую загрузку массивов объявлений и&nbsp;фотографий.
+            </p>
+            <div id="office7-gallery" class="block masonry-gallery screenshots">
+                <div class="item w2">
+                    <img
+                        src="img/auto/office/client/50/client-card-6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item w15">
+                    <img
+                        src="img/auto/office/client/50/adv-list-28.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="item">
+                    <img
+                        src="img/auto/office/client/50/XML-upload-29.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/client/50/photo-manager-17.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="item">
+                    <img
+                        src="img/auto/office/client/50/autoupload-settnigs-13.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/client/50/photo-manager-176.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/client/50/photo-manager-175.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <script>
+                jQuery(document).ready(function () {
+                    var $container = $("#office7-gallery");
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            columnWidth: ($container.width() / 100) * 24,
+                            gutter: ($container.width() / 100) * 1,
+                            itemSelector: ".item",
+                        });
+                    });
+                });
+            </script>
+
+            <p>
+                В «офисе админиcтратора» происходит управление автосалонами,
+                работа с&nbsp;выбранным автосалоном, управление пользователями
+                и&nbsp;т.д.<br />
+            </p>
+            <div
+                id="office7-admin-gallery"
+                class="block masonry-gallery screenshots"
+            >
+                <div class="item w2">
+                    <img
+                        src="img/auto/office/admin/50/client-list-6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item w15">
+                    <img
+                        src="img/auto/office/admin/50/frozen-client-12.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/add-client-6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/add-client-62.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/client-card-admin-11.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/frozen-client-1.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/moderation-2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img src="img/auto/office/admin/50/log-3.png" alt="" />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/dealership-edit-4.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img src="img/auto/office/admin/50/tarif-72.png" alt="" />
+                </div>
+
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/penalty-events-22.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/admin/50/penalty-events-2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img src="img/auto/office/admin/50/users-7.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/auto/office/admin/50/users-72.png" alt="" />
+                </div>
+            </div>
+            <script>
+                jQuery(document).ready(function () {
+                    var $container = $("#office7-admin-gallery");
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            columnWidth: ($container.width() / 100) * 24,
+                            gutter: ($container.width() / 100) * 1,
+                            itemSelector: ".item",
+                        });
+                    });
+                });
+            </script>
+
+            <p>
+                Страницы техподдержки позволяют отслеживать загрузку
+                и&nbsp;обработку массивов объявлений, а&nbsp;шаблон для рассылки
+                помогает рассказать о&nbsp;новых возможностях системы.<br />
+            </p>
+            <div
+                id="office7-other-gallery"
+                class="block masonry-gallery screenshots"
+            >
+                <div class="item w2">
+                    <img
+                        src="img/auto/office/support/50/autoupload-admin-6.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/support/50/autoupload-admin-62.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/support/50/subscription-template-2.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <script>
+                jQuery(document).ready(function () {
+                    var $container = $("#office7-other-gallery");
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            columnWidth: ($container.width() / 100) * 24,
+                            gutter: ($container.width() / 100) * 1,
+                            itemSelector: ".item",
+                        });
+                    });
+                });
+            </script>
+
+            <p>
+                Интерфейс проектировали в&nbsp;несколько этапов, с&nbsp;января
+                по&nbsp;апрель 2014 года. Со&nbsp;временем описание решения
+                разрослось на&nbsp;40&nbsp;страниц в&nbsp;конфлюенсе.
+            </p>
+            <img class="trash" src="img/auto/office/wiki-office-2.png" alt="" />
+            <img class="trash" src="img/auto/office/office-tree.png" alt="" />
+            <img
+                class="trash"
+                src="img/auto/office/office-entity-view-model.png"
+                alt=""
+            />
+            <img class="trash" src="img/auto/office/office-scheme.png" alt="" />
+            <style type="text/css">
+                .trash {
+                    height: 180px;
+                }
+            </style>
+            <hr />
+
+            <h3 id="scheduler">
+                Интерфейс планировщика баннерных рекламных кампаний
+            </h3>
+            <p>
+                Дает ответ на вопрос «сколько рекламных мест свободно и занято».
+                Предоставляет статистику показов баннеров, визуализирует
+                запланированные рекламные кампании, позволяет оценить рекламные
+                возможности в&nbsp;разных частях сервиса.
+            </p>
+            <div class="block screenshots">
+                <img
+                    class="small-shadow"
+                    style="max-width: 712px"
+                    src="img/auto/banner-campaigns-scheduler.png"
+                    alt=""
+                />
+            </div>
+            <hr />
+
+            <h3 id="modals">Модальные диалоги оплаты услуг</h3>
+            <p>
+                Задача&nbsp;— рассказать об условиях предоставления услуг
+                и&nbsp;дать возможность оплатить их.
+            </p>
+            <style type="text/css">
+                .billing-gallery .sy-slides-crop {
+                    overflow: visible;
+                }
+            </style>
+            <div class="billing-gallery">
+                <ul id="billing">
+                    <li>
+                        <img
+                            class="small-shadow"
+                            src="img/auto/billing/billing-popups-4s-1.png"
+                            alt=""
+                        />
+                    </li>
+                    <li>
+                        <img
+                            class="small-shadow"
+                            src="img/auto/billing/billing-popups-4s-2.png"
+                            alt=""
+                        />
+                    </li>
+                    <li>
+                        <img
+                            class="small-shadow"
+                            src="img/auto/billing/billing-popups-4s-3.png"
+                            alt=""
+                        />
+                    </li>
+                    <li>
+                        <img
+                            class="small-shadow"
+                            src="img/auto/billing/billing-popups-4s-4.png"
+                            alt=""
+                        />
+                    </li>
+                </ul>
+            </div>
+            <script>
+                $(function () {
+                    var gallery1 = $("#billing").slippry({
+                        transition: "fade",
+                        useCSS: true,
+                        speed: 100,
+                        auto: false,
+                        preload: "visible",
+                    });
+                });
+            </script>
+            <hr />
+
+            <h3>Макеты обновлённого сервиса «Шины и&nbsp;диски»</h3>
+            <p>
+                Проектирование новой версии сервиса. Я&nbsp;сделал макеты
+                главной страницы, результатов поиска, страниц объявлений
+                и&nbsp;форм добавления новых объявлений.
+            </p>
+            <div id="tires-gallery" class="block masonry-gallery screenshots">
+                <div class="item w2">
+                    <img src="img/auto/tires/50/tires-home-0.png" alt="" />
+                </div>
+                <div class="item w15">
+                    <img src="img/auto/tires/50/search-results-7.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/auto/tires/50/wheel-adv-42.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/auto/tires/50/wheel-adv-43.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/auto/tires/50/wheel-adv-44.png" alt="" />
+                </div>
+
+                <div class="item">
+                    <img src="img/auto/tires/50/new-wheel-72.png" alt="" />
+                </div>
+                <div class="item w15">
+                    <img src="img/auto/tires/50/new-package-7.png" alt="" />
+                </div>
+                <div class="item">
+                    <img src="img/auto/tires/50/new-package-72.png" alt="" />
+                </div>
+            </div>
+            <script>
+                jQuery(document).ready(function () {
+                    var $container = $("#tires-gallery");
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            columnWidth: ($container.width() / 100) * 24,
+                            gutter: ($container.width() / 100) * 1,
+                            itemSelector: ".item",
+                        });
+                    });
+                });
+            </script>
+
+            <p>
+                Я сделал максимально простые и&nbsp;понятные иллюстрации для
+                справочника по&nbsp;шинам и&nbsp;дискам.<br />
+            </p>
+            <p style="max-width: 48em">
+                <img
+                    style="height: 420px"
+                    src="img/auto/tires/pics/yellow/tire-marks.png"
+                    alt=""
+                />
+                <br />
+                <img
+                    style="height: 240px"
+                    src="img/auto/tires/pics/yellow/ply-construction-type-radial-diagonal.png"
+                    alt=""
+                />
+                <img
+                    style="height: 240px"
+                    src="img/auto/tires/pics/yellow/tire-width-2.png"
+                    alt=""
+                />
+                <img
+                    style="height: 320px"
+                    src="img/auto/tires/pics/yellow/rim.png"
+                    alt=""
+                />
+                <img
+                    style="height: 320px"
+                    src="img/auto/tires/pics/yellow/tire.png"
+                    alt=""
+                />
+            </p>
+            <hr />
+
+            <h3>Страница автосалона</h3>
+            <p>
+                Чтобы лучше понять интересы автодилеров, мы провели
+                <a
+                    href="https://docs.google.com/forms/d/1h4Ruv3DCgFf2znCvEIgpdNnHDK5BtuTmvGqIo5vYqdk/viewform?usp=send_form"
+                    ><i>небольшой опрос</i></a
+                >. Макеты учитывают разную степень информационной насыщенности
+                страницы. Продуманы детали&nbsp;— вывод категорий ТС, сбор
+                и&nbsp;публикация отзывов о&nbsp;продавце.
+            </p>
+            <div
+                id="salon-card-gallery"
+                class="block masonry-gallery screenshots"
+            >
+                <div class="item w2">
+                    <img
+                        src="img/auto/office/salon-card/50/salon-card-8s-2.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/salon-card/50/salon-card-8s-1.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/salon-card/50/salon-card-review.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/salon-card/50/salon-card-category.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item w05">
+                    <img src="img/auto/office/salon-card/survey.png" alt="" />
+                </div>
+            </div>
+            <script>
+                jQuery(document).ready(function () {
+                    var $container = $("#salon-card-gallery");
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            columnWidth: ($container.width() / 100) * 24,
+                            gutter: ($container.width() / 100) * 1,
+                            itemSelector: ".item",
+                        });
+                    });
+                });
+            </script>
+            <hr />
+
+            <h3>Заявка на регистрацию автосалона</h3>
+            <p>
+                Три шага&nbsp;— выбор тарифа, данные о&nbsp;салоне, способ
+                оплаты и реквизиты.
+            </p>
+            <div
+                id="salon-registration-gallery"
+                class="block masonry-gallery screenshots"
+            >
+                <div class="item w2">
+                    <img
+                        src="img/auto/office/registration/50/new-client-13s12.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/registration/50/new-client-13s4.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/registration/50/new-client-13s5.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/registration/50/new-client-13s10.png"
+                        alt=""
+                    />
+                </div>
+                <div class="item">
+                    <img
+                        src="img/auto/office/registration/50/new-client-13s11.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+            <script>
+                jQuery(document).ready(function () {
+                    var $container = $("#salon-registration-gallery");
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            columnWidth: ($container.width() / 100) * 24,
+                            gutter: ($container.width() / 100) * 1,
+                            itemSelector: ".item",
+                        });
+                    });
+                });
+            </script>
+            <hr />
+
+            <h3>Иконки</h3>
+            <p>
+                <img src="img/6/office/exclaim-1.png" alt="" />
+                <img src="img/6/office/exclaim-2.png" alt="" />
+                <img src="img/6/office/flight-1.png" alt="" />
+                <img src="img/6/office/mail.png" alt="" />
+                <img src="img/6/office/x-1.png" alt="" />
+                <img src="img/6/office/validity-check.png" alt="" />
+                <img src="img/6/office/camera-icon.png" alt="" />
+                <img src="img/6/office/office-arrow-left.png" alt="" />
+                <img src="img/6/office/office-arrow-right.png" alt="" />
+            </p>
+            <p>
+                <img src="img/6/office/office-blocked.png" alt="" /><img
+                    src="img/6/office/office-bones.png"
+                    alt=""
+                /><img src="img/6/office/office-calendar.png" alt="" /><img
+                    src="img/6/office/office-clock.png"
+                    alt=""
+                /><img src="img/6/office/office-close-red.png" alt="" /><img
+                    src="img/6/office/office-downsize.png"
+                    alt=""
+                /><img src="img/6/office/office-e.png" alt="" /><img
+                    src="img/6/office/office-edit.png"
+                    alt=""
+                /><img src="img/6/office/office-error.png" alt="" /><img
+                    src="img/6/office/office-exclaim.png"
+                    alt=""
+                /><img src="img/6/office/office-exit.png" alt="" /><img
+                    src="img/6/office/office-eye.png"
+                    alt=""
+                /><img src="img/6/office/office-freeze-2.png" alt="" /><img
+                    src="img/6/office/office-locked.png"
+                    alt=""
+                /><img src="img/6/office/office-new.png" alt="" /><img
+                    src="img/6/office/office-new-window.png"
+                    alt=""
+                /><img src="img/6/office/office-pig.png" alt="" /><img
+                    src="img/6/office/office-question.png"
+                    alt=""
+                /><img src="img/6/office/office-plus-2.png" alt="" /><img
+                    src="img/6/office/office-red-flag.png"
+                    alt=""
+                /><img src="img/6/office/office-refresh.png" alt="" /><img
+                    src="img/6/office/office-rouble.png"
+                    alt=""
+                /><img src="img/6/office/office-shield.png" alt="" /><img
+                    src="img/6/office/office-star-gold.png"
+                    alt=""
+                /><img src="img/6/office/office-star-gray.png" alt="" /><img
+                    src="img/6/office/office-star-gray-stroke.png"
+                    alt=""
+                /><img src="img/6/office/office-star-green.png" alt="" /><img
+                    src="img/6/office/office-thorns.png"
+                    alt=""
+                /><img src="img/6/office/office-trash.png" alt="" /><img
+                    src="img/6/office/office-valid-2.png"
+                    alt=""
+                /><img src="img/6/office/office-wallet.png" alt="" /><img
+                    src="img/6/office/office-wrench.png"
+                    alt=""
+                /><img src="img/6/office/office-x.png" alt="" /><img
+                    src="img/6/office/office-xml.png"
+                    alt=""
+                />
+            </p>
+            <p>
+                <img src="img/6/office/office-services-up-on.png" alt="" />
+                <img src="img/6/office/office-services-special-on.png" alt="" />
+                <img src="img/6/office/office-services-color-on.png" alt="" />
+                <img src="img/6/office/office-services-up-off.png" alt="" />
+                <img
+                    src="img/6/office/office-services-special-off.png"
+                    alt=""
+                />
+                <img src="img/6/office/office-services-color-off.png" alt="" />
+            </p>
+            <p>
+                <img src="img/6/office/big/file-upload-64.png" alt="" />
+                <img src="img/6/office/big/file.png" alt="" />
+                <img src="img/6/office/big/text-file.png" alt="" />
+                <img src="img/6/office/big/files.png" alt="" />
+                <img src="img/6/office/big/catalog.png" alt="" />
+            </p>
+            <p>
+                <img src="img/6/office/big/doc-icon.png" alt="" />
+                <img src="img/6/office/big/doc-icon-blue.png" alt="" />
+                <img src="img/6/office/big/doc-icon-gray.png" alt="" />
+                <img src="img/6/office/big/upload-icon.png" alt="" />
+                <img
+                    class="lazy"
+                    style="margin-bottom: 4px"
+                    src="img/6/office/big/upload-document-icon.png"
+                    alt=""
+                />
+                <img
+                    class="lazy"
+                    style="margin-bottom: 4px"
+                    src="img/6/office/big/image-file-icon.png"
+                    alt=""
+                />
+            </p>
+            <p>
+                <img src="img/6/car-bodies/blk-sedan-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-hatch-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-wagon-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-truck-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-suv-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-minivan-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-van-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-coupe-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-cab-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-limo-body.png" alt="" />
+                <img src="img/6/car-bodies/blk-victoria-body.png" alt="" />
+            </p>
+            <hr />
+
+            <h3>Баннеры, редкие логотипы для каталога производителей</h3>
+            <p>
+                <img
+                    class="lazy"
+                    style="height: 200px"
+                    src="img/5/auto/red-banner.png"
+                    alt=""
+                />
+                <img
+                    class="lazy"
+                    style="height: 200px"
+                    src="img/5/auto/mias-banner-3-400.png"
+                    alt=""
+                />
+                <img
+                    class="lazy"
+                    style="height: 200px"
+                    src="img/5/auto/mias-banner-4-400.png"
+                    alt=""
+                />
+                <img src="img/5/auto/mias-banner-3-200.png" alt="" />
+                <img src="img/5/auto/mias-banner-4-200.png" alt="" />
+            </p>
+            <p class="logos white-bg" style="padding: 0.5em 0 0 0.5em">
+                <img src="img/6/logos/lo_astro.png" alt="" />
+                <img src="img/6/logos/lo_austin.png" alt="" />
+                <img src="img/6/logos/lo_autobianchi.png" alt="" />
+                <img src="img/6/logos/lo_blonell.png" alt="" />
+                <img src="img/6/logos/lo_reliant.png" alt="" />
+                <img src="img/6/logos/lo_srt.png" alt="" />
+                <img src="img/6/logos/lo_eagle.png" alt="" />
+                <img src="img/6/logos/lo_dallas.png" alt="" />
+                <img src="img/6/logos/lo_detomaso.png" alt="" />
+                <img src="img/6/logos/lo_innocenti.png" alt="" />
+                <img src="img/6/logos/lo_isdera.png" alt="" />
+                <img src="img/6/logos/lo_ktm.png" alt="" />
+                <img src="img/6/logos/lo_tazzari.png" alt="" />
+                <img src="img/6/logos/lo_triumph.png" alt="" />
+                <img src="img/6/logos/lo_tvr.png" alt="" />
+                <img src="img/6/logos/lo_bronto.png" alt="" />
+                <img src="img/6/logos/lo_daf.png" alt="" />
+                <img src="img/6/logos/lo_hindustan.png" alt="" />
+                <img src="img/6/logos/lo_kamaz.png" alt="" />
+                <img src="img/6/logos/lo_spectre.png" alt="" />
+                <img src="img/6/logos/lo_maruti.png" alt="" />
+                <img src="img/6/logos/lo_marlin.png" alt="" />
+            </p>
+            <hr />
+
+            <p>
+                В работах принимали активное участие:<br />
+                &nbsp;— Иван Юнин,<br />
+                &nbsp;— Андрей Ткаченко,<br />
+                &nbsp;— Владимир Леденёв,<br />
+                &nbsp;— Борис Воротников,<br />
+                &nbsp;— Антон Тимофеев.<br />
+            </p>
+
+            <p>Cпасибо за&nbsp;открытые обсуждения и&nbsp;ценные советы.</p>
+
+            <p>
+                Статистика:<br />
+                &nbsp;— c:\_Clients\Auto.ru: 18,6 ГБ в 8489 файлах, 2100
+                папок,<br />
+                &nbsp;— в конфлюенсе 98 страниц, 317 загруженых файлов,<br />
+                &nbsp;— потрачено 229 рабочих дней, или 46 недель.<br />
+            </p>
+        </article>
+
+        <script type="text/javascript">
+            $("article.not-yet").scrollNav({
+                sections: "h3",
+                subSections: false,
+                sectionElem: "section",
+                showHeadline: false,
+                headlineText: "Scroll To",
+                showTopLink: true,
+                topLinkText: "Top",
+                fixedMargin: 40,
+                scrollOffset: 40,
+                animated: true,
+                speed: 500,
+                insertTarget: this.selector,
+                insertLocation: "insertBefore",
+                arrowKeys: false,
+                scrollToHash: true,
+                onInit: null,
+                onRender: null,
+                onDestroy: null,
+            });
+        </script>
+
+        <footer>
+            <p>
+                <a href="mailto:s@yakunins.com">s@yakunins.com</a> &middot;
+                <a href="http://artgorbunov.ru/bb/soviet/sergeyyakunin/"
+                    ><i>Бюросфера</i></a
+                >
+                &middot;
+                <a href="http://s-yakunin.moikrug.ru/"><i>Мой круг</i></a>
+                &middot;
+                <a href="http://facebook.com/yakunins"><i>Фейсбук</i></a>
+            </p>
+        </footer>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-23378586-1"]);
+            _gaq.push(["_trackPageview"]);
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src =
+                    ("https:" == document.location.protocol
+                        ? "https://ssl"
+                        : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>

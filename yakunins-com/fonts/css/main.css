@@ -1,0 +1,293 @@
+/* Basic CSS */
+
+body {
+  background-color: #fff;
+}
+
+header, article, footer {
+  margin: 3% 6%;
+  position: relative;
+}
+
+.block, 
+p, blockquote, article > ul, article > ol {
+  margin: 2% 0;
+  max-width: 36em;
+}
+
+hr {
+  border-width: 0 0 .1em 0;
+  border-color: rgba(0,0,0,.2);
+  margin: 2% 0;
+}
+
+input[type=checkbox] {
+  transform: scale(1.2);  /* All browsers except webkit*/
+  -webkit-transform: scale(1.2);  /* Webkit browsers*/
+  margin: 4px;
+}
+
+
+header b {
+  font-size: 103%;
+}
+header {
+  text-align: left;
+}
+
+p img.big {
+  max-width: 48em;
+  min-width: 400px;
+  margin: .1em 0;
+  font-size: inherit;
+}
+p img.small {
+  max-width: 36em;
+  min-width: 300px;
+  margin: .1em 0;
+  font-size: inherit;
+}
+p img.smallest {
+  max-width: 24em;
+  min-width: 200px;
+  margin: .1em 0;
+  font-size: inherit;
+}
+
+.bordered img,
+img.bordered {
+  border: .1em solid rgba(0,0,0,.1);
+}
+
+.shadowed,
+img.shadowed {
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 5px 20px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+.image-note {
+  display: block;
+  margin-left: 50%;
+}
+
+
+a img {
+  border: 1px solid #ccc;
+}
+a:hover img {
+  border: 1px solid #aaa;
+}
+a i {
+  font-style: inherit;
+}
+a.thin-underline {
+  position: relative;
+  top: -.05em;
+}
+a.thin-underline i {
+  position: relative;
+  top: .05em;
+}
+.pa-i {
+  position: absolute !important;
+}
+
+a:link {color: inherit; opacity: 1; text-decoration: none; border-bottom: solid .05em;}
+a:visited {color: inherit; opacity: .5; text-decoration: none;}
+a:active {color: inherit; opacity: .25;}
+a:link:hover, a:visited:hover, a:active:hover {color: inherit; opacity: .5;} 
+
+a {
+    transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+}
+
+
+.bullets li {
+  list-style-type: disc;
+  margin-left: 1.5em;
+}
+
+.header-date {
+  font-size: .75em;
+  opacity: .5;
+  position: relative;
+  top: -.1em;
+}
+.header-date + h3 {
+  margin-top: 0;
+}
+
+.arrow {
+  text-decoration: none !important;
+}
+
+
+.home-page .breadcrumbs-item a,
+.home-page .breadcrumbs-item a i {
+  color: #000 !important; 
+  border: none;
+}
+.breadcrumbs-item {
+  vertical-align: middle;
+  text-align: left;
+}
+.breadcrumbs-item a:visited i {
+  color: #0b6ee2;
+}
+.breadcrumbs-item a:visited:hover i {
+  color: #d00000;
+}
+.breadcrumbs-item a:visited {
+  border-color: #b2cbff;  
+}
+.breadcrumbs-item .arrow {
+  margin: 0 1.5em;
+  display: inline-block;
+}
+
+
+
+.pr {
+  position: relative;
+}
+.dn {
+  display: none;
+}
+.op50 {
+  opacity: .5;
+}
+.lh200 {
+  line-height: 200%;
+}
+
+.logos img {
+  margin-right: 14px;
+}
+ul.bulleted {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.54em;
+  margin-top: 0;
+}
+ul.bulleted li {
+}
+
+
+header .right-menu {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  text-align: right;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-size: 67%;
+}
+header .right-menu a {
+  margin: 0 .25em;
+}
+header .right-menu .active {
+  text-decoration: none;
+  opacity: .35;
+  cursor: default;
+}
+header .right-menu .active,
+header .right-menu .active i {
+  border: none !important;
+  color: #000;
+}
+
+.indicator {
+  opacity: .25;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  text-align: right;
+  visibility: hidden;
+}
+.indicator div {
+  display: none;
+}
+
+
+
+.with-right-side {
+  padding-right: 30%;
+}
+.right-side {
+  position: relative;
+  width: 150%;
+}
+.right-side-container {
+  position: absolute;
+  right: 0%;
+  width: 30%;
+}
+.right-side-container .wrapper {
+  margin-left: 2em;
+}
+.right-side-container p:first-child {
+  margin-top: 0;
+}
+
+
+.rss li {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 4%;
+  width: 24rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rss .title {
+  margin: 0 1em 0 0;
+}
+.rss .date, 
+.rss .title,
+.rss .content {
+  line-height: 1.35em;
+  display: block !important;
+}
+.rss .date {
+  opacity: 1;
+  white-space: nowrap;
+}
+.rss .content {
+  word-wrap: break-word;
+}
+.rss .item *,
+.rss .content * {
+  display: none;
+}
+.rss .title a {
+  padding-top: .1em;
+}
+.rss .title * {
+  display: inline;
+}
+
+.rssHeader:before {
+  content: 'RSS: ';
+}
+
+.rss-page {
+  border-bottom: .1em solid;
+  padding-top: 1em;
+}
+
+.spinner-bg {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  position: relative;
+  z-index: -1;
+  top: -50px;
+  left: -50px;
+}

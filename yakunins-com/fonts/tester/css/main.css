@@ -1,0 +1,244 @@
+/* HTML */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; /* needed for container min-height */
+}
+
+body {
+  font-family: Verdana, Droid, sans-serif;
+	letter-spacing: 0;
+  font-size: 99.99%;
+  line-height: 150%;
+	color: black;
+	background-color: #f7f7f7;
+}
+
+p {
+  margin: 1.45em 0 0 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+ul {
+  margin: 1.45em 0 0 0;
+  padding: 0;
+}
+ul ul {
+  margin: 0;
+}
+ol {
+  margin: 1.45em 0 0 0;
+  padding: 0;
+}
+ol ol {
+  margin: 0;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
+li li {
+}
+
+dl dt {  
+}
+dl dd {
+  margin-bottom: .75em;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  padding: 0;
+  margin: 1.45em 0 0 0;
+}
+
+h1 {
+  color: #000000;
+  font-size: 190%;
+  letter-spacing: -1px;
+  line-height: 110%;
+  margin: .85em 0 .15em 0;
+  padding: 0;
+}
+
+h2.first, h3.first {
+  margin-top: 1.45em !important;
+}
+
+h2, h3 {
+  font-size: 150%;
+  line-height: 100%;
+  letter-spacing: -1px;
+  font-weight: normal;
+  margin: 1.5em 0 .35em 0;
+}
+h2, h5 {
+  color: #e57100;
+}
+h4 {
+  font-size: 100%;
+  margin: 1.45em 0 0 0;
+}
+h5, h6 {
+  font-size: 100%;
+}
+
+p + ul, p + ol,
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, 
+h1 + ul, h2 + ul, h3 + ul, h4 + ul, h5 + ul, h6 + ul, 
+h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
+  margin-top: .15em !important;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  line-height: 145%;
+}
+input {
+  margin: 0;
+  font-size: inherit;
+  font-family: Verdana, Arial, Geneva, sans-serif;
+  vertical-align: middle;
+  line-height: 125%;
+  //font-size: 95%;
+}
+input, textarea, select {
+	font-size: 100%;
+}
+input[type=checkbox], input[type=radio] {
+	vertical-align: middle;
+}
+select, option {
+  margin: 0;
+  font-size: inherit;
+  font-family: Verdana, Arial, Geneva, sans-serif;
+  vertical-align: middle;
+  line-height: 125%;
+  //font-size: 95%;
+}
+label [ disabled = "true" ] {
+	opacity: 0.4;
+}
+sup, sub {
+	line-height: 50%;
+}
+address {
+  font-style: normal;
+}
+
+pre, tt, code, .Mono {
+  font-family: Consolas, 'Lucida Console', 'Courier New', Courier, monospace;
+  font-size: 114%;
+  margin: .5em 0;
+  overflow: visible;
+}
+tt, code {
+  letter-spacing: -1px;
+  color: #454545;
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #a3a0a0;
+  margin: 1.45em 0;
+}
+
+fieldset {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tables */
+table, td, th {
+	border-spacing: 0;
+	border-width: 0;
+	vertical-align: top;
+}
+th, td {
+	text-align: left;
+}
+
+/* Links */
+a:link {
+  color: #2c68c3;
+  text-decoration: underline;
+/*	text-shadow: 1px 1px 0 #fff;*/
+}
+a:visited {
+  color: #6b19a8;
+}
+a:active {
+  color: #999999;
+}
+a:link:hover, a:visited:hover, a:active:hover {
+  color: #d00000;
+  cursor: pointer;
+} 
+a img, a u, a.u {
+  text-decoration: none !important;
+}
+
+/* Common settings */
+.print {
+  display: none !important;
+}
+.first {
+  margin-top: 0 !important;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#page div {
+}
+.large, .biggest {
+  font-size: 280%;
+  line-height: 80%;
+	letter-spacing: -.035em;
+}
+.big, .bigger {
+  font-size: 180%;
+  line-height: 75%;
+	letter-spacing: -.02em;
+}
+.small, .smaller {
+  font-size: 60%;
+  line-height: 100%;
+	max-width: 30em;
+}
+.smallest {
+	font-size: 40%;
+  line-height: 90%;
+	max-width: 40em;
+}
+.tiny {
+	font-size: 35%;
+  line-height: 50%;
+}
+.caps {
+	text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
+
+
+.hide {
+  display: none;
+}
+a.trigger:link, a.trigger:visited {
+	text-decoration: none;
+  border-bottom: 1px dotted blue;
+}
+a.trigger:link:hover, a.trigger:visited:hover {
+	text-decoration: none;
+  border-bottom: 1px dotted red;
+}

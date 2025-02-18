@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+
+        <title>Font test</title>
+        <link href="img/rss-en.png" rel="shortcut icon" type="image/x-icon" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/reset.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/fonts.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/main.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/responsive.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/touch.css"
+            media="all"
+        />
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv/html5shiv.js"></script>
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="css/ie.css"
+                media="all"
+            />
+        <![endif]-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/knockout-3.2.0.js"></script>
+        <script src="js/please-color.js"></script>
+        <script src="js/jquery.hotkeys.js"></script>
+        <script src="js/modernizr.custom.16590.js"></script>
+
+        <script src="js/control-panel.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header id="top">
+            <a name="top"></a>
+            <table class="breadcrumbs">
+                <tr>
+                    <td class="breadcrumbs-item">
+                        <a href="index.html"
+                            ><i
+                                >Sergey&nbsp;Yakunin,<br />
+                                web&nbsp;designer</i
+                            ></a
+                        >
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span class="arrow arrow-right">→</span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span>Fonts</span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span class="arrow arrow-right">→</span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span>Rayon font testing</span>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="indicator">
+                <div class="hi-res">1281px</div>
+                <div class="med-res">481px to 1280px</div>
+                <div class="low-res">480px</div>
+                <div class="touch-device-indicator">touch device</div>
+            </div>
+        </header>
+
+        <article>
+            <h1>Font testing playground</h1>
+
+            <div id="rss-feed"></div>
+            <script src="js/jquery.zrssfeed.js"></script>
+            <script src="js/spin.min.js"></script>
+
+            <script type="text/javascript">
+                var rssSource =
+                    "http://pipes.yahoo.com/pipes/pipe.run?_id=a95101ae48ec05d2aea00683f9490e15&_render=rss";
+                var rssItemsPerPage = 12;
+                var pageCount = 1;
+
+                $(document).ready(function () {
+                    loadPage(pageCount, rssItemsPerPage);
+                    pageCount += 1;
+
+                    scrollListener();
+                });
+            </script>
+
+            <!--
+  <div id="output">
+    <ul class="rss">
+      <li>Content from Yahoo! Pipes feed will display here.</li>
+    </ul>
+  </div>
+  <button id="pipes" style="border: none; background-color: pale; border-radius: 4px; padding: 1em 2em;">Load feed from Yahoo Pipes</button>
+  <script language="javascript">
+    rssSource = "http://pipes.yahoo.com/pipes/pipe.run?_id=a95101ae48ec05d2aea00683f9490e15&_render=json";
+  </script>
+  <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+  <script src="js/yui-json-feed.js"></script>
+-->
+        </article>
+
+        <footer>
+            <p>
+                <a href="mailto:s@yakunins.com" class="at-mark">@</a> &middot;
+                <a href="http://facebook.com/yakunins"><i>Facebook</i></a>
+                &middot;
+                <a href="http://www.linkedin.com/pub/sergey-yakunin/1/782/5a2"
+                    ><i>LinkedIn</i></a
+                >
+                &middot;
+                <a href="http://www.quora.com/Sergey-Yakunin"><i>Quora</i></a>
+                &middot;
+                <a
+                    href="http://graphicdesign.stackexchange.com/users/5791/yakunins"
+                    ><i>Stackexchange</i></a
+                >
+            </p>
+        </footer>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-23378586-1"]);
+            _gaq.push(["_trackPageview"]);
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src =
+                    ("https:" == document.location.protocol
+                        ? "https://ssl"
+                        : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.3em;
+    text-rendering: optimizeLegibility;
+}
+
+h3 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 24px;
+}
+h1 {
+    font-size: 36px;
+}
+body h1,
+body h2,
+body h3 {
+    font-weight: normal;
+}
+h4 {
+    font-weight: bold;
+    letter-spacing: -0.35px;
+    font-size: 103%;
+}
+h1,
+h2,
+h3 {
+    margin: 1em 0;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    max-width: 20em;
+}
+
+.caps,
+.all-caps {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+.fake-small-caps,
+.fsc {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 98%;
+    font-style: normal;
+}
+
+.small-caps,
+.sc {
+    -moz-font-feature-settings: "smcp" on;
+    -ms-font-feature-settings: "smcp";
+    -webkit-font-feature-settings: "smcp";
+    -o-font-feature-settings: "smcp";
+    font-feature-settings: "smcp";
+
+    letter-spacing: 0.01em;
+}
+
+.large,
+.biggest {
+    font-size: 280%;
+    line-height: 80%;
+    letter-spacing: -0.035em;
+}
+.big,
+.bigger {
+    font-size: 180%;
+    line-height: 75%;
+    letter-spacing: -0.02em;
+}
+.small,
+.smaller {
+    font-size: 60%;
+    line-height: 100%;
+    max-width: 36em;
+}
+.smallest {
+    font-size: 40%;
+    line-height: 90%;
+    max-width: 40em;
+}
+.tiny {
+    font-size: 35%;
+    line-height: 50%;
+}
+
+.fit {
+    white-space: nowrap;
+}

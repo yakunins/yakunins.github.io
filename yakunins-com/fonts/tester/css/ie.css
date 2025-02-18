@@ -1,0 +1,3 @@
+img.site, .fancy-group img {
+	behavior: url(js/pie.htc);
+}

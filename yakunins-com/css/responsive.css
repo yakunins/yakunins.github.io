@@ -1,0 +1,122 @@
+/* for low resolution */
+@media (max-width: 480px) {
+    header,
+    article,
+    footer {
+        margin: 8% 1em;
+    }
+    .home-page header,
+    .home-page article,
+    .home-page footer,
+    .home-page footer p {
+        text-align: center;
+    }
+
+    body {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0.65em 0;
+    }
+    .block,
+    p,
+    blockquote,
+    article > ul,
+    article > ol {
+        margin: 1em 0;
+        text-align: left;
+    }
+    hr {
+        margin: 1.25em 0;
+    }
+    .year-number,
+    .work-description .time-span {
+        font-size: 9px;
+    }
+
+    .scale,
+    .workflow {
+        text-align: center !important;
+    }
+    .work-description .time-span {
+        display: none;
+    }
+    .segment {
+        border-width: 1px !important;
+    }
+    .stat-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    .indicator .low-res {
+        display: block !important;
+    }
+}
+
+/* for high resolution */
+@media (min-width: 1281px) {
+    body {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 42px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h1,
+    h2,
+    h3 {
+        margin: 0.5em 0;
+        line-height: 100%;
+    }
+
+    .block,
+    p,
+    blockquote,
+    article > ul,
+    article > ol {
+        margin: 1em 0;
+    }
+
+    .year-number,
+    .work-description .time-span {
+        font-size: 50%;
+    }
+
+    .indicator .hi-res {
+        display: block !important;
+    }
+}
+
+/* for intermediate resolution, e.g. touch devices */
+@media (min-width: 481px) and (max-width: 1280px) {
+    .block,
+    p,
+    blockquote,
+    article > ul,
+    article > ol {
+        margin: 1.5em 0;
+    }
+
+    .indicator .med-res {
+        display: block !important;
+    }
+}

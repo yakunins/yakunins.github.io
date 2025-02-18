@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+
+        <title>Испытание шрифта</title>
+        <link href="img/rss-ru.png" rel="shortcut icon" type="image/x-icon" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/reset.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/fonts.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/main.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/responsive.css"
+            media="all"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="css/touch.css"
+            media="all"
+        />
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv/html5shiv.js"></script>
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="css/ie.css"
+                media="all"
+            />
+        <![endif]-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/knockout-3.2.0.js"></script>
+        <script src="js/please-color.js"></script>
+        <script src="js/jquery.hotkeys.js"></script>
+        <script src="js/modernizr.custom.16590.js"></script>
+
+        <script src="js/control-panel.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header id="top">
+            <a name="top"></a>
+            <table class="breadcrumbs">
+                <tr>
+                    <td class="breadcrumbs-item">
+                        <a href="index-ru.html"
+                            ><i
+                                >Сергей&nbsp;Якунин,<br />
+                                веб-дизайнер</i
+                            ></a
+                        >
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span class="arrow arrow-right">→</span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span>Шрифты</span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span class="arrow arrow-right">→</span>
+                    </td>
+                    <td class="breadcrumbs-item">
+                        <span>Испытание шрифта «Район Кириллический»</span>
+                    </td>
+                </tr>
+            </table>
+
+            <!--  
+  <div class="right-menu gamma-trigger">
+    <a href="#gamma-light" class="tip light-trigger" onclick="setLight();"><i>Invert colors</i></a>
+    <a href="#gamma-dark" class="tip dark-trigger" onclick="setDark();"><i>Invert colors</i></a>  
+  </div>
+-->
+
+            <div class="indicator">
+                <div class="hi-res">1281px</div>
+                <div class="med-res">481px to 1280px</div>
+                <div class="low-res">480px</div>
+                <div class="touch-device-indicator">touch device</div>
+            </div>
+        </header>
+
+        <article>
+            <h1>Испытание для шрифта</h1>
+
+            <div id="rss-feed"></div>
+            <script src="js/jquery.zrssfeed.js"></script>
+            <script src="js/spin.min.js"></script>
+
+            <script type="text/javascript">
+                var rssSource =
+                    "http://pipes.yahoo.com/pipes/pipe.run?_id=7b6001ce4f82562ec1fff96ff692cfb5&_render=rss";
+                var rssItemsPerPage = 12;
+                var pageCount = 1;
+
+                $(document).ready(function () {
+                    loadPage(pageCount, rssItemsPerPage);
+                    pageCount += 1;
+
+                    $(window).scroll(function () {
+                        if (
+                            $(window).scrollTop() >=
+                            $(document).height() - $(window).height() - 10
+                        ) {
+                            delay = 500;
+                            insertSpinner(delay + 100);
+                            setTimeout(function () {
+                                loadPage(pageCount, rssItemsPerPage);
+                                pageCount += 1;
+                            }, delay);
+                        }
+                    });
+                });
+            </script>
+        </article>
+
+        <footer>
+            <p>
+                <a href="mailto:s@yakunins.com">@</a> &middot;
+                <a href="http://artgorbunov.ru/bb/soviet/sergeyyakunin/"
+                    ><i>Бюросфера</i></a
+                >
+                &middot;
+                <a href="http://s-yakunin.moikrug.ru/"><i>Мой круг</i></a>
+                &middot;
+                <a href="http://facebook.com/yakunins"><i>Фейсбук</i></a>
+            </p>
+        </footer>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-23378586-1"]);
+            _gaq.push(["_trackPageview"]);
+            (function () {
+                var ga = document.createElement("script");
+                ga.type = "text/javascript";
+                ga.async = true;
+                ga.src =
+                    ("https:" == document.location.protocol
+                        ? "https://ssl"
+                        : "http://www") + ".google-analytics.com/ga.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </body>
+</html>

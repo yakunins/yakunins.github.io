@@ -1,0 +1,106 @@
+body.gamma-dark .light-trigger,
+body.gamma-light .dark-trigger {
+  display: inline;
+}
+body.gamma-dark .dark-trigger,
+body.gamma-light .light-trigger {
+  display: none;
+}
+body .gamma-trigger {
+  position: fixed;
+  right: 3em;
+  top: 3em;
+  z-index: 10;
+}
+.light-trigger,
+.dark-trigger {
+  opacity: .5;
+}
+
+
+
+/* Light gamma */
+body.gamma-light {
+  background-color: #fff;
+}
+.gamma-light h1, .gamma-light h2,
+.gamma-light .font-sample td,
+.gamma-light p, .gamma-light ul, .gamma-light ol {
+  color: #000;
+}
+
+.gamma-light .font-sample {
+  border-top-color: #000;
+  border-bottom-color: #000;
+}
+.gamma-light .font-sample td .weight span,
+.gamma-light .a-b-trigger span {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+
+/* Dark gamma */
+body.gamma-dark {
+  background-color: #222;
+}
+
+.gamma-dark .breadcrumbs-item, 
+.gamma-dark h1, 
+.gamma-dark h2, 
+.gamma-dark h3, 
+.gamma-dark h4, 
+.gamma-dark h5, 
+.gamma-dark h6, 
+.gamma-dark p, 
+.gamma-dark ul, 
+.gamma-dark ol, 
+.gamma-dark blockquote {
+  color: #fff;
+}
+
+
+.gamma-dark a:link i, 
+.gamma-dark a:link {color: #0b6ee2; text-decoration: none;}
+.gamma-dark a:visited i, 
+.gamma-dark a:visited {color: #6b19a8;}
+.gamma-dark a:active i, 
+.gamma-dark a:active {color: #999999;}
+.gamma-dark a:link:hover i, .gamma-dark a:visited:hover i, .gamma-dark a:active:hover i, 
+.gamma-dark a:link:hover, .gamma-dark a:visited:hover, .gamma-dark a:active:hover {color: #d00000;} 
+
+.gamma-dark a.thin-underline:link {color: #172e6b; border-color: #172e6b;}
+.gamma-dark a.thin-underline:visited {color: #3b2151; border-color: #3b2151;}
+.gamma-dark a.thin-underline:active {color: #d8d8d8; border-color: #d8d8d8;}
+.gamma-dark a.thin-underline:link:hover, .gamma-dark a.thin-underline:visited:hover, .gamma-dark a.thin-underline:active:hover {color: #692222; border-color: #692222;} 
+
+.gamma-dark a.tip:visited i {
+  color: #fff;
+}
+.gamma-dark a.tip:visited:hover i {
+  color: #aaa;
+}
+.gamma-dark a.tip {
+  border-color: #777 !important; 
+}
+
+.gamma-dark .breadcrumbs-item a:visited i {
+  color: #0b6ee2;
+}
+.gamma-dark .breadcrumbs-item a:visited:hover i {
+  color: #d00000;
+}
+.gamma-dark .breadcrumbs-item a:visited {
+  border-color: #172e6b;
+}
+
+
+
+.gamma-dark .breadcrumbs-item .arrow-right {
+  background: url(../img/arrow-right-white.svg) no-repeat center center;
+  background-size: contain;
+}
+.gamma-dark .no-svg .breadcrumbs-item .arrow-right {
+  background-image: url(../img/arrow-right-white..png);
+}
+

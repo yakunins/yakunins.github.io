@@ -1,0 +1,15 @@
+@import url("fonts/r/stylesheet.css");
+@import url("fonts/b/stylesheet.css");
+
+body {
+    font-family: "rayonregular", Arial, sans-serif;
+    letter-spacing: -0.005em;
+}
+
+b,
+em,
+h1,
+h2,
+h3 {
+    font-family: "rayonbold", Arial, sans-serif;
+}

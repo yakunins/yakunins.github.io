@@ -1,0 +1,54 @@
+ 
+ 
+/* for low resolution */
+@media (max-width: 480px) { 
+  html {
+    font-size: 15px;
+  }
+  header, article, footer {
+    margin: 8% 1em;
+  }
+  h1, h2, h3 {
+    margin: .65em 0;
+  }
+  .block, 
+  p, blockquote, article > ul, article > ol {
+    margin: 1em 0;
+    text-align: left;
+  }
+  hr {
+    margin: 1.25em 0;
+  }
+  .indicator .low-res {display: block !important;}
+}
+
+
+/* for high resolution */
+@media (min-width: 1281px) {
+  html {
+    font-size: 20px;
+  }
+  h1, h2, h3 {
+    margin: 1em 0;
+    line-height: 1em;
+  }
+  .block, 
+  p, blockquote, article > ul, article > ol {
+    margin: 1em 0;
+  }
+  .indicator .hi-res {display: block !important;}
+}
+
+
+/* for intermediate resolution, e.g. touch devices */
+@media (min-width: 481px) and (max-width: 1280px) {
+
+  html {
+  }
+  .block, 
+  p, blockquote, article > ul, article > ol {
+    margin: 1.5em 0;
+  }
+  .indicator .med-res {display: block !important;}
+}
+

@@ -1,0 +1,21 @@
+/* only for touch devices */
+
+.touch .gallery {
+  display: inline-block;
+  width: 320px;
+  max-width: inherit;
+  margin-right: 3em;
+}
+
+.touch .gallery img {
+  border: none !important;
+}
+
+.touch .indicator .touch-device-indicator {
+	display: block !important
+}
+
+.touch .gallery .gallery-controls {
+  display: block;
+}
+
