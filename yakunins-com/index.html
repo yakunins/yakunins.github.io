@@ -7,11 +7,7 @@
         <meta http-equiv="Pragma" content="no-cache" />
 
         <title>Sergey Yakunin, web designer</title>
-        <link
-            href="img/sergey-yakunin-photo.png"
-            rel="shortcut icon"
-            type="image/x-icon"
-        />
+        <link href="img/sergey-yakunin-photo.png" rel="shortcut icon" type="image/x-icon" />
 
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link rel="stylesheet" type="text/css" href="css/jbox.css" />
@@ -30,10 +26,7 @@
         <script src="js/jquery.browserLanguage.js"></script>
         <script>
             $.browserLanguage(function (language, acceptHeader) {
-                if (
-                    acceptHeader.indexOf("ru") > -1 &&
-                    $.cookie("language") != "EN"
-                ) {
+                if (acceptHeader.indexOf("ru") > -1 && $.cookie("language") != "EN") {
                     $.cookie("language", "RU");
                     window.location = "index-ru.html";
                 }
@@ -85,12 +78,9 @@
                         class="gallery-link"
                         href="auto.html"
                         data-mouse-traveled-prev="0"
-                        data-mouse-traveled="0"
-                    >
+                        data-mouse-traveled="0">
                         <span class="gallery-padding"></span>
-                        <span class="gallery-caption"
-                            ><i>Works for Auto.ru</i></span
-                        >
+                        <span class="gallery-caption"><i>Works for Auto.ru</i></span>
                     </a>
                     <ul class="gallery-controls">
                         <li class="prev"><a href="#prev">Previous</a></li>
@@ -103,8 +93,7 @@
                         class="gallery-link"
                         href="web.html"
                         data-mouse-traveled-prev="0"
-                        data-mouse-traveled="0"
-                    >
+                        data-mouse-traveled="0">
                         <span class="gallery-padding"></span>
                         <span class="gallery-caption"><i>Web</i></span>
                     </a>
@@ -119,12 +108,9 @@
                         class="gallery-link"
                         href="fonts.html"
                         data-mouse-traveled-prev="0"
-                        data-mouse-traveled="0"
-                    >
+                        data-mouse-traveled="0">
                         <span class="gallery-padding"></span>
-                        <span class="gallery-caption"
-                            ><i>Logos and fonts</i></span
-                        >
+                        <span class="gallery-caption"><i>Logos and fonts</i></span>
                     </a>
                     <ul class="gallery-controls">
                         <li class="prev"><a href="#prev">Previous</a></li>
@@ -137,12 +123,9 @@
                         class="gallery-link"
                         href="graphics.html"
                         data-mouse-traveled-prev="0"
-                        data-mouse-traveled="0"
-                    >
+                        data-mouse-traveled="0">
                         <span class="gallery-padding"></span>
-                        <span class="gallery-caption"
-                            ><i>Icons, vector graphics</i></span
-                        >
+                        <span class="gallery-caption"><i>Icons, vector graphics</i></span>
                     </a>
                     <ul class="gallery-controls">
                         <li class="prev"><a href="#prev">Previous</a></li>
@@ -155,12 +138,9 @@
                         class="gallery-link"
                         href="retouch.html"
                         data-mouse-traveled-prev="0"
-                        data-mouse-traveled="0"
-                    >
+                        data-mouse-traveled="0">
                         <span class="gallery-padding"></span>
-                        <span class="gallery-caption"
-                            ><i>Banners, retouching</i></span
-                        >
+                        <span class="gallery-caption"><i>Banners, retouching</i></span>
                     </a>
                     <ul class="gallery-controls">
                         <li class="prev"><a href="#prev">Previous</a></li>
@@ -191,8 +171,7 @@
             <script>
                 $(".gallery-link")
                     .mouseenter(function (e) {
-                        var enteredAtX =
-                            e.pageX - $(this).parent().offset().left;
+                        var enteredAtX = e.pageX - $(this).parent().offset().left;
                         $(this).attr("data-mouse-entered-at", enteredAtX);
                     })
                     .mouseleave(function (e) {
@@ -204,12 +183,8 @@
                     var parentOffset = $(this).parent().offset();
                     var relPosX = e.pageX - parentOffset.left;
 
-                    var enteredAt = parseInt(
-                        $(this).attr("data-mouse-entered-at")
-                    );
-                    var traveledPrev = parseInt(
-                        $(this).attr("data-mouse-traveled-prev")
-                    );
+                    var enteredAt = parseInt($(this).attr("data-mouse-entered-at"));
+                    var traveledPrev = parseInt($(this).attr("data-mouse-traveled-prev"));
 
                     var traveledX = traveledPrev + (relPosX - enteredAt);
                     $(this).attr("data-mouse-traveled", traveledX);
@@ -220,39 +195,29 @@
 
                 $(".gallery .gallery-controls .prev").click(function () {
                     event.preventDefault();
-                    $(this)
-                        .parent()
-                        .siblings(".gallery-link")
-                        .css("background-position-x", "+=320px");
+                    $(this).parent().siblings(".gallery-link").css("background-position-x", "+=320px");
                 });
                 $(".gallery .gallery-controls .next").click(function () {
                     event.preventDefault();
-                    $(this)
-                        .parent()
-                        .siblings(".gallery-link")
-                        .css("background-position-x", "-=320px");
+                    $(this).parent().siblings(".gallery-link").css("background-position-x", "-=320px");
                 });
             </script>
 
             <p>
                 I&nbsp;am web designer with solid knowledge of
-                <span class="fsc">HTML</span> and <span class="fsc">CSS</span>.
-                I&nbsp;am&nbsp;an expert in&nbsp;Adobe Photo&shy;shop,
-                Illustrator, Indesign, Fontlab.
+                <span class="fsc">HTML</span> and <span class="fsc">CSS</span>. I&nbsp;am&nbsp;an expert in&nbsp;Adobe
+                Photo&shy;shop, Illustrator, Indesign, Fontlab.
             </p>
             <p>
                 <a href="pdf/cv.pdf"><i>cv.pdf</i></a>
             </p>
             <p>
-                My professional interests are: web interfaces, information
-                architecture, usability and <span class="fsc">UX</span>, layout
-                and typography, fonts and vector graphics.
+                My professional interests are: web interfaces, information architecture, usability and
+                <span class="fsc">UX</span>, layout and typography, fonts and vector graphics.
             </p>
 
             <p>
-                <a href="#stats" id="expand-stats" class="tip"
-                    ><i>Work experience</i></a
-                >
+                <a href="#stats" id="expand-stats" class="tip"><i>Work experience</i></a>
             </p>
 
             <div style="display: none" id="content-stats">
@@ -319,40 +284,24 @@
                     </div>
 
                     <div class="workflow">
-                        <div
-                            class="work-range description-bottom"
-                            style="width: 10%"
-                        >
+                        <div class="work-range description-bottom" style="width: 10%">
                             <div class="work-description">
                                 <span class="time-place"
-                                    ><a
-                                        href="http://urfu.ru/en/about-the-university/"
+                                    ><a href="http://urfu.ru/en/about-the-university/"
                                         ><i>Urals State University</i></a
                                     ></span
                                 >
-                                <span class="time-span"
-                                    >1998&thinsp;&minus;&thinsp;2004</span
-                                >
+                                <span class="time-span">1998&thinsp;&minus;&thinsp;2004</span>
                             </div>
-                            <div
-                                class="work-pointer"
-                                style="border-right-color: #ddd"
-                            ></div>
-                            <div
-                                class="fill"
-                                style="background-color: #ddd"
-                            ></div>
+                            <div class="work-pointer" style="border-right-color: #ddd"></div>
+                            <div class="fill" style="background-color: #ddd"></div>
                         </div>
                         <div class="work-range" style="width: 1%"></div>
                         <div class="work-range" style="width: 3.5%">
                             <div class="work-description">
-                                <span class="time-span"
-                                    >09.2004&thinsp;&minus;&thinsp;04.2005</span
-                                >
+                                <span class="time-span">09.2004&thinsp;&minus;&thinsp;04.2005</span>
                                 <span class="time-place"
-                                    ><a href="http://itex.ru"
-                                        ><i>Itex.ru</i></a
-                                    ></span
+                                    ><a href="http://itex.ru"><i>Itex.ru</i></a></span
                                 >
                             </div>
                             <div class="work-pointer"></div>
@@ -361,28 +310,19 @@
                         <div class="work-range" style="width: 4%"></div>
                         <div class="work-range" style="width: 7%">
                             <div class="work-description">
-                                <span class="time-span"
-                                    >01.2006&thinsp;&minus;&thinsp;03.2007</span
-                                >
+                                <span class="time-span">01.2006&thinsp;&minus;&thinsp;03.2007</span>
                                 <span class="time-place"
-                                    ><a href="http://x-tensive.com"
-                                        ><i>X-tensive.com</i></a
-                                    ></span
+                                    ><a href="http://x-tensive.com"><i>X-tensive.com</i></a></span
                                 >
                             </div>
                             <div class="work-pointer"></div>
                             <div class="fill"></div>
                         </div>
                         <div class="work-range" style="width: 0.5%"></div>
-                        <div
-                            class="work-range description-bottom"
-                            style="width: 5%"
-                        >
+                        <div class="work-range description-bottom" style="width: 5%">
                             <div class="work-description">
                                 <span class="time-place">Freelance</span>
-                                <span class="time-span"
-                                    >05.2007&thinsp;&minus;&thinsp;02.2008</span
-                                >
+                                <span class="time-span">05.2007&thinsp;&minus;&thinsp;02.2008</span>
                             </div>
                             <div class="work-pointer"></div>
                             <div class="fill"></div>
@@ -390,9 +330,7 @@
                         <div class="work-range" style="width: 0.5%"></div>
                         <div class="work-range" style="width: 30.5%">
                             <div class="work-description">
-                                <span class="time-span"
-                                    >03.2008&thinsp;&minus;&thinsp;04.2013</span
-                                >
+                                <span class="time-span">03.2008&thinsp;&minus;&thinsp;04.2013</span>
                                 <span class="time-place">X-tensive.com</span>
                             </div>
                             <div class="work-pointer"></div>
@@ -401,13 +339,9 @@
                         <div class="work-range" style="width: 1.5%"></div>
                         <div class="work-range" style="width: 7.5%">
                             <div class="work-description">
-                                <span class="time-span"
-                                    >07.2013&thinsp;&minus;&thinsp;10.2014</span
-                                >
+                                <span class="time-span">07.2013&thinsp;&minus;&thinsp;10.2014</span>
                                 <span class="time-place"
-                                    ><a href="http://auto.ru"
-                                        ><i>Auto.ru</i></a
-                                    ></span
+                                    ><a href="http://auto.ru"><i>Auto.ru</i></a></span
                                 >
                             </div>
                             <div class="work-pointer"></div>
@@ -421,41 +355,19 @@
                 <div class="stats-container">
                     <div
                         class="stat-item"
-                        style="
-                            background-color: #333;
-                            color: #31abf0;
-                            width: 7.65em;
-                            height: 7.65em;
-                        "
-                    >
+                        style="background-color: #333; color: #31abf0; width: 7.65em; height: 7.65em">
                         <div class="container">
                             <span class="stat-header counter">3468 </span><br />
                             <span class="stat-description">.psd</span>
                         </div>
                     </div>
-                    <div
-                        class="stat-item"
-                        style="
-                            background-color: #333;
-                            color: #ff7f18;
-                            width: 5em;
-                            height: 5em;
-                        "
-                    >
+                    <div class="stat-item" style="background-color: #333; color: #ff7f18; width: 5em; height: 5em">
                         <div class="container">
                             <span class="stat-header counter">1448 </span><br />
                             <span class="stat-description">.ai</span>
                         </div>
                     </div>
-                    <div
-                        class="stat-item"
-                        style="
-                            background-color: #333;
-                            color: #ff408c;
-                            width: 4em;
-                            height: 4em;
-                        "
-                    >
+                    <div class="stat-item" style="background-color: #333; color: #ff408c; width: 4em; height: 4em">
                         <div class="container">
                             <span class="stat-header counter">923 </span><br />
                             <span class="stat-description">.indd</span>
@@ -478,16 +390,11 @@
                 &middot;
                 <a href="http://facebook.com/yakunins"><i>Facebook</i></a>
                 &middot;
-                <a href="http://www.linkedin.com/pub/sergey-yakunin/1/782/5a2"
-                    ><i>LinkedIn</i></a
-                >
+                <a href="https://linkedin.com/in/sergei-iakunin/"><i>LinkedIn</i></a>
                 &middot;
-                <a href="http://www.quora.com/Sergey-Yakunin"><i>Quora</i></a>
+                <a href="http://quora.com/Sergey-Yakunin"><i>Quora</i></a>
                 &middot;
-                <a
-                    href="http://graphicdesign.stackexchange.com/users/5791/yakunins"
-                    ><i>Stackexchange</i></a
-                >
+                <a href="http://graphicdesign.stackexchange.com/users/5791/yakunins"><i>Stackexchange</i></a>
             </p>
         </footer>
 
@@ -500,9 +407,8 @@
                 ga.type = "text/javascript";
                 ga.async = true;
                 ga.src =
-                    ("https:" == document.location.protocol
-                        ? "https://ssl"
-                        : "http://www") + ".google-analytics.com/ga.js";
+                    ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+                    ".google-analytics.com/ga.js";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(ga, s);
             })();
