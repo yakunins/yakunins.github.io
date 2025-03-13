@@ -1,0 +1,51 @@
+@import url("beem-regular.css");
+@import url("beem-bold.css");
+
+body {
+    font-family: "Beem", Consolas, monospace;
+    font-size: max(1.5rem, 2vmin);
+    line-height: 1.5;
+    margin: 10vmin 12vmin;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: normal;
+}
+h1 {
+    font-size: 135%;
+    letter-spacing: -0.035em;
+}
+h2 {
+    margin: 0;
+}
+p {
+    --space: 0.55em; /* whitespace size based on font */
+    --word-spacing: calc(var(--space) * -0.5);
+    letter-spacing: -0.035em;
+    margin-top: 0;
+    margin-inline: 2em;
+}
+
+a {
+    text-decoration-thickness: 0.035em;
+    text-underline-offset: 0.125em;
+    text-decoration-color: color-mix(
+        in srgb,
+        currentColor 25%,
+        transparent 75%
+    );
+}
+i {
+    font-style: normal;
+    letter-spacing: -0.057em;
+    padding-left: 0.5em;
+    opacity: 0.35;
+}
+.logo {
+    margin-bottom: 10vmin;
+}
