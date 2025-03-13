@@ -5,7 +5,6 @@ body {
     font-family: "Beem", Consolas, monospace;
     font-size: max(1.5rem, 2vmin);
     line-height: 1.5;
-    margin: 10vmin 12vmin;
 }
 h1,
 h2,
