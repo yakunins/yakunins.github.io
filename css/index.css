@@ -2,9 +2,13 @@
 @import url("beem-bold.css");
 
 body {
+    --font-size: calc(max(1.5rem, 2vmin) * 0.88);
+
     font-family: "Beem", Consolas, monospace;
-    font-size: max(1.5rem, 2vmin);
+    font-size: var(--font-size, 18px);
     line-height: 1.5;
+    letter-spacing: -0.035em;
+    margin: 10vmin 12vmin;
 }
 h1,
 h2,
@@ -15,19 +19,15 @@ h6 {
     font-size: inherit;
     font-weight: normal;
 }
-h1 {
-    font-size: 135%;
-    letter-spacing: -0.035em;
-}
 h2 {
     margin: 0;
 }
 p {
     --space: 0.55em; /* whitespace size based on font */
     --word-spacing: calc(var(--space) * -0.5);
-    letter-spacing: -0.035em;
+
     margin-top: 0;
-    margin-inline: 2em;
+    margin-inline: 0em;
 }
 
 a {
@@ -46,5 +46,8 @@ i {
     opacity: 0.35;
 }
 .logo {
-    margin-bottom: 10vmin;
+    font-size: 106%;
+    font-weight: bold;
+    letter-spacing: 0em;
+    margin-bottom: 1em;
 }
