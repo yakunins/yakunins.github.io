@@ -8,14 +8,25 @@ body {
 }
 
 body {
+    box-sizing: border-box;
+    display: flow-root;
+    min-height: 100dvh;
+}
+
+body {
     --font-size: calc(max(1.5rem, 2vmin) * 0.88);
+    --cv-background: #e6e1dc;
 
     font-family: "Beem", Consolas, monospace;
     font-size: var(--font-size, 18px);
     line-height: 1.5;
     letter-spacing: -0.035em;
+}
+
+main {
     margin: 2vmin 12vmin;
 }
+
 h1,
 h2,
 h3,
@@ -37,13 +48,12 @@ ul {
 }
 
 a {
-    text-decoration-thickness: 0.035em;
-    text-underline-offset: 0.125em;
-    text-decoration-color: color-mix(
-        in srgb,
-        currentColor 25%,
-        transparent 75%
-    );
+    --line: 0.085em;
+    text-decoration: underline;
+    text-decoration-thickness: calc(var(--line) * 0.92);
+    text-underline-offset: calc(var(--line) * 1.12);
+    text-decoration-color: color-mix(in srgb, transparent, currentColor 17.5%);
+    text-decoration-skip-ink: none;
 }
 
 h1 {
@@ -68,5 +78,9 @@ h1 {
     }
     i:nth-child(4) {
         margin-right: 0.035em;
+    }
+    i:nth-child(5) {
+        margin-left: 0.015em;
+        margin-right: 0.015em;
     }
 }
