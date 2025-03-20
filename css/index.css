@@ -1,6 +1,12 @@
 @import url("beem-regular.css");
 @import url("beem-bold.css");
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     --font-size: calc(max(1.5rem, 2vmin) * 0.88);
 
@@ -8,7 +14,7 @@ body {
     font-size: var(--font-size, 18px);
     line-height: 1.5;
     letter-spacing: -0.035em;
-    margin: 10vmin 12vmin;
+    margin: 2vmin 12vmin;
 }
 h1,
 h2,
@@ -18,16 +24,15 @@ h5,
 h6 {
     font-size: inherit;
     font-weight: normal;
-}
-h2 {
     margin: 0;
 }
-p {
+p,
+ul {
     margin-block-start: 0;
+    margin-block-end: 2rem;
 }
 ul {
     list-style-type: none;
-    margin-block-start: 0;
     padding-inline-start: 1.2em;
 }
 
@@ -40,15 +45,28 @@ a {
         transparent 75%
     );
 }
-i {
-    font-style: normal;
-    letter-spacing: -0.057em;
-    padding-left: 0.5em;
-    opacity: 0.35;
-}
-.logo {
-    font-size: 106%;
-    font-weight: bold;
-    letter-spacing: 0em;
-    margin-bottom: 1em;
+
+h1 {
+    font-weight: normal;
+    font-size: 156%;
+    letter-spacing: -0.05em;
+    margin-block: 4rem;
+    word-spacing: -0.1em;
+
+    i {
+        font-style: normal;
+    }
+    i:nth-child(1) {
+        margin-right: 0.035em;
+    }
+    i:nth-child(2) {
+        margin-left: -0.035em;
+    }
+    i:nth-child(3) {
+        margin-left: -0.015em;
+        margin-right: 0.035em;
+    }
+    i:nth-child(4) {
+        margin-right: 0.035em;
+    }
 }
