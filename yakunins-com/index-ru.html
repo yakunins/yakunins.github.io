@@ -43,15 +43,6 @@
                 <a id="eng" href="index.html"><i>En</i></a>
                 <a id="rus" href="index-ru.html" class="active"><i>Ru</i></a>
             </div>
-            <script>
-                $("#rus").click(function () {
-                    event.stopPropagation();
-                    return false;
-                });
-                $("#eng").click(function () {
-                    $.cookie("language", "EN");
-                });
-            </script>
 
             <div class="indicator">
                 <div class="hi-res">1281px</div>
@@ -404,19 +395,7 @@
         </footer>
 
         <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(["_setAccount", "UA-23378586-1"]);
-            _gaq.push(["_trackPageview"]);
-            (function () {
-                var ga = document.createElement("script");
-                ga.type = "text/javascript";
-                ga.async = true;
-                ga.src =
-                    ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
-                    ".google-analytics.com/ga.js";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
+            jQuery(document).ready(() => $.cookie("language", "RU"));
         </script>
     </body>
 </html>
