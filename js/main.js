@@ -26,7 +26,6 @@ const bindGridToggle = () => {
     document.addEventListener("keydown", handleGridToggle);
 }
 const handleGridToggle = (e) => {
-    console.log(e);
     if (e.key !== "g") return;
     if (document.body.classList.contains(gridClassName)) {
         document.body.classList.remove(gridClassName);
