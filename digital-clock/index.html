@@ -5,23 +5,24 @@
         <title>New Tab</title>
         <script src="js/vendor.js"></script>
         <style>
-            .get-extension {
-                position: absolute;
-                display: flex;
+            .title {
+                color: var(--color, white);
                 flex-direction: row;
                 place-items: center;
-                gap: 0.5em;
+                text-align: center;
+                z-index: 10;
+
+                position: fixed;
                 top: 0;
                 left: 0;
-                padding: var(--padding);
-                z-index: 1000;
+                width: 100%;
 
-                * {
-                    color: black;
+                h1 {
+                    font-family: "Work Sans", WorkSansEmbedded, "Segoe UI",
+                        Segoe, sans-serif;
+                    font-size: 2.5em;
+                    font-weight: 200;
                 }
-            }
-            .text {
-                _display: none;
             }
             .links {
                 display: flex;
@@ -29,6 +30,7 @@
 
                 a {
                     backdrop-filter: blur(0.5em);
+                    color: black;
                     display: flex;
                     gap: 0.3em;
                     place-items: center;
@@ -54,6 +56,13 @@
                         width: 1.35em;
                         margin-bottom: -1px;
                     }
+                    i {
+                        font-style: normal;
+                        vertical-align: 8px;
+                        margin-block: -10px;
+                        display: inline-block;
+                        margin-inline-end: -6px;
+                    }
                 }
             }
         </style>
@@ -62,19 +71,23 @@
     <body class="extension-newtab">
         <div id="root"></div>
         <script src="js/newtab.js"></script>
-        <div class="get-extension">
+
+        <div class="title">
+            <h1>Digital Clock in a New Tab</h1>
             <div class="links">
                 <a
+                    target="_blank"
                     href="https://chromewebstore.google.com/detail/digital-clock-in-a-new-ta/jigadjkijhkamfmjfjnjlgojkdednakp"
                 >
                     <img src="./chrome-web-store.svg" />
-                    <span>Chrome</span></a
+                    <span>Chrome<i>↗</i></span></a
                 >
                 <a
+                    target="_blank"
                     href="https://addons.mozilla.org/en-US/firefox/addon/digital-clock-in-a-new-tab/"
                 >
                     <img src="./firefox-logo.svg" />
-                    <span>Firefox</span></a
+                    <span>Firefox<i>↗</i></span></a
                 >
             </div>
         </div>
