@@ -72,6 +72,37 @@
         <div id="root"></div>
         <script src="js/newtab.js"></script>
 
+        <script>
+            window.addEventListener("load", () => {
+                const day = 1000 * 60 * 60 * 24;
+                if (sinceLastVisit() > day) openSettings();
+            });
+
+            const openSettings = () => {
+                const opened = document.querySelector(
+                    "#root .settings-dropdown:has(.settings-overlay)"
+                );
+                if (opened) return;
+
+                const trigger = document.querySelector(
+                    "#root .settings-dropdown > div > button"
+                );
+                setTimeout(() => trigger?.click(), 50);
+            };
+
+            const sinceLastVisit = () => {
+                const storage_key = "visit_timestamp";
+                const stored = localStorage.getItem(storage_key);
+                const last_visit = new Date(
+                    stored ? parseInt(stored, 10) : 0
+                ).getTime();
+                const now = new Date().getTime();
+                const since_last_visit = now - last_visit;
+                localStorage.setItem(storage_key, now);
+                return since_last_visit;
+            };
+        </script>
+
         <div class="title">
             <h1>Digital Clock in a New Tab</h1>
             <div class="links">
