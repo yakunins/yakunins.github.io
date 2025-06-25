@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <title>Hello, Wonderful AI World</title>
+        <style>
+            html,
+            body {
+                font-family: Sylfaen, serif;
+                margin: 0;
+                overflow: hidden;
+                padding: 0;
+            }
+            body {
+                --shift-x: 0px;
+                --shift-y: 0px;
+
+                height: 100dvh;
+            }
+            h1 {
+                top: calc(50dvh + var(--shift-y));
+                left: calc(50dvw + var(--shift-x));
+
+                border-radius: 100rem;
+                color: var(--random-fg, red);
+                font-size: var(--font-size, 10vmin);
+                font-weight: 100;
+                letter-spacing: 0.05em;
+                margin: auto;
+                padding: 10vmin;
+                position: absolute;
+                text-transform: uppercase;
+                transform: translate(-50%, -50%);
+                transition-property: top, left;
+                transition-timing-function: ease-in-out;
+                transition-duration: 0.2s;
+                white-space: nowrap;
+                z-index: var(--z, 1);
+
+                &::after {
+                    background: var(--random-bg, green);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    filter: blur(10vmin);
+                    z-index: -1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p style="margin: 1em">
+            <a href="./" target="blank" style="text-decoration: none"
+                ><span
+                    style="
+                        text-decoration: underline;
+                        text-decoration-color: color-mix(
+                            in srgb,
+                            currentColor,
+                            transparent 10%
+                        );
+                    "
+                    >Open this page in a new window</span
+                ><i>↗</i></a
+            >
+            to see true AI miracle!
+            <script src="./main.js"></script>
+        </p>
+    </body>
+</html>
