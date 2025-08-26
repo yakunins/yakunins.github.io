@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Portfolio of Sergei Iakunin, Front-End Developer specializing in React, UI Design, and Open Source projects."
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <title>Sergei Iakunin</title>
+
+        <link rel="preload" href="./css/index.css" as="style" />
         <link href="./css/index.css" rel="stylesheet" />
-        <script src="./js/main.js" async defer></script>
+        <link rel="canonical" href="https://yakunins.com/" />
+
+        <script src="./js/main.js" defer></script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Sergei Iakunin",
+                "url": "https://yakunins.com",
+                "sameAs": [
+                    "https://github.com/yakunins",
+                    "https://www.linkedin.com/in/sergei-iakunin/",
+                    "https://stackoverflow.com/users/316979"
+                ],
+                "jobTitle": "Front-End Developer"
+            }
+        </script>
     </head>
     <body>
         <main>
@@ -59,11 +83,17 @@
             <p>
                 ————<br />
                 <a href="mailto:s@yakunins.com">email</a><br />
-                <a href="https://github.com/yakunins">github</a><br />
-                <a href="https://www.linkedin.com/in/sergei-iakunin/"
+                <a rel="noopener noreferrer" href="https://github.com/yakunins"
+                    >github</a
+                ><br />
+                <a
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/sergei-iakunin/"
                     >linkedin</a
                 ><br />
-                <a href="https://stackoverflow.com/users/316979"
+                <a
+                    rel="noopener noreferrer"
+                    href="https://stackoverflow.com/users/316979"
                     >stackexchange</a
                 ><br />
             </p>

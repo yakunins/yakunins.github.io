@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="icon" href="/icon-16.png" />
+        <link rel="preload" href="js/vendor.js" as="script" />
+        <link rel="preload" href="js/newtab.js" as="script" />
+
         <title>Digital Clock in New Tab (Browser Extension)</title>
-        <script src="js/vendor.js"></script>
+
+        <script src="js/vendor.js" defer></script>
+        <script src="js/newtab.js" defer></script>
         <style>
             .title {
                 --color: white;
@@ -97,7 +107,6 @@
 
     <body class="extension-newtab">
         <div id="root"></div>
-        <script src="js/newtab.js"></script>
 
         <script>
             window.addEventListener("load", () => {
@@ -139,6 +148,7 @@
                 <a
                     target="_blank"
                     href="https://chromewebstore.google.com/detail/digital-clock-in-a-new-ta/jigadjkijhkamfmjfjnjlgojkdednakp"
+                    rel="noopener noreferrer"
                 >
                     <img src="./chrome-web-store.svg" alt="chrome web store" />
                     <span>Chrome<i>↗</i></span></a
@@ -147,6 +157,7 @@
                 <a
                     target="_blank"
                     href="https://addons.mozilla.org/en-US/firefox/addon/digital-clock-in-a-new-tab/"
+                    rel="noopener noreferrer"
                 >
                     <img src="./firefox-logo.svg" alt="firefox addons" />
                     <span>Firefox<i>↗</i></span></a
