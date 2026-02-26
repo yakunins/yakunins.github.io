@@ -1,0 +1,101 @@
+#course-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 24px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+#course-header nav {
+  position: relative;
+  background: var(--c-ink);
+  border-radius: 0.65rem;
+  box-shadow: 0 .25rem .5rem var(--c-ink-10), 0 .5rem 2rem var(--c-ink-50);
+  max-width: calc(var(--content-width, 820px) * 1.05);
+  margin: 0 auto;
+  padding: .65rem 1rem;
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+#course-header .header-logo {
+  color: var(--c-paper);
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+
+  svg {
+    margin-bottom: -3px;
+  }
+}
+
+#course-header .header-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  gap: 1px;
+}
+
+#course-header .header-nav li a {
+  border-radius: 6px;
+  color: var(--c-paper);
+  display: block;
+  text-decoration: none;
+  height: 24px;
+  line-height: 24px;
+  margin-bottom: -2px;
+  padding-inline: 8px;
+  text-align: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+#course-header .header-nav li a:hover {
+  background: var(--c-ink);
+  color: var(--c-paper);
+}
+
+#course-header .header-nav li a.active {
+  background: var(--c-accent);
+  color: var(--c-paper);
+}
+
+#course-header .lesson-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--c-paper);
+  background: var(--c-ink);
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 1;
+  transition: opacity .15s;
+  text-align: center;
+}
+
+#course-header .lesson-nav-btn:hover {
+}
+
+#course-header .lesson-nav-prev {
+  right: calc(100% + 8px);
+}
+
+#course-header .lesson-nav-next {
+  left: calc(100% + 8px);
+}
+
+body {
+  padding-top: 68px;
+}

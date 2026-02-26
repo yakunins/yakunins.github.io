@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3: Protocols — The Rules of the Internet &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">How the Internet Works</p>
+  <h1 class="lesson-title">The Rules Computers Follow to Talk</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=kBXQZMmiA4s" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          The Internet: HTTP &amp; HTML (Code.org, 7 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=hExRDVZHhig" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          SSL, TLS, HTTP, HTTPS Explained (PowerCert, 13 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=uwoD5YsGACg" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          TCP vs UDP Comparison (PowerCert, 5 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=g2fT-g9PX9o" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Network Ports Explained (PowerCert, 6 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the Code.org video, David Karp explains what happens when your browser asks a server for a page. What is the name of the &ldquo;language&rdquo; your browser and the server use to talk to each other?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> FTP</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> HTTP (HyperText Transfer Protocol)</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> DNS</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> TCP</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert &ldquo;SSL, TLS, HTTPS&rdquo; video, what does the padlock icon in your browser&rsquo;s address bar indicate?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> The website loads faster than normal</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> The website is using HTTPS and has a valid SSL/TLS certificate</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> The website is free to use</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> The website is hosted in your country</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert &ldquo;SSL, TLS, HTTPS&rdquo; video, what is the main difference between SSL and TLS?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> SSL is for email, TLS is for websites</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> TLS is the newer, more secure successor to SSL</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> SSL is faster but TLS is more reliable</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> They are exactly the same thing</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert &ldquo;TCP vs UDP&rdquo; video, which protocol uses a three-way handshake before sending data?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> UDP</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> Both TCP and UDP</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> TCP</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> Neither &mdash; handshakes are a DNS feature</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert &ldquo;TCP vs UDP&rdquo; video, why is UDP preferred for live video streaming and online gaming?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> UDP encrypts data better than TCP</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> UDP is faster because it doesn&rsquo;t wait for lost packets to be re-sent</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> UDP can only carry video data</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> UDP uses less electricity</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert &ldquo;Network Ports&rdquo; video, what well-known port number does HTTPS use?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> 21</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> 80</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> 443</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> 8080</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/8/8d/OSI_Model_v1.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/OSI_Model_v1.svg" alt="The seven layers of the OSI networking model">
+        <figcaption>OSI model layers. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>What Is a Protocol?</h3>
+      <p>
+        A <a href="https://en.wikipedia.org/wiki/Communication_protocol" target="_blank" rel="noopener">protocol</a> is a set of
+        rules that two devices agree to follow so they can exchange information. Without protocols, your
+        laptop and a server on the other side of the planet would have no way to understand each other &mdash;
+        like two people trying to have a conversation in different languages with no translator.
+      </p>
+      <p>
+        The Internet relies on many protocols stacked in layers. At the bottom,
+        <a href="https://en.wikipedia.org/wiki/Internet_protocol_suite" target="_blank" rel="noopener">TCP/IP</a> handles
+        addressing and delivery. Above that, <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank" rel="noopener">HTTP</a>
+        governs how web pages are requested and served.
+        <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank" rel="noopener">FTP</a> handles file transfers,
+        <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" target="_blank" rel="noopener">SMTP</a> handles email sending,
+        and so on. Each layer has its own job, and together they make the Internet work.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/e/ed/Https_diagram_bof.png" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Https_diagram_bof.png" alt="Diagram showing how HTTPS encrypts data between browser and server">
+        <figcaption>HTTPS connection flow. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>HTTP vs. HTTPS &mdash; Why the &ldquo;S&rdquo; Matters</h3>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank" rel="noopener">HTTP</a> (HyperText Transfer Protocol)
+        is the original protocol browsers use to fetch web pages. The problem: everything sent over plain
+        HTTP travels as readable text. Anyone sitting between you and the server &mdash; a hacker on the same
+        Wi-Fi, a rogue ISP employee &mdash; can read your passwords, messages, and credit card numbers.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">HTTPS</a> adds a security layer called
+        <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener">TLS</a> (Transport Layer Security,
+        the successor to the older <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0" target="_blank" rel="noopener">SSL</a>).
+        TLS encrypts the data so that even if someone intercepts it, all they see is scrambled nonsense.
+        The padlock icon in your browser&rsquo;s address bar means the site has a valid
+        <a href="https://en.wikipedia.org/wiki/Public_key_certificate" target="_blank" rel="noopener">TLS certificate</a>
+        and the connection is encrypted.
+      </p>
+      <p>
+        Today, most websites use HTTPS by default. If a site still uses plain HTTP, your browser will
+        often warn you that the connection is &ldquo;not secure.&rdquo;
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/c/c4/IP_stack_connections.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/IP_stack_connections.svg" alt="TCP/IP protocol stack showing how data flows between two hosts through routers">
+        <figcaption>TCP/IP stack between two hosts. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>TCP/IP: Splitting Data into Packets</h3>
+      <p>
+        When you download a photo or load a video, the data doesn&rsquo;t travel as one giant block. Instead,
+        <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank" rel="noopener">TCP</a> (Transmission
+        Control Protocol) breaks it into small chunks called
+        <a href="https://en.wikipedia.org/wiki/Network_packet" target="_blank" rel="noopener">packets</a> &mdash; typically around
+        1,500 bytes each. Every packet gets a sequence number so the receiving device can reassemble them
+        in the correct order, even if they arrive out of sequence.
+      </p>
+      <p>
+        TCP also guarantees delivery: if a packet gets lost or corrupted along the way, TCP detects
+        the gap and requests it again. This makes TCP ideal for web pages, email, and file downloads
+        where every byte matters.
+      </p>
+      <p>
+        Its counterpart, <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" target="_blank" rel="noopener">UDP</a>
+        (User Datagram Protocol), skips the error-checking. UDP is faster but less reliable &mdash; perfect
+        for live video calls and online games, where a slightly glitchy frame is better than a long pause
+        while waiting for a lost packet.
+      </p>
+      <p>
+        Below TCP and UDP sits <a href="https://en.wikipedia.org/wiki/Internet_Protocol" target="_blank" rel="noopener">IP</a>
+        (Internet Protocol), which handles addressing and routing each packet from source to destination.
+        Together, TCP/IP forms the backbone protocol suite of the entire Internet.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/6/6f/Multiplexing_diagram.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Multiplexing_diagram.svg" alt="Multiplexing diagram showing multiple data streams sharing one connection">
+        <figcaption>Multiplexing &mdash; sharing one connection. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Ports: Doors into a Server</h3>
+      <p>
+        A single server can run dozens of services at the same time &mdash; a web server, an email server,
+        a file server, a database. How does an incoming packet know which service it&rsquo;s meant for?
+        That&rsquo;s where <a href="https://en.wikipedia.org/wiki/Port_(computer_networking)" target="_blank" rel="noopener">ports</a> come in.
+      </p>
+      <p>
+        A port is a number (from 0 to 65,535) attached to every network connection. Think of an IP address
+        as a building&rsquo;s street address, and a port number as the apartment number inside that building.
+        When your browser connects to a website, it sends data to the server&rsquo;s IP address on a specific port:
+      </p>
+      <ul>
+        <li>Port 80 &mdash; HTTP (unencrypted web traffic)</li>
+        <li>Port 443 &mdash; HTTPS (encrypted web traffic)</li>
+        <li>Port 21 &mdash; <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank" rel="noopener">FTP</a> (file transfers)</li>
+        <li>Port 25 &mdash; <a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" target="_blank" rel="noopener">SMTP</a> (sending email)</li>
+        <li>Port 53 &mdash; <a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank" rel="noopener">DNS</a> (domain name lookups)</li>
+      </ul>
+      <p>
+        Ports 0&ndash;1023 are called <a href="https://en.wikipedia.org/wiki/Well-known_port" target="_blank" rel="noopener">well-known ports</a>,
+        reserved for standard services. Higher port numbers are used by applications for temporary or custom
+        connections.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is a protocol in the context of the Internet?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> A type of hardware used to connect computers</label></li>
+          <li><label><input type="radio" name="q1" value="b"> A set of rules devices follow to exchange data</label></li>
+          <li><label><input type="radio" name="q1" value="c"> A programming language for building websites</label></li>
+          <li><label><input type="radio" name="q1" value="d"> A password used to access the Internet</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What does HTTPS protect against that plain HTTP does not?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> Slow loading times</label></li>
+          <li><label><input type="radio" name="q2" value="b"> Someone intercepting and reading your data in transit</label></li>
+          <li><label><input type="radio" name="q2" value="c"> Viruses on the server</label></li>
+          <li><label><input type="radio" name="q2" value="d"> Running out of bandwidth</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why does TCP number every packet it sends?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> So routers can charge per packet</label></li>
+          <li><label><input type="radio" name="q3" value="b"> So the receiving device can reassemble them in the correct order</label></li>
+          <li><label><input type="radio" name="q3" value="c"> To encrypt the data inside</label></li>
+          <li><label><input type="radio" name="q3" value="d"> To limit the total number of packets allowed</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>When would UDP be a better choice than TCP?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> Downloading a file where every byte must be correct</label></li>
+          <li><label><input type="radio" name="q4" value="b"> Sending an important email</label></li>
+          <li><label><input type="radio" name="q4" value="c"> A live video call where speed matters more than perfection</label></li>
+          <li><label><input type="radio" name="q4" value="d"> Loading a bank&rsquo;s website securely</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>A server&rsquo;s IP address is like a building&rsquo;s street address. What is the port number like?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> The building&rsquo;s color</label></li>
+          <li><label><input type="radio" name="q5" value="b"> The apartment number inside the building</label></li>
+          <li><label><input type="radio" name="q5" value="c"> The city the building is in</label></li>
+          <li><label><input type="radio" name="q5" value="d"> The height of the building</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;Packet Splitter&rdquo;</h2>
+    <p>
+      Create an HTML/JS page that simulates how TCP splits a message into packets and reassembles them:
+    </p>
+    <ol>
+      <li>The user types a message into a text field and clicks &ldquo;Send.&rdquo;</li>
+      <li>JavaScript splits the message into chunks of 3&ndash;5 characters each (these are your &ldquo;packets&rdquo;).</li>
+      <li>The packets are displayed in a random, shuffled order &mdash; each one as a numbered card.</li>
+      <li>After a short delay, an animation reorders the cards into the correct sequence.</li>
+      <li>The reassembled message appears at the bottom.</li>
+    </ol>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>An <code>&lt;input&gt;</code> or <code>&lt;textarea&gt;</code> and a &ldquo;Send&rdquo; button</li>
+      <li>Each packet displayed as a styled card showing its sequence number and content</li>
+      <li>Packets appear shuffled first, then animate into correct order using CSS transitions or <code>setTimeout</code></li>
+      <li>The final reassembled message displayed clearly at the end</li>
+      <li>A &ldquo;Reset&rdquo; button to try again with a new message</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'b', q3: 'b', q4: 'c', q5: 'b' };
+  var videoAnswers = { vq1: 'b', vq2: 'b', vq3: 'b', vq4: 'c', vq5: 'b', vq6: 'c' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

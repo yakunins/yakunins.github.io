@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2: IP Addresses, DNS &amp; How Data Finds Its Way &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">How the Internet Works</p>
+  <h1 class="lesson-title">Internet Addresses, Domain Names &amp; How Data Finds Its Way</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=5o8CwafCxnU" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          The Internet: IP Addresses &amp; DNS (Code.org, 7 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=mpQZVYPuDGU" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How a DNS Server (Domain Name System) Works (PowerCert, 12 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=AYdF7b3nMto" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          The Internet: Packets, Routing &amp; Reliability (Code.org, 6 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the Code.org &ldquo;IP Addresses &amp; DNS&rdquo; video, Paola Mejia compares DNS to something you&rsquo;d find in everyday life. What does she compare it to?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> A library card catalog</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> A phone book</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> A postal sorting office</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> A train timetable</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Code.org &ldquo;IP Addresses &amp; DNS&rdquo; video, Vint Cerf explains why IPv6 was created. How many unique addresses does IPv6 support?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> About 4 billion</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> About 1 trillion</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> About 340 undecillion (340 followed by 36 zeros)</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> Exactly 1 billion more than IPv4</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert DNS video, what is the first type of DNS server your computer contacts when resolving a domain name?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> The root server</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> The authoritative name server</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> The DNS resolver (recursive resolver)</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> The TLD server</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert DNS video, how many root server clusters exist worldwide?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> 5</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> 13</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> 50</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> 256</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Code.org &ldquo;Packets, Routing &amp; Reliability&rdquo; video, what does TCP do when a packet is lost or arrives corrupted?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> It ignores the missing packet and moves on</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> It requests the missing packet to be re-sent</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> It sends the entire file again from the start</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> It reroutes all future traffic through a different path</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Code.org &ldquo;Packets, Routing &amp; Reliability&rdquo; video, the speaker explains that data packets can take different routes to reach the same destination. What determines which route a packet takes?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> The user chooses the route manually</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> Routers figure out the cheapest and fastest available path at that moment</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> Every packet must follow the same pre-determined path</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> The operating system randomly assigns a route</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/7/74/Ipv4_address.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Ipv4_address.svg" alt="Breakdown of an IPv4 address into its four octets">
+        <figcaption>IPv4 address structure. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>IP Addresses: Every Device&rsquo;s Unique Number</h3>
+      <p>
+        Every device connected to the Internet gets an <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank" rel="noopener">IP address</a> &mdash;
+        a unique number that identifies it on the network, much like a street address identifies a house.
+        Without IP addresses, routers would have no way of knowing where to send your data.
+      </p>
+      <p>
+        The original system, <a href="https://en.wikipedia.org/wiki/IPv4" target="_blank" rel="noopener">IPv4</a>, uses four numbers separated by
+        dots (e.g. <code>192.168.1.1</code>). Each number ranges from 0 to 255, giving roughly 4.3 billion
+        possible addresses. That sounded like plenty in the 1980s &mdash; but with billions of smartphones, laptops,
+        smart TVs, and <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="_blank" rel="noopener">IoT devices</a> online today, IPv4
+        addresses have essentially run out.
+      </p>
+      <p>
+        The replacement is <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank" rel="noopener">IPv6</a>, which uses eight groups of
+        hexadecimal digits separated by colons (e.g. <code>2001:0db8:85a3::8a2e:0370:7334</code>). IPv6 provides
+        roughly 340 undecillion addresses &mdash; enough for every grain of sand on Earth to have its own IP, many times over.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/d/d2/DNS_schema.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/DNS_schema.svg" alt="Diagram of DNS resolution flow from client to authoritative server">
+        <figcaption>DNS resolution flow. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>DNS: The Internet&rsquo;s Phone Book</h3>
+      <p>
+        Humans remember names; computers work with numbers. The <a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank" rel="noopener">Domain Name System</a> (DNS)
+        bridges that gap. When you type <code>wikipedia.org</code> into your browser, DNS translates that
+        <a href="https://en.wikipedia.org/wiki/Domain_name" target="_blank" rel="noopener">domain name</a> into the server&rsquo;s IP address
+        so your computer knows where to connect.
+      </p>
+      <p>
+        The lookup happens in stages. First your device asks a <a href="https://en.wikipedia.org/wiki/Domain_Name_System#DNS_resolvers" target="_blank" rel="noopener">DNS resolver</a>
+        (usually run by your ISP or a public service like <a href="https://en.wikipedia.org/wiki/Google_Public_DNS" target="_blank" rel="noopener">Google Public DNS</a>).
+        If the resolver doesn&rsquo;t already know the answer, it queries a chain of servers:
+        a <a href="https://en.wikipedia.org/wiki/Root_name_server" target="_blank" rel="noopener">root server</a> (13 clusters worldwide),
+        then a <a href="https://en.wikipedia.org/wiki/Top-level_domain" target="_blank" rel="noopener">TLD server</a> (handling <code>.com</code>, <code>.org</code>, etc.),
+        and finally the <a href="https://en.wikipedia.org/wiki/Authoritative_name_server" target="_blank" rel="noopener">authoritative name server</a>
+        that holds the actual IP for that domain.
+      </p>
+      <p>
+        To speed things up, every step in this chain uses <a href="https://en.wikipedia.org/wiki/DNS_cache" target="_blank" rel="noopener">caching</a> &mdash;
+        storing recent results so the full lookup doesn&rsquo;t need to repeat for every single request.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg" alt="Client-server model diagram showing request and response">
+        <figcaption>Client-server model. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>From URL to Web Page: The Journey of a Request</h3>
+      <p>
+        When you type a <a href="https://en.wikipedia.org/wiki/URL" target="_blank" rel="noopener">URL</a> like
+        <code>https://en.wikipedia.org/wiki/Internet</code> and press Enter, a chain of events fires off in milliseconds:
+      </p>
+      <ol>
+        <li>Your browser extracts the domain name (<code>en.wikipedia.org</code>) and asks DNS for its IP address.</li>
+        <li>DNS returns the IP (e.g. <code>208.80.154.224</code>).</li>
+        <li>Your browser opens a <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank" rel="noopener">TCP</a> connection to that IP address on <a href="https://en.wikipedia.org/wiki/Port_(computer_networking)" target="_blank" rel="noopener">port</a> 443 (for <a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">HTTPS</a>).</li>
+        <li>Your browser sends an <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank" rel="noopener">HTTP</a> request: &ldquo;Please give me the page at <code>/wiki/Internet</code>.&rdquo;</li>
+        <li>The server processes the request and sends back the HTML, CSS, images, and scripts that make up the page.</li>
+        <li>Your browser renders all of that into the page you see on screen.</li>
+      </ol>
+      <p>
+        This entire round trip &mdash; DNS lookup, connection, request, response, rendering &mdash; usually takes
+        well under one second.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://upload.wikimedia.org/wikipedia/commons/5/58/IPv4_Traceroute_option-en.svg" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/IPv4_Traceroute_option-en.svg" alt="Diagram showing how traceroute reveals each hop between source and destination">
+        <figcaption>Traceroute hops. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Traceroute: Following Data&rsquo;s Path</h3>
+      <p>
+        Data doesn&rsquo;t teleport from your device to a server. It hops through a series of
+        <a href="https://en.wikipedia.org/wiki/Router_(computing)" target="_blank" rel="noopener">routers</a> &mdash; sometimes
+        dozens &mdash; each one deciding the next best step toward the destination. Every hop is a separate
+        network node that reads the destination IP and forwards the <a href="https://en.wikipedia.org/wiki/Network_packet" target="_blank" rel="noopener">packet</a> onward.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Traceroute" target="_blank" rel="noopener">Traceroute</a> is a tool that reveals
+        this hidden journey. It sends special packets with increasing
+        <a href="https://en.wikipedia.org/wiki/Time_to_live" target="_blank" rel="noopener">TTL</a> (Time to Live) values.
+        Each router along the way decrements the TTL by one; when it hits zero, that router reports back.
+        The result is a numbered list of every hop your data takes, along with the time each hop took &mdash;
+        letting you see exactly which networks and cities your request passes through.
+      </p>
+      <p>
+        You can try it yourself: on Windows, open a terminal and type <code>tracert google.com</code>;
+        on Mac or Linux, use <code>traceroute google.com</code>.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is the main purpose of an IP address?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> To encrypt data sent over the Internet</label></li>
+          <li><label><input type="radio" name="q1" value="b"> To uniquely identify a device on the network so data can be routed to it</label></li>
+          <li><label><input type="radio" name="q1" value="c"> To store website content</label></li>
+          <li><label><input type="radio" name="q1" value="d"> To block unwanted traffic</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why was IPv6 created?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> IPv4 was too slow</label></li>
+          <li><label><input type="radio" name="q2" value="b"> IPv4 did not support Wi-Fi</label></li>
+          <li><label><input type="radio" name="q2" value="c"> IPv4 was running out of available addresses</label></li>
+          <li><label><input type="radio" name="q2" value="d"> IPv4 could not handle video streaming</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What does DNS do?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> Translates domain names into IP addresses</label></li>
+          <li><label><input type="radio" name="q3" value="b"> Protects your computer from viruses</label></li>
+          <li><label><input type="radio" name="q3" value="c"> Speeds up your Internet connection</label></li>
+          <li><label><input type="radio" name="q3" value="d"> Stores your browsing history</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What is the correct order when your browser loads a web page?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> Render page &rarr; DNS lookup &rarr; HTTP request &rarr; TCP connection</label></li>
+          <li><label><input type="radio" name="q4" value="b"> DNS lookup &rarr; TCP connection &rarr; HTTP request &rarr; Render page</label></li>
+          <li><label><input type="radio" name="q4" value="c"> HTTP request &rarr; DNS lookup &rarr; Render page &rarr; TCP connection</label></li>
+          <li><label><input type="radio" name="q4" value="d"> TCP connection &rarr; Render page &rarr; DNS lookup &rarr; HTTP request</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What does the traceroute tool show you?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> A list of every website you have visited</label></li>
+          <li><label><input type="radio" name="q5" value="b"> The speed of your Wi-Fi signal</label></li>
+          <li><label><input type="radio" name="q5" value="c"> Each router hop your data passes through on the way to a destination</label></li>
+          <li><label><input type="radio" name="q5" value="d"> The total amount of data you have downloaded</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;DNS Lookup Simulator&rdquo;</h2>
+    <p>
+      Create an HTML/JS page with an input field where the user types a domain name
+      (e.g. <code>wikipedia.org</code>). When they click a button, the page displays a
+      step-by-step text animation showing the DNS resolution process:
+    </p>
+    <ol>
+      <li>Browser checks its cache &mdash; &ldquo;Not found!&rdquo;</li>
+      <li>Asks the DNS resolver &mdash; &ldquo;Let me look that up&hellip;&rdquo;</li>
+      <li>Resolver asks the root server &mdash; &ldquo;Try the .org TLD server.&rdquo;</li>
+      <li>Resolver asks the TLD server &mdash; &ldquo;Try ns1.wikipedia.org.&rdquo;</li>
+      <li>Resolver asks the authoritative server &mdash; &ldquo;The IP is 208.80.154.224!&rdquo;</li>
+      <li>Browser connects to the IP &mdash; &ldquo;Loading page&hellip;&rdquo;</li>
+    </ol>
+    <p>
+      Each step should appear one at a time with a short delay (like a real lookup).
+      Use CSS to style each step as a colored card or row. Display a random (fake) IP
+      address at the end for any domain the user enters.
+    </p>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>An <code>&lt;input&gt;</code> field and a &ldquo;Lookup&rdquo; button</li>
+      <li>At least 5 steps shown sequentially with <code>setTimeout</code></li>
+      <li>Each step styled as a distinct card with CSS</li>
+      <li>A generated (fake) IP address displayed at the final step</li>
+      <li>A &ldquo;Reset&rdquo; button to clear the results and try another domain</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'c', q3: 'a', q4: 'b', q5: 'c' };
+  var videoAnswers = { vq1: 'b', vq2: 'c', vq3: 'c', vq4: 'b', vq5: 'b', vq6: 'b' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

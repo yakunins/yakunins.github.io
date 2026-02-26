@@ -1,0 +1,30 @@
+.tooltip {
+  position: fixed;
+  position-anchor: --tooltip-anchor;
+  top: anchor(bottom);
+  left: anchor(center);
+  translate: 0 0;
+  margin: -4px 12px;
+  padding: 4px 12px;
+  background: var(--c-ink, black);
+  color: var(--c-paper, white);
+  line-height: 1.4;
+  border-radius: 6px;
+  border: none;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.tooltip.visible {
+  opacity: 1;
+}
+
+/* Fallback for browsers without anchor positioning */
+@supports not (position-anchor: --tooltip-anchor) {
+  .tooltip {
+    position: fixed;
+  }
+}
