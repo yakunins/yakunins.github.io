@@ -103,7 +103,8 @@ a {
 h1 {
     font-weight: normal;
     font-size: 156%;
-    letter-spacing: -0.05em;
+    font-weight: bold;
+    letter-spacing: -0.035em;
     margin-block: calc(var(--v-grid-em) * 2.85);
     word-spacing: -0.1em;
 
@@ -115,14 +116,15 @@ h1 {
         margin-left: -0.015em;
     }
     i:nth-child(2) {
-        margin-left: -0.035em;
+        margin-left: 0.0125em;
     }
     i:nth-child(3) {
         margin-left: -0.015em;
         margin-right: 0.035em;
     }
     i:nth-child(4) {
-        margin-right: 0.035em;
+        margin-right: 0.05em;
+        margin-left: 0.025em;
     }
     i:nth-child(5) {
         margin-left: 0.015em;
