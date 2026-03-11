@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1646 1042">
+<path d="m90 949c1463-844 1466-845 1466-845l-2.9 1.4" stroke="#c00" stroke-width="16"/>
+<g fill="none">
+	<g stroke="#c00" stroke-linecap="round">
+		<path d="m1481 101l76-1" stroke-width="15"/>
+		<path d="m1527 167c30.9-67.9 30.9-67.9 30.9-67.9" stroke-width="16"/>
+	</g>
+	<path d="m79 108l4 850 1524-4" stroke-dashoffset="10" stroke="#000" stroke-width="15"/>
+</g>
+<g stroke-dashoffset="10" stroke="#00b" fill="#fff">
+	<rect height="179" width="391" y="245" x="997" stroke-width="2.6"/>
+	<rect height="106" width="361" y="451" x="767" stroke-width="1.9"/>
+	<rect height="166" width="387" y="575" x="449" stroke-width="2.5"/>
+	<rect height="166" width="367" y="752" x="142" stroke-width="2.4"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="30" transform="translate(-8.6-52)">
+	<text y="1068" x="662">
+		<tspan y="1068" x="662">2010</tspan>
+	</text>
+	<text y="1064" x="1168">
+		<tspan y="1064" x="1168">2020</tspan>
+	</text>
+	<text y="1062" x="1546">
+		<tspan y="1062" x="1546">Time</tspan>
+	</text>
+	<text y="1074" x="122">
+		<tspan x="122" y="1074">2000</tspan>
+	</text>
+	<text transform="matrix(0-1 1 0 0 0)" y="50" x="-407">
+		<tspan y="50" x="-407">Technology reach</tspan>
+	</text>
+	<text y="158" x="1176">
+		<tspan y="158" x="1176">Software agents and</tspan>
+		<tspan y="196" x="1176">advanced sensor</tspan>
+		<tspan y="233" x="1176">fusion</tspan>
+	</text>
+	<text y="337" x="1048">
+		<tspan x="1048" y="337">Teleoperation and</tspan>
+		<tspan x="1048" y="374">telepresence: ability to</tspan>
+		<tspan x="1048" y="412">monitor and control</tspan>
+		<tspan x="1048" y="449">distant objects</tspan>
+	</text>
+	<text y="242" x="751">
+		<tspan x="751" y="242">Miniaturisation, power-</tspan>
+		<tspan x="751" y="280">efficient electronics, and</tspan>
+		<tspan x="751" y="317">available spectrum</tspan>
+		<tspan x="751" y="355"/>
+	</text>
+	<text y="452" x="508">
+		<tspan y="452" x="508">Ability of devices located</tspan>
+		<tspan y="490" x="508">indoors to receive</tspan>
+		<tspan y="527" x="508">geological signals</tspan>
+	</text>
+	<text y="545" x="816">
+		<tspan y="545" x="816">Locating people and</tspan>
+		<tspan y="583" x="816">everyday objects</tspan>
+	</text>
+	<g fill="#c00">
+		<text y="606" x="1181">Ubiquitous positioning</text>
+		<text y="790" x="906">Vertical-market applications</text>
+		<text y="437" x="1436">
+			<tspan y="437" x="1436">Physical-world</tspan>
+			<tspan y="475" x="1436">web</tspan>
+		</text>
+		<text y="964" x="574">Supply-chain helpers</text>
+	</g>
+	<text y="568" x="142">
+		<tspan y="568" x="142">Cost reduction leading</tspan>
+		<tspan y="606" x="142">to diffusion into 2nd</tspan>
+		<tspan y="643" x="142">wave of applications</tspan>
+	</text>
+	<text y="665" x="502">
+		<tspan y="665" x="502">Surveillance, security,</tspan>
+		<tspan y="703" x="502">healthcare, transport,</tspan>
+		<tspan y="740" x="502">food safety, document</tspan>
+		<tspan y="778" x="502">management</tspan>
+	</text>
+	<text y="890" x="954">
+		<tspan font-size="24" font-style="oblique" y="890" x="954">Source: SRI Consulting Business Intelligence</tspan>
+	</text>
+	<text y="738" x="102">
+		<tspan y="738" x="102">Demand for expedited</tspan>
+		<tspan y="776" x="102">logistics</tspan>
+	</text>
+	<text y="843" x="191">
+		<tspan y="843" x="191">RFID tags for</tspan>
+		<tspan y="880" x="191">tacilitating routing,</tspan>
+		<tspan y="918" x="191">inventorying, and loss</tspan>
+		<tspan y="955" x="191">prevention</tspan>
+	</text>
+	<text font-weight="bold" font-size="40" y="102" x="353">
+		<tspan y="102" x="353">Technology roadmap: The internet of things</tspan>
+	</text>
+</g>
+</svg>

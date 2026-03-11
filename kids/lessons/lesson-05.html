@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 5: Servers &amp; Hosting &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">How the Internet Works</p>
+  <h1 class="lesson-title">Where Websites Live</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=UjCDWCeHCzY" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          What is a Server? Servers vs Desktops Explained (PowerCert, 10 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=9J1nJOivdyw" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Web Server Concepts and Examples (WebConcepts, 8 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=L5BlpPU_muY" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          The Client Server Model &mdash; Clients and Servers (The TechCave, 7 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=H8oAvyqQwew" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          What is Web Hosting and How Does It Work? (Create a Pro Website, 6 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the PowerCert &ldquo;What is a Server?&rdquo; video, what is one key hardware difference between a server and a regular desktop computer?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> Servers have a monitor but desktops do not</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> Servers use special processors (like Xeon) designed for reliability and running 24/7</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> Servers can only connect to one network at a time</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> Servers always run Windows</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert video, where are servers typically stored?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> Under someone&rsquo;s desk at home</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> In a data centre with special cooling, power backups, and security</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> On every user&rsquo;s personal device</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> Servers don&rsquo;t have a physical location &mdash; they exist only as software</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the WebConcepts &ldquo;Web Server Concepts&rdquo; video, what two things does the term &ldquo;web server&rdquo; refer to?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> A browser and a search engine</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> Hardware (the physical computer) and software (the program handling HTTP requests)</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> A domain name and an IP address</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> A database and a stylesheet</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the WebConcepts video, what does a web server software do when it receives a request from a browser?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> It shuts down and restarts</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> It finds the requested file and sends it back to the browser over HTTP</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> It sends the request to another browser</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> It converts the page into a PDF</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In The TechCave &ldquo;Client Server Model&rdquo; video, what role does the client play in the client-server relationship?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> It stores all the website files permanently</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> It sends requests for resources and displays the responses</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> It manages the domain name system</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> It runs the database for every website</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the &ldquo;What is Web Hosting&rdquo; video by Create a Pro Website, what is web hosting compared to in real life?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> Buying a car</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> Renting space or land where your website&rsquo;s files are stored</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> Installing an app on your phone</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> Printing pages of a book</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Client-server-model.svg" target="_blank" rel="noopener"><img src="../images/Client-server-model.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg'" alt="Diagram showing multiple clients connected to a central server">
+        <figcaption>Client-server model. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Client vs. Server</h3>
+      <p>
+        Every time you open a website, two machines are involved. Your device &mdash; phone, laptop, tablet &mdash;
+        is the <a href="https://en.wikipedia.org/wiki/Client_(computing)" target="_blank" rel="noopener">client</a>.
+        It sends a request: &ldquo;Hey, give me the page at this address.&rdquo; Somewhere across the Internet,
+        another computer receives that request, finds the right files, and sends them back. That computer is the
+        <a href="https://en.wikipedia.org/wiki/Server_(computing)" target="_blank" rel="noopener">server</a>.
+      </p>
+      <p>
+        This back-and-forth is called the
+        <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank" rel="noopener">client&ndash;server model</a>,
+        and it powers almost everything online: websites, email, video streaming, multiplayer games. The client
+        initiates communication; the server waits, listens, and responds. A single server can handle requests from
+        thousands of clients at the same time &mdash; like a popular restaurant with a kitchen that never closes.
+      </p>
+      <p>
+        Your browser (<a href="https://en.wikipedia.org/wiki/Google_Chrome" target="_blank" rel="noopener">Chrome</a>,
+        <a href="https://en.wikipedia.org/wiki/Firefox" target="_blank" rel="noopener">Firefox</a>,
+        <a href="https://en.wikipedia.org/wiki/Safari_(web_browser)" target="_blank" rel="noopener">Safari</a>)
+        is the most common client. It speaks
+        <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank" rel="noopener">HTTP</a> to ask the server
+        for <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a>,
+        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener">CSS</a>, images, and scripts,
+        then assembles everything into the page you see.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Apache_HTTP_server_logo_%282019-present%29.svg" target="_blank" rel="noopener"><img src="../images/Apache_HTTP_server_logo_(2019-present).svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg'" alt="Apache HTTP Server logo">
+        <figcaption>Apache HTTP Server logo. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>What Is a Web Server?</h3>
+      <p>
+        The word &ldquo;server&rdquo; means two things at once. First, it&rsquo;s a physical machine &mdash; a computer built to run
+        around the clock, usually stored in a
+        <a href="https://en.wikipedia.org/wiki/Data_center" target="_blank" rel="noopener">data centre</a> with backup power,
+        heavy-duty cooling, and tight security. Server hardware uses special processors
+        (like <a href="https://en.wikipedia.org/wiki/Xeon" target="_blank" rel="noopener">Intel Xeon</a> chips)
+        designed for reliability rather than gaming speed.
+      </p>
+      <p>
+        Second, &ldquo;server&rdquo; refers to the software running on that machine &mdash; the program that listens for
+        incoming HTTP requests and responds with the right files. The three most common web-server programs are:
+      </p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Apache_HTTP_Server" target="_blank" rel="noopener">Apache</a> &mdash; the oldest and most widely used, powering websites since 1995</li>
+        <li><a href="https://en.wikipedia.org/wiki/Nginx" target="_blank" rel="noopener">Nginx</a> (pronounced &ldquo;engine-X&rdquo;) &mdash; known for handling huge numbers of simultaneous connections efficiently</li>
+        <li><a href="https://en.wikipedia.org/wiki/Node.js" target="_blank" rel="noopener">Node.js</a> &mdash; lets developers write server-side code in JavaScript, the same language used in browsers</li>
+      </ul>
+      <p>
+        When you type a <a href="https://en.wikipedia.org/wiki/URL" target="_blank" rel="noopener">URL</a>
+        into your browser, the request travels to the server&rsquo;s
+        <a href="https://en.wikipedia.org/wiki/IP_address" target="_blank" rel="noopener">IP address</a>.
+        The web-server software finds the file that matches the URL, and sends it back over
+        the network. If the requested file doesn&rsquo;t exist, the server returns a
+        <a href="https://en.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener">404 Not Found</a> error &mdash;
+        a page you&rsquo;ve probably seen before.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Cloud_computing.svg" target="_blank" rel="noopener"><img src="../images/Cloud_computing.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg'" alt="Cloud computing diagram with interconnected services">
+        <figcaption>Cloud computing overview. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Hosting Types: Shared, VPS, and Cloud</h3>
+      <p>
+        Most people don&rsquo;t keep a server humming in their bedroom.
+        Instead, they pay a <a href="https://en.wikipedia.org/wiki/Web_hosting_service" target="_blank" rel="noopener">hosting company</a>
+        to store their website on a machine connected to the Internet 24/7. There are three main types:
+      </p>
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Shared_web_hosting_service" target="_blank" rel="noopener">Shared hosting</a> &mdash;
+          your website shares one physical server with hundreds of other sites. It&rsquo;s cheap (a few dollars a month) and
+          fine for small projects, but if someone else&rsquo;s site gets a traffic spike, yours can slow down &mdash; like
+          sharing a Wi-Fi connection with your entire apartment building.
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Virtual_private_server" target="_blank" rel="noopener">VPS</a> (Virtual Private Server) &mdash;
+          the physical machine is split into isolated virtual compartments using
+          <a href="https://en.wikipedia.org/wiki/Virtualization" target="_blank" rel="noopener">virtualisation</a>.
+          Each compartment acts like its own mini-server with guaranteed resources. More control, more power, higher price.
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Cloud_computing" target="_blank" rel="noopener">Cloud hosting</a> &mdash;
+          your site runs across a network of servers managed by companies like
+          <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services" target="_blank" rel="noopener">Amazon Web Services</a>,
+          <a href="https://en.wikipedia.org/wiki/Google_Cloud_Platform" target="_blank" rel="noopener">Google Cloud</a>, or
+          <a href="https://en.wikipedia.org/wiki/Microsoft_Azure" target="_blank" rel="noopener">Microsoft Azure</a>.
+          If one machine fails, another takes over instantly. You pay for what you use, and the system scales
+          automatically when traffic grows &mdash; perfect for apps that might go viral overnight.
+        </li>
+      </ul>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Server-based-network.svg" target="_blank" rel="noopener"><img src="../images/Server-based-network.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/f/fb/Server-based-network.svg'" alt="Server-based network diagram showing clients connected to a central server">
+        <figcaption>Server-based network. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>From Code to Live Website</h3>
+      <p>
+        So you&rsquo;ve written some HTML, CSS, and JavaScript. How does it go from files on your laptop to a website
+        anyone can visit? Here&rsquo;s the typical path:
+      </p>
+      <ol>
+        <li>
+          You write your code locally and test it in a browser on your own machine.
+        </li>
+        <li>
+          You choose a hosting provider and sign up for a plan (shared, VPS, or cloud).
+        </li>
+        <li>
+          You upload your files to the server. This can be done with
+          <a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" target="_blank" rel="noopener">FTP</a>,
+          <a href="https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol" target="_blank" rel="noopener">SFTP</a>,
+          or a <a href="https://en.wikipedia.org/wiki/Git" target="_blank" rel="noopener">Git</a>-based deployment
+          that automatically pushes new code to the server whenever you save changes.
+        </li>
+        <li>
+          You register a <a href="https://en.wikipedia.org/wiki/Domain_name" target="_blank" rel="noopener">domain name</a>
+          (like <code>mysite.com</code>) and point its
+          <a href="https://en.wikipedia.org/wiki/Domain_Name_System" target="_blank" rel="noopener">DNS</a> records
+          to your server&rsquo;s IP address. Now, when someone types your domain into their browser, DNS translates
+          it to the server&rsquo;s address, and the web-server software delivers your pages.
+        </li>
+        <li>
+          You set up <a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">HTTPS</a> with a
+          <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener">TLS</a>
+          certificate (often free through
+          <a href="https://en.wikipedia.org/wiki/Let%27s_Encrypt" target="_blank" rel="noopener">Let&rsquo;s Encrypt</a>)
+          so visitors have a secure, encrypted connection.
+        </li>
+      </ol>
+      <p>
+        After these steps, your site is live. Every time a visitor&rsquo;s browser makes a request, the server
+        responds with your HTML, CSS, and JavaScript &mdash; and the page appears on their screen in a fraction
+        of a second.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>In the client&ndash;server model, which device sends the request?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> The server</label></li>
+          <li><label><input type="radio" name="q1" value="b"> The router</label></li>
+          <li><label><input type="radio" name="q1" value="c"> The client (e.g. your browser)</label></li>
+          <li><label><input type="radio" name="q1" value="d"> The domain registrar</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which web-server software lets developers write server-side code in JavaScript?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> Apache</label></li>
+          <li><label><input type="radio" name="q2" value="b"> Nginx</label></li>
+          <li><label><input type="radio" name="q2" value="c"> Node.js</label></li>
+          <li><label><input type="radio" name="q2" value="d"> FTP</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What is the main disadvantage of shared hosting?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> It doesn&rsquo;t support HTML files</label></li>
+          <li><label><input type="radio" name="q3" value="b"> Other sites on the same server can slow yours down during traffic spikes</label></li>
+          <li><label><input type="radio" name="q3" value="c"> You must build the physical server yourself</label></li>
+          <li><label><input type="radio" name="q3" value="d"> It only works with cloud-based domain names</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>After uploading files to a hosting server, what must you point to the server&rsquo;s IP address so visitors can find your site by name?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> An FTP connection</label></li>
+          <li><label><input type="radio" name="q4" value="b"> A TLS certificate</label></li>
+          <li><label><input type="radio" name="q4" value="c"> Your domain name&rsquo;s DNS records</label></li>
+          <li><label><input type="radio" name="q4" value="d"> A backup power supply</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why is cloud hosting a good choice for a website that might suddenly get a lot of traffic?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> It is always free</label></li>
+          <li><label><input type="radio" name="q5" value="b"> It runs on a single powerful machine that never fails</label></li>
+          <li><label><input type="radio" name="q5" value="c"> It scales automatically across multiple servers to handle traffic spikes</label></li>
+          <li><label><input type="radio" name="q5" value="d"> It doesn&rsquo;t require a domain name</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;My First Server Page&rdquo;</h2>
+    <p>
+      Create an HTML page that looks like it&rsquo;s being &ldquo;served&rdquo; from your own computer. The page should explain
+      what a server does, using styled sections, and include a live clock to simulate dynamic, server-generated content.
+    </p>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>A heading that says &ldquo;Hello! This page is served from MY computer!&rdquo;</li>
+      <li>Three styled <code>&lt;section&gt;</code> blocks explaining: what a server is, how a request-response cycle works, and what hosting means</li>
+      <li>Each section should have a different background colour and an icon or emoji</li>
+      <li>A live clock (<code>&lt;div id=&quot;clock&quot;&gt;</code>) that updates every second using <code>setInterval()</code>, showing the current date and time &mdash; simulating a &ldquo;server timestamp&rdquo;</li>
+      <li>A footer that displays &ldquo;Served at: &rdquo; followed by the time the page was first opened (use <code>new Date().toLocaleString()</code>)</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: var(--c-ink-10);">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared scripts -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'c', q2: 'c', q3: 'b', q4: 'c', q5: 'c' };
+  var videoAnswers = { vq1: 'b', vq2: 'b', vq3: 'b', vq4: 'b', vq5: 'b', vq6: 'b' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

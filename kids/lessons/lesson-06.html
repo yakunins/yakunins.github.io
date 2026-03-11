@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 6: The Skeleton of Every Web Page &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">The Web Up Close</p>
+  <h1 class="lesson-title">The Skeleton of Every Web Page</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=salY_Sm6mv4" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          HTML in 5 Minutes (Aaron Jack, 5 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=bWPMSSsVdPk" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Learn HTML in 12 Minutes (Jake Wright, 12 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=dD2EISBDjWM" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Introduction to HTML (EJ Media, 8 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the &ldquo;HTML in 5 Minutes&rdquo; video by Aaron Jack, what does he say every HTML page starts with at the very top of the file?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> A <code>&lt;head&gt;</code> tag</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> A <code>&lt;!DOCTYPE html&gt;</code> declaration</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> A <code>&lt;body&gt;</code> tag</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> A link to a CSS file</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the &ldquo;HTML in 5 Minutes&rdquo; video, Aaron Jack compares HTML to a specific part of the human body. What does he compare it to?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> The muscles</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> The brain</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> The skeleton</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> The skin</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Jake Wright&rsquo;s &ldquo;Learn HTML in 12 Minutes&rdquo; video, what text editor does he use to write his HTML code?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> Visual Studio Code</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> Sublime Text</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> Notepad</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> Atom</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Jake Wright&rsquo;s video, what tag does he demonstrate for creating a clickable link that takes you to another page?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> <code>&lt;link&gt;</code></label></li>
+          <li><label><input type="radio" name="vq4" value="b"> <code>&lt;a&gt;</code> (anchor)</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> <code>&lt;url&gt;</code></label></li>
+          <li><label><input type="radio" name="vq4" value="d"> <code>&lt;goto&gt;</code></label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the EJ Media &ldquo;Introduction to HTML&rdquo; video, what does the presenter say HTML stands for?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> High-Tech Modern Language</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> Hyper Transfer Markup Language</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> HyperText Markup Language</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> HyperText Management Language</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Jake Wright&rsquo;s video, he shows that HTML tags usually come in pairs. Which of these is a &ldquo;self-closing&rdquo; tag that does not need a closing partner?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> <code>&lt;p&gt;</code></label></li>
+          <li><label><input type="radio" name="vq6" value="b"> <code>&lt;h1&gt;</code></label></li>
+          <li><label><input type="radio" name="vq6" value="c"> <code>&lt;img&gt;</code></label></li>
+          <li><label><input type="radio" name="vq6" value="d"> <code>&lt;div&gt;</code></label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:HTML.svg" target="_blank" rel="noopener"><img src="../images/HTML.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/8/84/HTML.svg'" alt="An HTML document icon showing nested tags and structure">
+        <figcaption>HTML document structure. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Tags, Elements, and Attributes</h3>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a> (HyperText Markup Language) is the
+        standard language every web browser understands. It doesn&rsquo;t make things look pretty and it doesn&rsquo;t add
+        interactivity &mdash; its only job is to describe the structure and meaning of content on a page.
+      </p>
+      <p>
+        HTML uses <a href="https://en.wikipedia.org/wiki/HTML_element" target="_blank" rel="noopener">tags</a> to mark up text.
+        A tag is a keyword wrapped in angle brackets, like <code>&lt;p&gt;</code>. Most tags come in pairs: an
+        <a href="https://en.wikipedia.org/wiki/HTML_element#Syntax" target="_blank" rel="noopener">opening tag</a> (<code>&lt;p&gt;</code>)
+        and a closing tag (<code>&lt;/p&gt;</code>). Everything between the opening and closing tag is called an
+        <a href="https://en.wikipedia.org/wiki/HTML_element" target="_blank" rel="noopener">element</a>.
+      </p>
+      <p>
+        Tags can also carry <a href="https://en.wikipedia.org/wiki/HTML_attribute" target="_blank" rel="noopener">attributes</a> &mdash;
+        extra information tucked inside the opening tag. For example,
+        <code>&lt;a href=&quot;https://example.com&quot;&gt;</code> uses the <code>href</code> attribute to tell the browser
+        where a link should go. Attributes always follow the pattern <code>name=&quot;value&quot;</code>.
+      </p>
+      <p>
+        Every HTML page shares the same skeleton:
+        a <code>&lt;!DOCTYPE html&gt;</code> declaration at the top, an <code>&lt;html&gt;</code> element wrapping everything,
+        a <code>&lt;head&gt;</code> section for metadata (page title, character set, linked stylesheets), and a
+        <code>&lt;body&gt;</code> section for the visible content. This structure hasn&rsquo;t changed much since
+        <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank" rel="noopener">Tim Berners-Lee</a>
+        invented HTML in 1991 at <a href="https://en.wikipedia.org/wiki/CERN" target="_blank" rel="noopener">CERN</a>.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg" target="_blank" rel="noopener"><img src="../images/512px-HTML5_logo_and_wordmark.svg.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png'" alt="The official HTML5 shield logo in orange with a white number 5">
+        <figcaption>HTML5 logo. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Semantic Markup &mdash; Why Structure Matters</h3>
+      <p>
+        You could build an entire page using nothing but <code>&lt;div&gt;</code> tags and it would display
+        just fine. So why bother with different tags? Because
+        <a href="https://en.wikipedia.org/wiki/Semantic_HTML" target="_blank" rel="noopener">semantic HTML</a> tells browsers,
+        search engines, and assistive tools what each piece of content actually means.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" rel="noopener">HTML5</a> introduced tags that describe
+        their purpose by name:
+        <code>&lt;header&gt;</code> for the top section of a page or article,
+        <code>&lt;nav&gt;</code> for navigation links,
+        <code>&lt;main&gt;</code> for the primary content,
+        <code>&lt;article&gt;</code> for a self-contained piece of writing,
+        <code>&lt;section&gt;</code> for thematic groupings,
+        <code>&lt;aside&gt;</code> for sidebars or related info,
+        and <code>&lt;footer&gt;</code> for the bottom section.
+      </p>
+      <p>
+        When <a href="https://en.wikipedia.org/wiki/Web_crawler" target="_blank" rel="noopener">search-engine crawlers</a>
+        read your page, semantic tags help them understand which text is the main article and which is just navigation.
+        This can improve your site&rsquo;s ranking in search results &mdash; a practice known as
+        <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" rel="noopener">SEO</a>.
+        Using <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> for headings (instead of making text big with CSS)
+        creates a clear outline that both humans and machines can follow.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Html-text-formating-example.png" target="_blank" rel="noopener"><img src="../images/Html-text-formating-example.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/c2/Html-text-formating-example.png'" alt="Example of HTML text formatting showing various tags and their rendered output">
+        <figcaption>HTML text formatting example. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Forms, Links, Images, Lists, and Tables</h3>
+      <p>
+        HTML gives you a toolbox of elements that cover most things you&rsquo;ll ever need on a web page:
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" rel="noopener">Links</a> use the
+        <code>&lt;a&gt;</code> (anchor) tag with an <code>href</code> attribute pointing to a
+        <a href="https://en.wikipedia.org/wiki/URL" target="_blank" rel="noopener">URL</a>. They are the glue that holds
+        the entire <a href="https://en.wikipedia.org/wiki/World_Wide_Web" target="_blank" rel="noopener">World Wide Web</a>
+        together &mdash; without links, there would be no &ldquo;web&rdquo; at all.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/HTML_element#Images_and_objects" target="_blank" rel="noopener">Images</a>
+        use the self-closing <code>&lt;img&gt;</code> tag with a <code>src</code> attribute for the image path.
+        <a href="https://en.wikipedia.org/wiki/Help:Ordered_and_unordered_lists" target="_blank" rel="noopener">Lists</a>
+        come in two flavors: <code>&lt;ul&gt;</code> (unordered, with bullet points) and <code>&lt;ol&gt;</code>
+        (ordered, with numbers). Each item goes inside an <code>&lt;li&gt;</code> tag.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/HTML_element#Tables" target="_blank" rel="noopener">Tables</a>
+        use <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code> (table row), <code>&lt;th&gt;</code> (header cell),
+        and <code>&lt;td&gt;</code> (data cell) to organize information in rows and columns.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Form_(HTML)" target="_blank" rel="noopener">Forms</a> let users send data
+        to a server. A <code>&lt;form&gt;</code> wraps input fields like <code>&lt;input&gt;</code>,
+        <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, and a <code>&lt;button&gt;</code> to submit.
+        Every time you log in, search for something, or fill out a survey, you&rsquo;re using an HTML form.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Web_Accessibility_laurel.svg" target="_blank" rel="noopener"><img src="../images/Web_Accessibility_laurel.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/9/98/Web_Accessibility_laurel.svg'" alt="Web accessibility laurel badge symbolizing accessible web design">
+        <figcaption>Accessibility symbol. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Accessibility &mdash; Making the Web Work for Everyone</h3>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Web_accessibility" target="_blank" rel="noopener">Web accessibility</a>
+        means designing pages so that people with disabilities &mdash; visual, auditory, motor, or cognitive &mdash; can
+        use them just as easily as anyone else. Roughly 15% of the world&rsquo;s population lives with some form
+        of disability, so accessible design is not optional; it&rsquo;s a responsibility.
+      </p>
+      <p>
+        The simplest accessibility win is the <code>alt</code>
+        <a href="https://en.wikipedia.org/wiki/Alt_attribute" target="_blank" rel="noopener">attribute</a> on every
+        <code>&lt;img&gt;</code> tag. A <a href="https://en.wikipedia.org/wiki/Screen_reader" target="_blank" rel="noopener">screen reader</a>
+        &mdash; software used by people who are blind or have low vision &mdash; reads the <code>alt</code> text aloud
+        so the user knows what the image shows. If you leave it blank or write something lazy like
+        &ldquo;image123.jpg,&rdquo; that person gets no useful information at all.
+      </p>
+      <p>
+        Heading hierarchy also matters. Screen readers let users jump between headings to navigate a page
+        quickly. If your page skips from <code>&lt;h1&gt;</code> straight to <code>&lt;h4&gt;</code>,
+        the structure feels broken and users may miss important sections.
+        Always use headings in order: <code>&lt;h1&gt;</code> &rarr; <code>&lt;h2&gt;</code> &rarr; <code>&lt;h3&gt;</code>,
+        and so on.
+      </p>
+      <p>
+        The <a href="https://en.wikipedia.org/wiki/WAI-ARIA" target="_blank" rel="noopener">WAI-ARIA</a> specification
+        adds extra attributes (like <code>role</code> and <code>aria-label</code>) for cases where plain HTML isn&rsquo;t
+        descriptive enough. But the golden rule is: use the right semantic HTML element first, and only reach
+        for ARIA when there&rsquo;s no native tag that does the job.
+        The <a href="https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines" target="_blank" rel="noopener">WCAG</a>
+        guidelines published by the <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium" target="_blank" rel="noopener">W3C</a>
+        are the global standard for building accessible websites.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is the purpose of the <code>&lt;!DOCTYPE html&gt;</code> line at the top of every HTML page?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> It links the page to a CSS stylesheet</label></li>
+          <li><label><input type="radio" name="q1" value="b"> It tells the browser this document uses HTML5</label></li>
+          <li><label><input type="radio" name="q1" value="c"> It creates the page&rsquo;s title in the browser tab</label></li>
+          <li><label><input type="radio" name="q1" value="d"> It starts the visible body content</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why is using <code>&lt;nav&gt;</code> better than using <code>&lt;div class=&quot;nav&quot;&gt;</code> for navigation links?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> It loads faster in the browser</label></li>
+          <li><label><input type="radio" name="q2" value="b"> It is a semantic element that tells browsers and screen readers this section contains navigation</label></li>
+          <li><label><input type="radio" name="q2" value="c"> It automatically adds styling</label></li>
+          <li><label><input type="radio" name="q2" value="d"> It prevents the page from having any bugs</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What attribute on the <code>&lt;img&gt;</code> tag helps screen-reader users understand an image?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> <code>src</code></label></li>
+          <li><label><input type="radio" name="q3" value="b"> <code>title</code></label></li>
+          <li><label><input type="radio" name="q3" value="c"> <code>alt</code></label></li>
+          <li><label><input type="radio" name="q3" value="d"> <code>href</code></label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which pair of tags would you use to create a numbered list?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code></label></li>
+          <li><label><input type="radio" name="q4" value="b"> <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code></label></li>
+          <li><label><input type="radio" name="q4" value="c"> <code>&lt;table&gt;</code> and <code>&lt;tr&gt;</code></label></li>
+          <li><label><input type="radio" name="q4" value="d"> <code>&lt;list&gt;</code> and <code>&lt;item&gt;</code></label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In a form, which element would you use to let a user type a short piece of text (like their name)?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> <code>&lt;textarea&gt;</code></label></li>
+          <li><label><input type="radio" name="q5" value="b"> <code>&lt;select&gt;</code></label></li>
+          <li><label><input type="radio" name="q5" value="c"> <code>&lt;input type=&quot;text&quot;&gt;</code></label></li>
+          <li><label><input type="radio" name="q5" value="d"> <code>&lt;p&gt;</code></label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;About Me&rdquo; Page</h2>
+    <p>
+      Create a personal &ldquo;About Me&rdquo; page using only HTML (no CSS allowed). The goal is to practice every
+      major HTML element you learned in this lesson &mdash; headings, lists, images, tables, and forms &mdash; all
+      in one page.
+    </p>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>A heading hierarchy using <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;h3&gt;</code> &mdash;
+          the <code>&lt;h1&gt;</code> should be your name, with sub-sections for hobbies, schedule, and contact</li>
+      <li>An unordered list (<code>&lt;ul&gt;</code>) of at least 5 hobbies or interests</li>
+      <li>An image (<code>&lt;img&gt;</code>) with a meaningful <code>alt</code> attribute describing what the image shows
+          (use any placeholder image URL, e.g., <code>https://placehold.co/300x200</code>)</li>
+      <li>A table (<code>&lt;table&gt;</code>) showing your weekly schedule with columns for day, subject, and time &mdash;
+          at least 5 rows of data plus a header row using <code>&lt;th&gt;</code></li>
+      <li>A contact form (<code>&lt;form&gt;</code>) with:
+        an <code>&lt;input type=&quot;text&quot;&gt;</code> for the visitor&rsquo;s name,
+        an <code>&lt;input type=&quot;email&quot;&gt;</code> for their email,
+        a <code>&lt;textarea&gt;</code> for a message,
+        and a submit <code>&lt;button&gt;</code></li>
+      <li>Use semantic elements: wrap everything in <code>&lt;main&gt;</code>, add a <code>&lt;header&gt;</code> at the top
+          and a <code>&lt;footer&gt;</code> at the bottom with a copyright line</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel. Leave the CSS and JS panels empty &mdash; this task is pure HTML. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'b', q3: 'c', q4: 'b', q5: 'c' };
+  var videoAnswers = { vq1: 'b', vq2: 'c', vq3: 'b', vq4: 'b', vq5: 'c', vq6: 'c' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

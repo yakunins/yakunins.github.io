@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 9: How Web Apps Work &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">The Web Up Close</p>
+  <h1 class="lesson-title">How Web Apps Work</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=4r6WdaY3SOA" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How The Backend Works (SuperSimpleDev, 14 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=-MTSQjw5DrM" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          RESTful APIs in 100 Seconds (Fireship, 12 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=iiADhChRriM" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Learn JSON in 10 Minutes (Web Dev Simplified, 10 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the SuperSimpleDev video, what does he say the frontend is responsible for?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> Storing data in a database</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> Everything the user sees and interacts with in the browser</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> Running the server&rsquo;s operating system</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> Encrypting passwords</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the SuperSimpleDev video, what is the &ldquo;request-response cycle&rdquo; he describes?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> The browser sends a request to a server, and the server sends back a response</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> Two servers exchange data automatically every second</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> The user clicks a button and the page reloads</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> A database writes data and then reads it back</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Fireship video, what does REST stand for?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> Remote Endpoint Server Technology</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> Representational State Transfer</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> Rapid Exchange of Structured Text</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> Real-time Event Streaming Transfer</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Fireship video, which HTTP method is used to read or retrieve data from an API?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> POST</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> DELETE</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> PUT</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> GET</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Web Dev Simplified video, what two data structures does JSON support?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> Tables and trees</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> Objects (key-value pairs) and arrays (ordered lists)</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> Dictionaries and linked lists</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> XML nodes and HTML elements</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Web Dev Simplified video, what JavaScript method does he use to convert a JSON string into a JavaScript object?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> JSON.stringify()</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> JSON.parse()</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> JSON.decode()</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> JSON.toObject()</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Netscape_Navigator_2_Screenshot.png" target="_blank" rel="noopener"><img src="../images/Netscape_Navigator_2_Screenshot.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/6/69/Netscape_Navigator_2_Screenshot.png'" alt="Screenshot of Netscape Navigator 2 browser showing an early web page">
+        <figcaption>An early static web page in Netscape Navigator. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Static Sites vs. Dynamic Web Apps</h3>
+      <p>
+        The earliest websites were <a href="https://en.wikipedia.org/wiki/Static_web_page" target="_blank" rel="noopener">static pages</a> &mdash;
+        plain <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a> files stored on a server. Every visitor
+        saw the exact same content, and to change anything the developer had to edit the file by hand and re-upload it.
+        Think of a static site like a printed poster: once it&rsquo;s up, it stays the same until someone replaces it.
+      </p>
+      <p>
+        A <a href="https://en.wikipedia.org/wiki/Dynamic_web_page" target="_blank" rel="noopener">dynamic web application</a> is different.
+        When you open <a href="https://en.wikipedia.org/wiki/YouTube" target="_blank" rel="noopener">YouTube</a>,
+        <a href="https://en.wikipedia.org/wiki/Instagram" target="_blank" rel="noopener">Instagram</a>, or
+        <a href="https://en.wikipedia.org/wiki/Google_Maps" target="_blank" rel="noopener">Google Maps</a>,
+        the page you see is assembled on the fly. The server reads your account data, pulls
+        fresh content from a <a href="https://en.wikipedia.org/wiki/Database" target="_blank" rel="noopener">database</a>, and builds a
+        unique page just for you. That&rsquo;s why your YouTube homepage looks nothing like your friend&rsquo;s &mdash;
+        the app personalises it in real time.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Client-server-model.svg" target="_blank" rel="noopener"><img src="../images/Client-server-model.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg'" alt="Diagram of the client-server model showing a server connected to multiple clients">
+        <figcaption>The client-server model. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Frontend vs. Backend</h3>
+      <p>
+        Every web app has two halves. The <a href="https://en.wikipedia.org/wiki/Front-end_web_development" target="_blank" rel="noopener">frontend</a>
+        (also called the &ldquo;client side&rdquo;) is everything that runs inside your browser:
+        the <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a> structure,
+        the <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener">CSS</a> styling,
+        and the <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" rel="noopener">JavaScript</a> code that makes
+        buttons respond, animations play, and forms validate before you hit &ldquo;Submit.&rdquo;
+      </p>
+      <p>
+        The <a href="https://en.wikipedia.org/wiki/Frontend_and_backend" target="_blank" rel="noopener">backend</a>
+        (or &ldquo;server side&rdquo;) is the code you never see. It runs on a remote
+        <a href="https://en.wikipedia.org/wiki/Web_server" target="_blank" rel="noopener">server</a> and handles
+        the heavy lifting: checking passwords, querying databases, processing payments, and
+        deciding what data to send back to the frontend. Popular backend languages include
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" rel="noopener">Python</a>,
+        <a href="https://en.wikipedia.org/wiki/Node.js" target="_blank" rel="noopener">Node.js</a> (JavaScript on the server),
+        <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank" rel="noopener">Ruby</a>, and
+        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank" rel="noopener">Java</a>.
+      </p>
+      <p>
+        Think of a restaurant: the frontend is the dining room where you sit, read the menu, and
+        place an order. The backend is the kitchen where the chef prepares your meal and sends it out.
+        Both halves need each other, but they have very different jobs.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Swagger-logo.png" target="_blank" rel="noopener"><img src="../images/Swagger-logo.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png'" alt="Swagger logo representing API documentation tools">
+        <figcaption>Swagger &mdash; a popular tool for documenting APIs. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>APIs: How the Frontend Talks to the Backend</h3>
+      <p>
+        An <a href="https://en.wikipedia.org/wiki/API" target="_blank" rel="noopener">API</a>
+        (Application Programming Interface) is a set of rules that lets two programs talk to each
+        other. In a web app, the frontend sends a
+        <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank" rel="noopener">HTTP</a> request to the backend&rsquo;s
+        API, and the backend replies with the requested data. The frontend never touches the database
+        directly &mdash; it always goes through the API.
+      </p>
+      <p>
+        Most modern web apps use
+        <a href="https://en.wikipedia.org/wiki/REST" target="_blank" rel="noopener">REST</a>ful APIs. REST
+        organises data into &ldquo;resources&rdquo; (like <code>/users</code> or <code>/posts</code>)
+        and uses standard HTTP methods to work with them:
+      </p>
+      <ul>
+        <li><code>GET</code> &mdash; read a resource (fetch a list of posts)</li>
+        <li><code>POST</code> &mdash; create a new resource (publish a new post)</li>
+        <li><code>PUT</code> &mdash; update an existing resource (edit a post)</li>
+        <li><code>DELETE</code> &mdash; remove a resource (delete a post)</li>
+      </ul>
+      <p>
+        When you scroll your social media feed, your browser quietly fires <code>GET</code> requests
+        to an API endpoint. The server queries the database, picks the next batch of posts, and
+        sends them back &mdash; all without reloading the page. This is called
+        <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank" rel="noopener">AJAX</a>
+        (Asynchronous JavaScript and XML), and it&rsquo;s the reason modern web apps feel so smooth.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:JSON_vector_logo.svg" target="_blank" rel="noopener"><img src="../images/JSON_vector_logo.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg'" alt="The official JSON logo">
+        <figcaption>The JSON logo. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>JSON: The Universal Data Format of the Web</h3>
+      <p>
+        When an API sends data, it needs a format both humans and machines can read.
+        <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" rel="noopener">JSON</a>
+        (JavaScript Object Notation) has become that format. It looks like this:
+      </p>
+<pre><code>{
+  "city": "London",
+  "temperature": 14,
+  "unit": "celsius",
+  "conditions": "partly cloudy"
+}</code></pre>
+      <p>
+        JSON stores data as key-value pairs inside curly braces. Keys are always strings in double
+        quotes; values can be strings, numbers,
+        <a href="https://en.wikipedia.org/wiki/Boolean_data_type" target="_blank" rel="noopener">booleans</a>
+        (<code>true</code>/<code>false</code>), arrays (ordered lists in square brackets), other
+        objects, or <code>null</code>. That simplicity is why nearly every programming language can
+        read and write JSON.
+      </p>
+      <p>
+        In JavaScript, you convert a JSON string into a usable object with
+        <code>JSON.parse()</code>, and turn an object back into a JSON string with
+        <code>JSON.stringify()</code>. The browser&rsquo;s built-in
+        <a href="https://en.wikipedia.org/wiki/Fetch_API" target="_blank" rel="noopener">Fetch API</a>
+        makes it easy to request JSON from any public API:
+      </p>
+<pre><code>const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=51.5&amp;longitude=-0.1&amp;current_weather=true");
+const data = await response.json();
+console.log(data.current_weather.temperature);</code></pre>
+      <p>
+        That tiny snippet connects to a real weather API, downloads the
+        <a href="https://en.wikipedia.org/wiki/JSON" target="_blank" rel="noopener">JSON</a> response,
+        and prints the current temperature. You&rsquo;ll do exactly this in today&rsquo;s practice task.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is the main difference between a static website and a dynamic web application?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> Static sites use CSS; dynamic apps do not</label></li>
+          <li><label><input type="radio" name="q1" value="b"> A static site shows the same content to everyone; a dynamic app assembles personalised pages on the fly</label></li>
+          <li><label><input type="radio" name="q1" value="c"> Dynamic apps can only run on mobile devices</label></li>
+          <li><label><input type="radio" name="q1" value="d"> Static sites are always faster than dynamic apps</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the restaurant analogy, which part of a web app is &ldquo;the kitchen&rdquo;?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> The frontend (HTML/CSS/JS in the browser)</label></li>
+          <li><label><input type="radio" name="q2" value="b"> The user&rsquo;s operating system</label></li>
+          <li><label><input type="radio" name="q2" value="c"> The backend (server-side code and database)</label></li>
+          <li><label><input type="radio" name="q2" value="d"> The Internet cable</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which HTTP method would you use to delete a blog post through a RESTful API?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> GET</label></li>
+          <li><label><input type="radio" name="q3" value="b"> POST</label></li>
+          <li><label><input type="radio" name="q3" value="c"> PUT</label></li>
+          <li><label><input type="radio" name="q3" value="d"> DELETE</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In JSON, what type of brackets surround an ordered list (array)?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> Curly braces { }</label></li>
+          <li><label><input type="radio" name="q4" value="b"> Square brackets [ ]</label></li>
+          <li><label><input type="radio" name="q4" value="c"> Angle brackets &lt; &gt;</label></li>
+          <li><label><input type="radio" name="q4" value="d"> Parentheses ( )</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which JavaScript method converts a JSON string into a JavaScript object?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> JSON.stringify()</label></li>
+          <li><label><input type="radio" name="q5" value="b"> JSON.parse()</label></li>
+          <li><label><input type="radio" name="q5" value="c"> JSON.decode()</label></li>
+          <li><label><input type="radio" name="q5" value="d"> JSON.read()</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;Weather Dashboard&rdquo;</h2>
+    <p>
+      Create an HTML + CSS + JS page that fetches live weather data from the
+      <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo API</a>
+      (free, no API key needed) and shows the current weather for any city the user types in.
+    </p>
+
+    <h3>How it works:</h3>
+    <ol>
+      <li>The user types a city name into a text field and clicks &ldquo;Search.&rdquo;</li>
+      <li>Your JavaScript uses the <a href="https://geocoding-api.open-meteo.com/v1/search?name=London&amp;count=1" target="_blank" rel="noopener">Open-Meteo Geocoding API</a> to turn the city name into latitude and longitude.</li>
+      <li>With those coordinates, it calls the <a href="https://api.open-meteo.com/v1/forecast?latitude=51.5&amp;longitude=-0.1&amp;current_weather=true" target="_blank" rel="noopener">Open-Meteo Forecast API</a> to get the current weather.</li>
+      <li>The page displays the city name, temperature, wind speed, and a weather description.</li>
+    </ol>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>An <code>&lt;input&gt;</code> for the city name and a &ldquo;Search&rdquo; button</li>
+      <li>Use <code>fetch()</code> to call the Geocoding API: <code>https://geocoding-api.open-meteo.com/v1/search?name=CITY&amp;count=1</code></li>
+      <li>Use <code>fetch()</code> again with the returned latitude/longitude to call: <code>https://api.open-meteo.com/v1/forecast?latitude=LAT&amp;longitude=LON&amp;current_weather=true</code></li>
+      <li>Parse the JSON response and display: city name, temperature (&deg;C), wind speed (km/h), and wind direction</li>
+      <li>Show a friendly error message if the city is not found</li>
+      <li>Style the dashboard with a card layout, readable fonts, and a clean look</li>
+    </ul>
+
+    <h3>Helpful code snippet:</h3>
+<pre><code>async function getWeather(city) {
+  // Step 1: geocode the city name
+  const geoRes = await fetch(
+    `https://geocoding-api.open-meteo.com/v1/search?name=${city}&amp;count=1`
+  );
+  const geoData = await geoRes.json();
+
+  if (!geoData.results) {
+    alert("City not found!");
+    return;
+  }
+
+  const { latitude, longitude, name } = geoData.results[0];
+
+  // Step 2: fetch the weather
+  const wxRes = await fetch(
+    `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&amp;longitude=${longitude}&amp;current_weather=true`
+  );
+  const wxData = await wxRes.json();
+
+  console.log(name, wxData.current_weather);
+}</code></pre>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'c', q3: 'd', q4: 'b', q5: 'b' };
+  var videoAnswers = { vq1: 'b', vq2: 'a', vq3: 'b', vq4: 'd', vq5: 'b', vq6: 'b' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 17: Online Shopping and Payments &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">Advanced Web Concepts</p>
+  <h1 class="lesson-title">Online Shopping and Payments</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=SSo_EIwHSd4" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How We Got Hooked on Credit Cards (TED-Ed, 5 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=j9QmMEWmcfo" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          SSL, TLS, HTTPS Explained (PowerCert, 12 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=rYQgy8QDEBI" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How Does Cryptocurrency Work? (Simply Explained, 6 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=T4Df5_cojAs" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How Does HTTPS Work? What&rsquo;s a CA? What&rsquo;s a Self-Signed Certificate? (8 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the TED-Ed video about credit cards, what key financial invention from the 1950s paved the way for modern credit cards?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> Paper checks</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> The Diners&rsquo; Club card</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> Wire transfers</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> Debit cards</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the TED-Ed video, what does the narrator say credit card companies earn revenue from, besides interest on unpaid balances?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> Selling user data to advertisers</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> Merchant fees (interchange fees) charged to businesses</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> Government subsidies</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> Cryptocurrency mining</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the PowerCert video about SSL/TLS, what is the primary purpose of the &ldquo;handshake&rdquo; that happens at the start of an HTTPS connection?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> To check if the user has paid their Internet bill</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> To exchange encryption keys so the browser and server can communicate securely</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> To measure the speed of the Internet connection</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> To scan the website for viruses</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>According to the Simply Explained video on cryptocurrency, what technology records every cryptocurrency transaction in a tamper-proof way?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> A central bank database</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> A blockchain &mdash; a distributed public ledger</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> A private spreadsheet on one server</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> An email chain between miners</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Simply Explained cryptocurrency video, what does &ldquo;mining&rdquo; refer to?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> Digging up physical coins from the ground</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> Using computing power to validate transactions and add them to the blockchain</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> Deleting old transactions to free up space</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> Creating new Internet cables</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the HTTPS video, what role does a Certificate Authority (CA) play in securing a website?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> It hosts the website&rsquo;s files on its own servers</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> It verifies the website&rsquo;s identity and issues a digital certificate that the browser trusts</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> It blocks all ads on the website</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> It stores the user&rsquo;s passwords in an encrypted vault</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Online-shop_button.jpg" target="_blank" rel="noopener"><img src="../images/Online-shop_button.jpg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/c9/Online-shop_button.jpg'" alt="Online shop button on a keyboard, representing e-commerce">
+        <figcaption>Online shopping. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>How Online Payments Work</h3>
+      <p>
+        When you tap &ldquo;Buy Now&rdquo; on an online store, a chain of invisible steps fires off in less than two seconds.
+        First, the store&rsquo;s website sends your card details to a
+        <a href="https://en.wikipedia.org/wiki/Payment_gateway" target="_blank" rel="noopener">payment gateway</a> &mdash;
+        a service that encrypts the data and forwards it to a
+        <a href="https://en.wikipedia.org/wiki/Payment_processor" target="_blank" rel="noopener">payment processor</a>.
+        The processor contacts the <a href="https://en.wikipedia.org/wiki/Card_scheme" target="_blank" rel="noopener">card network</a>
+        (such as <a href="https://en.wikipedia.org/wiki/Visa_Inc." target="_blank" rel="noopener">Visa</a> or
+        <a href="https://en.wikipedia.org/wiki/Mastercard" target="_blank" rel="noopener">Mastercard</a>),
+        which routes the request to your <a href="https://en.wikipedia.org/wiki/Issuing_bank" target="_blank" rel="noopener">issuing bank</a> &mdash;
+        the bank that gave you the card.
+      </p>
+      <p>
+        Your bank checks whether you have enough funds and whether the transaction looks legitimate. If everything
+        is in order, it sends back an approval code. That code travels the reverse path &mdash;
+        card network, processor, gateway &mdash; and finally the store shows you a &ldquo;Payment Successful&rdquo; page.
+        The actual money transfer (called <a href="https://en.wikipedia.org/wiki/Settlement_(finance)" target="_blank" rel="noopener">settlement</a>)
+        happens later, usually within one to two business days.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Credit-card-front.svg" target="_blank" rel="noopener"><img src="../images/Credit-card-front.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/d/d7/Credit-card-front.svg'" alt="Diagram of the front of a credit card showing card number, name, and expiration date">
+        <figcaption>Credit card anatomy. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Credit Cards, Digital Wallets, and Cryptocurrency</h3>
+      <p>
+        A <a href="https://en.wikipedia.org/wiki/Credit_card" target="_blank" rel="noopener">credit card</a> lets you borrow
+        money from a bank to pay for goods now and repay later. A
+        <a href="https://en.wikipedia.org/wiki/Debit_card" target="_blank" rel="noopener">debit card</a> does the same thing
+        but pulls directly from your bank account &mdash; no borrowing involved. Both use the same gateway-processor-network
+        chain described above.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Digital_wallet" target="_blank" rel="noopener">Digital wallets</a> like
+        <a href="https://en.wikipedia.org/wiki/Apple_Pay" target="_blank" rel="noopener">Apple Pay</a>,
+        <a href="https://en.wikipedia.org/wiki/Google_Pay" target="_blank" rel="noopener">Google Pay</a>, and
+        <a href="https://en.wikipedia.org/wiki/PayPal" target="_blank" rel="noopener">PayPal</a>
+        add an extra layer: instead of sending your real card number, they generate a one-time
+        <a href="https://en.wikipedia.org/wiki/Tokenization_(data_security)" target="_blank" rel="noopener">token</a> &mdash;
+        a random substitute number that only works for that single transaction. Even if a hacker intercepts the token,
+        it is useless for future purchases.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Cryptocurrency" target="_blank" rel="noopener">Cryptocurrency</a> like
+        <a href="https://en.wikipedia.org/wiki/Bitcoin" target="_blank" rel="noopener">Bitcoin</a> and
+        <a href="https://en.wikipedia.org/wiki/Ethereum" target="_blank" rel="noopener">Ethereum</a>
+        works differently: there is no bank in the middle. Transactions are verified by a network of computers
+        and recorded on a <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank" rel="noopener">blockchain</a> &mdash;
+        a shared, tamper-proof ledger. Crypto payments are irreversible, which is both a feature
+        (no <a href="https://en.wikipedia.org/wiki/Chargeback" target="_blank" rel="noopener">chargebacks</a>) and a risk
+        (if you send to the wrong address, the money is gone).
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:SSL_handshake_with_two_way_authentication_with_certificates.svg" target="_blank" rel="noopener"><img src="../images/SSL_handshake_with_two_way_authentication_with_certificates.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/a/ae/SSL_handshake_with_two_way_authentication_with_certificates.svg'" alt="Diagram showing the SSL/TLS handshake process between a client and server">
+        <figcaption>SSL/TLS handshake. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>How Your Payment Data Stays Encrypted</h3>
+      <p>
+        Every time you enter a card number on a website that starts with
+        <a href="https://en.wikipedia.org/wiki/HTTPS" target="_blank" rel="noopener">https://</a>, your browser
+        and the server perform a &ldquo;handshake&rdquo; using
+        <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="noopener">TLS</a>
+        (Transport Layer Security, the successor to the older
+        <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0" target="_blank" rel="noopener">SSL</a>).
+        During this handshake they agree on a secret key and from that point on, every byte of data
+        traveling between them is scrambled &mdash; unreadable to anyone who intercepts it.
+      </p>
+      <p>
+        The padlock icon in your browser&rsquo;s address bar confirms the connection is encrypted and the server
+        has a valid <a href="https://en.wikipedia.org/wiki/Public_key_certificate" target="_blank" rel="noopener">TLS certificate</a>
+        issued by a trusted <a href="https://en.wikipedia.org/wiki/Certificate_authority" target="_blank" rel="noopener">certificate authority</a>.
+        Reputable online stores also comply with
+        <a href="https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard" target="_blank" rel="noopener">PCI DSS</a>
+        (Payment Card Industry Data Security Standard), a set of rules that dictates how card data must be stored, processed,
+        and transmitted. Stores that meet PCI DSS never keep your full card number on their own servers &mdash;
+        they let the payment gateway handle it.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Blockchain.svg" target="_blank" rel="noopener"><img src="../images/Blockchain.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/9/98/Blockchain.svg'" alt="Diagram of a blockchain showing linked blocks of data">
+        <figcaption>Blockchain structure. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Red Flags of Fake Online Stores</h3>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Internet_fraud" target="_blank" rel="noopener">Internet fraud</a> from fake
+        online stores is booming. Here are the warning signs to watch for:
+      </p>
+      <ul>
+        <li>The <a href="https://en.wikipedia.org/wiki/URL" target="_blank" rel="noopener">URL</a> looks suspicious &mdash;
+          misspellings like &ldquo;amaz0n.com,&rdquo; unusual extensions like <code>.shop</code> or <code>.top</code>,
+          or extra words added to a brand name.</li>
+        <li>Prices that are too good to be true. A brand-new console for 80% off is almost certainly a scam.</li>
+        <li>No real contact information &mdash; no physical address, no phone number, no verifiable business name.</li>
+        <li>Only irreversible payment methods accepted: wire transfers,
+          <a href="https://en.wikipedia.org/wiki/Gift_card" target="_blank" rel="noopener">gift cards</a>,
+          or cryptocurrency. Legitimate stores accept credit cards because they know buyers can
+          <a href="https://en.wikipedia.org/wiki/Chargeback" target="_blank" rel="noopener">dispute</a> a charge.</li>
+        <li>Poor grammar, stock photos used as product images, and a website that looks like it was thrown together overnight.</li>
+        <li>No <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">privacy policy</a>
+          or <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank" rel="noopener">terms of service</a> pages,
+          or ones that are copied word-for-word from another site.</li>
+      </ul>
+      <p>
+        If you suspect a store is fake, search its name plus the word &ldquo;scam&rdquo; or &ldquo;review.&rdquo;
+        Use tools like <a href="https://www.scamadviser.com/" target="_blank" rel="noopener">ScamAdviser</a> to check
+        a site&rsquo;s trust score. And always pay with a credit card rather than a debit card &mdash; credit cards
+        have stronger <a href="https://en.wikipedia.org/wiki/Chargeback" target="_blank" rel="noopener">buyer protection</a>
+        that lets you dispute fraudulent charges and get your money back.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is the role of a payment gateway in an online purchase?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> It delivers the physical product to your address</label></li>
+          <li><label><input type="radio" name="q1" value="b"> It encrypts your card details and forwards them to the payment processor</label></li>
+          <li><label><input type="radio" name="q1" value="c"> It creates a new bank account for each transaction</label></li>
+          <li><label><input type="radio" name="q1" value="d"> It designs the checkout page for the store</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>How does a digital wallet like Apple Pay protect your real card number?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> It hides the number behind a fingerprint scanner</label></li>
+          <li><label><input type="radio" name="q2" value="b"> It generates a one-time token that replaces your real card number for each transaction</label></li>
+          <li><label><input type="radio" name="q2" value="c"> It sends the number through a faster Internet connection</label></li>
+          <li><label><input type="radio" name="q2" value="d"> It stores the number in a public blockchain</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why is paying with cryptocurrency riskier than using a credit card when shopping online?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> Cryptocurrency payments are always slower</label></li>
+          <li><label><input type="radio" name="q3" value="b"> Cryptocurrency transactions are irreversible &mdash; you cannot dispute a charge or get a refund</label></li>
+          <li><label><input type="radio" name="q3" value="c"> Cryptocurrency is illegal in most countries</label></li>
+          <li><label><input type="radio" name="q3" value="d"> Cryptocurrency can only be used on one website</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What does the padlock icon in your browser&rsquo;s address bar tell you?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> The website is free to use</label></li>
+          <li><label><input type="radio" name="q4" value="b"> The website is using TLS encryption and has a valid certificate</label></li>
+          <li><label><input type="radio" name="q4" value="c"> The website has been approved by the government</label></li>
+          <li><label><input type="radio" name="q4" value="d"> The website cannot be hacked under any circumstances</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which of the following is a red flag that an online store might be fake?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> The store accepts credit cards and PayPal</label></li>
+          <li><label><input type="radio" name="q5" value="b"> The store has a physical address and phone number listed</label></li>
+          <li><label><input type="radio" name="q5" value="c"> The store only accepts wire transfers or gift cards, and prices are unbelievably low</label></li>
+          <li><label><input type="radio" name="q5" value="d"> The store has customer reviews on independent review sites</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;Fake Store Detector&rdquo;</h2>
+    <p>
+      Create an HTML/CSS/JS page that displays 6 online store descriptions &mdash; 3 legitimate and 3 fake.
+      Each description is a card showing the store&rsquo;s name, URL, pricing, payment methods, and a short
+      &ldquo;About Us&rdquo; blurb. Some cards contain hidden red flags (suspicious URLs, absurd discounts,
+      no contact info, only irreversible payment methods, poor grammar).
+    </p>
+    <ol>
+      <li>Display all 6 store cards on the page. Each card has several clickable elements (URL, price, payment method, contact info, about text).</li>
+      <li>The user reads each card and clicks on elements they think are red flags.</li>
+      <li>Clicked elements toggle a &ldquo;flagged&rdquo; highlight (e.g., a red outline).</li>
+      <li>A &ldquo;Check My Answers&rdquo; button at the bottom scores the result: correct flags found, missed flags, and false flags.</li>
+      <li>After checking, each card shows a detailed explanation of why it is legitimate or fake, listing every red flag the user should have spotted.</li>
+    </ol>
+
+    <h3>Example store cards:</h3>
+    <ul>
+      <li>
+        &ldquo;TechDeals Planet&rdquo; &mdash; <code>techdeals-planet.shop</code> &mdash;
+        brand-new laptops at 90% off &mdash; only accepts gift cards &mdash;
+        no phone number or address listed (fake)
+      </li>
+      <li>
+        &ldquo;BookNook&rdquo; &mdash; <code>booknook.com</code> &mdash;
+        reasonable prices &mdash; accepts credit cards and PayPal &mdash;
+        verified address and phone number (legitimate)
+      </li>
+      <li>
+        &ldquo;SneakerVaullt&rdquo; &mdash; <code>sneakervaullt.top</code> &mdash;
+        misspelled name &mdash; designer shoes at 85% off &mdash;
+        only accepts cryptocurrency (fake)
+      </li>
+    </ul>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>6 store cards total (3 legit, 3 fake), each with 4&ndash;5 clickable data points</li>
+      <li>CSS styling: cards in a grid, flagged elements highlighted in red</li>
+      <li>A &ldquo;Check My Answers&rdquo; button that scores the user&rsquo;s choices</li>
+      <li>After scoring, show a detailed explanation panel below each card</li>
+      <li>Display a final score: e.g., &ldquo;You found 7 out of 10 red flags!&rdquo;</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'b', q3: 'b', q4: 'b', q5: 'c' };
+  var videoAnswers = { vq1: 'b', vq2: 'b', vq3: 'b', vq4: 'b', vq5: 'b', vq6: 'b' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

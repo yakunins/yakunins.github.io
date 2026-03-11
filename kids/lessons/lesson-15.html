@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 15: How Search Engines Really Work &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">Advanced Web Concepts</p>
+  <h1 class="lesson-title">How Search Engines Really Work</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=LVV_93mBfSU" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          The Internet: How Search Works (Code.org, 5 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=0eKVizvYSUQ" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How Google Search Works (Google, 5 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=B8ofWFx525s" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Beware Online &ldquo;Filter Bubbles&rdquo; (Eli Pariser / TED, 9 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the Code.org video, what does the speaker compare a search engine&rsquo;s index to?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> A telephone directory</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> The back-of-the-book index that maps words to pages</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> A shopping catalogue</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> A social media feed</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Code.org video, what role does a &ldquo;spider&rdquo; play in how search engines discover pages?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> It blocks harmful websites</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> It follows links from page to page, collecting information for the index</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> It ranks pages by popularity</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> It encrypts data between the user and the server</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Google &ldquo;How Google Search Works&rdquo; video, what are the three main stages Google uses to deliver search results?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> Uploading, downloading, and displaying</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> Crawling, indexing, and serving (ranking)</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> Scanning, filtering, and caching</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> Encrypting, sorting, and streaming</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Google video, what does Googlebot do when it discovers a new link on a page it is crawling?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> It ignores it and moves on</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> It deletes the old page and replaces it</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> It adds the new URL to the list of pages to crawl</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> It sends a notification to the website owner</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Eli Pariser&rsquo;s TED talk, what did he notice when two friends searched for the same term on Google?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> They both got identical results</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> They got very different results, personalized to each person</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> One friend got no results at all</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> Google showed them an error message</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Eli Pariser&rsquo;s talk, what does he call the invisible, personalized world of information that search engines and social media create around each user?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> An echo room</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> A data silo</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> A filter bubble</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> A walled garden</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:WebCrawlerArchitecture.svg" target="_blank" rel="noopener"><img src="../images/WebCrawlerArchitecture.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/d/df/WebCrawlerArchitecture.svg'" alt="Architecture diagram of a web crawler showing how it discovers and stores pages">
+        <figcaption>Web crawler architecture. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Web Crawlers and Indexing</h3>
+      <p>
+        Before a <a href="https://en.wikipedia.org/wiki/Web_search_engine" target="_blank" rel="noopener">search engine</a>
+        can answer your questions, it has to know what exists on the web. That job belongs to
+        <a href="https://en.wikipedia.org/wiki/Web_crawler" target="_blank" rel="noopener">web crawlers</a> &mdash;
+        automated programs (sometimes called &ldquo;spiders&rdquo; or &ldquo;bots&rdquo;) that hop from page to page by
+        following <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" rel="noopener">hyperlinks</a>.
+        Google&rsquo;s crawler is called
+        <a href="https://en.wikipedia.org/wiki/Googlebot" target="_blank" rel="noopener">Googlebot</a>;
+        Microsoft&rsquo;s is
+        <a href="https://en.wikipedia.org/wiki/Bingbot" target="_blank" rel="noopener">Bingbot</a>.
+      </p>
+      <p>
+        A crawler starts with a list of known
+        <a href="https://en.wikipedia.org/wiki/URL" target="_blank" rel="noopener">URLs</a> (called
+        &ldquo;seed URLs&rdquo;). It downloads each page, reads the
+        <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a>, extracts every link it
+        finds, and adds those new URLs to its queue. This cycle repeats billions of times a day.
+      </p>
+      <p>
+        Once a crawler downloads a page, the search engine processes its content &mdash; text,
+        headings, images, <a href="https://en.wikipedia.org/wiki/Meta_element" target="_blank" rel="noopener">meta tags</a>
+        &mdash; and stores it in a massive database called the
+        <a href="https://en.wikipedia.org/wiki/Search_engine_indexing" target="_blank" rel="noopener">index</a>. Think of
+        the index like a library catalogue: instead of listing books by title, it maps every word to
+        the pages where that word appears. When you type a query, the search engine looks up those
+        words in the index &mdash; it does not search the live web in real time.
+      </p>
+      <p>
+        Not every page gets indexed. A file called
+        <a href="https://en.wikipedia.org/wiki/Robots.txt" target="_blank" rel="noopener">robots.txt</a> on a website
+        can tell crawlers which pages to skip. Pages behind login walls, duplicate content, or
+        extremely low-quality pages may also be left out of the index.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:PageRanks-Example.svg" target="_blank" rel="noopener"><img src="../images/400px-PageRanks-Example.svg.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/PageRanks-Example.svg/400px-PageRanks-Example.svg.png'" alt="PageRank example showing nodes with different sizes representing their importance">
+        <figcaption>PageRank example. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>How Search Ranking Works</h3>
+      <p>
+        Having an index is only half the challenge. When you search for &ldquo;best pizza recipe,&rdquo;
+        millions of pages might match. The search engine needs to decide which ones to show first.
+        That decision is called <a href="https://en.wikipedia.org/wiki/Search_engine_results_page" target="_blank" rel="noopener">ranking</a>.
+      </p>
+      <p>
+        In 1998, <a href="https://en.wikipedia.org/wiki/Larry_Page" target="_blank" rel="noopener">Larry Page</a> and
+        <a href="https://en.wikipedia.org/wiki/Sergey_Brin" target="_blank" rel="noopener">Sergey Brin</a> invented
+        <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank" rel="noopener">PageRank</a>, the algorithm
+        that made Google famous. The core idea: if many other pages link to a page, that page is
+        probably important. And a link from an already-important page counts more than a link from an
+        obscure one. Imagine a voting system where every link is a vote, but votes from respected
+        sources carry extra weight.
+      </p>
+      <p>
+        Modern search engines go far beyond PageRank. Google considers hundreds of
+        <a href="https://en.wikipedia.org/wiki/Google_Search#Search_ranking" target="_blank" rel="noopener">ranking factors</a>,
+        including how well the page&rsquo;s content matches your query (relevance), how fresh the
+        content is, how fast the page loads, whether it works well on mobile, and whether the site
+        is trustworthy. Together, these signals help the engine sort results so the most useful pages
+        appear near the top.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Global_thinking.svg" target="_blank" rel="noopener"><img src="../images/400px-Global_thinking.svg.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Global_thinking.svg/400px-Global_thinking.svg.png'" alt="Global thinking illustration representing interconnected web of information and SEO">
+        <figcaption>Global web of information. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Search Engine Optimization Basics</h3>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank" rel="noopener">Search engine optimization</a>
+        (SEO) is the practice of making a website more visible in search results. If you build a
+        website and nobody can find it through search, it might as well not exist.
+      </p>
+      <p>
+        The first step is choosing the right
+        <a href="https://en.wikipedia.org/wiki/Keyword_research" target="_blank" rel="noopener">keywords</a> &mdash;
+        the words and phrases people actually type when looking for content like yours. Those keywords
+        should appear naturally in your page&rsquo;s title, headings, and body text.
+      </p>
+      <p>
+        Next comes on-page structure. Search engines give extra weight to text inside
+        <a href="https://en.wikipedia.org/wiki/HTML_element#heading" target="_blank" rel="noopener">heading tags</a>
+        (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.), the
+        <a href="https://en.wikipedia.org/wiki/Title_element" target="_blank" rel="noopener">&lt;title&gt; element</a>,
+        and the <a href="https://en.wikipedia.org/wiki/Meta_element#The_description_attribute" target="_blank" rel="noopener">meta description</a>.
+        Good alt text on images helps too, because crawlers cannot &ldquo;see&rdquo; images the way
+        humans do.
+      </p>
+      <p>
+        Finally, <a href="https://en.wikipedia.org/wiki/Backlink" target="_blank" rel="noopener">backlinks</a> &mdash;
+        links from other websites pointing to yours &mdash; remain one of the most powerful ranking
+        signals. Earning backlinks by creating genuinely useful content is the foundation of
+        off-page SEO. Tricks like buying links or stuffing invisible keywords into a page are
+        called <a href="https://en.wikipedia.org/wiki/Spamdexing" target="_blank" rel="noopener">spamdexing</a>
+        (or &ldquo;black-hat SEO&rdquo;), and search engines penalize sites that use them.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Internet_map_1024_-_transparent%2C_inverted.png" target="_blank" rel="noopener"><img src="../images/400px-Internet_map_1024_-_transparent,_inverted.png" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Internet_map_1024_-_transparent%2C_inverted.png/400px-Internet_map_1024_-_transparent%2C_inverted.png'" alt="Visualization of Internet connections resembling a network of nodes, illustrating how personalized paths through the web create filter bubbles">
+        <figcaption>Internet node map. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Search Bubbles, Filter Bias, and Advanced Search</h3>
+      <p>
+        Search engines do not show the same results to everyone. Google uses signals like your
+        location, language, search history, and device type to
+        <a href="https://en.wikipedia.org/wiki/Google_Personalized_Search" target="_blank" rel="noopener">personalize results</a>.
+        This can be helpful &mdash; a search for &ldquo;pizza&rdquo; shows nearby restaurants instead
+        of ones across the world &mdash; but it also creates what activist
+        <a href="https://en.wikipedia.org/wiki/Eli_Pariser" target="_blank" rel="noopener">Eli Pariser</a>
+        calls a <a href="https://en.wikipedia.org/wiki/Filter_bubble" target="_blank" rel="noopener">filter bubble</a>:
+        an invisible personal universe of information that reinforces what you already believe and
+        hides viewpoints you might disagree with.
+      </p>
+      <p>
+        A related concept is the
+        <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)" target="_blank" rel="noopener">echo chamber</a>
+        effect on social media, where algorithms keep showing you content similar to what you have
+        already liked or shared. Over time, your picture of the world can narrow without you
+        noticing.
+      </p>
+      <p>
+        To counteract filter bubbles, try searching in a
+        <a href="https://en.wikipedia.org/wiki/Privacy_mode" target="_blank" rel="noopener">private/incognito window</a>,
+        using privacy-focused search engines like
+        <a href="https://en.wikipedia.org/wiki/DuckDuckGo" target="_blank" rel="noopener">DuckDuckGo</a>, or
+        deliberately seeking out sources that challenge your views. You can also use advanced search
+        techniques: wrapping a phrase in quotes (&ldquo;exact phrase&rdquo;) forces the engine to
+        find that exact wording; the minus sign (<code>-word</code>) excludes a term; and the
+        <code>site:</code> operator limits results to a single domain (e.g.,
+        <code>site:wikipedia.org climate change</code>).
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is the purpose of a web crawler?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> To display search results to users</label></li>
+          <li><label><input type="radio" name="q1" value="b"> To follow links and discover pages so the search engine can build its index</label></li>
+          <li><label><input type="radio" name="q1" value="c"> To block malicious websites from appearing in search</label></li>
+          <li><label><input type="radio" name="q1" value="d"> To encrypt web traffic between the user and the server</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What was the key insight behind the original PageRank algorithm?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> Pages with more images are more important</label></li>
+          <li><label><input type="radio" name="q2" value="b"> Pages that load faster should rank higher</label></li>
+          <li><label><input type="radio" name="q2" value="c"> A page linked to by many other pages (especially important ones) is likely important itself</label></li>
+          <li><label><input type="radio" name="q2" value="d"> Newer pages are always more relevant than older ones</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which file on a website tells crawlers which pages they should not visit?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> index.html</label></li>
+          <li><label><input type="radio" name="q3" value="b"> sitemap.xml</label></li>
+          <li><label><input type="radio" name="q3" value="c"> robots.txt</label></li>
+          <li><label><input type="radio" name="q3" value="d"> .htaccess</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What is a filter bubble?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> A tool that blocks ads in search results</label></li>
+          <li><label><input type="radio" name="q4" value="b"> A personalized information environment that limits exposure to diverse viewpoints</label></li>
+          <li><label><input type="radio" name="q4" value="c"> A type of spam filter used in email</label></li>
+          <li><label><input type="radio" name="q4" value="d"> A security feature that protects search queries from hackers</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which advanced search technique limits results to a specific website?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> Wrapping the query in quotes</label></li>
+          <li><label><input type="radio" name="q5" value="b"> Adding a minus sign before a word</label></li>
+          <li><label><input type="radio" name="q5" value="c"> Using the <code>site:</code> operator</label></li>
+          <li><label><input type="radio" name="q5" value="d"> Typing the query in all caps</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;Mini Search Engine&rdquo;</h2>
+    <p>
+      Create an HTML/CSS/JS page that simulates a search engine. You have a hardcoded array of 20
+      &ldquo;webpage&rdquo; objects, and users type queries to find matching results ranked by
+      relevance.
+    </p>
+
+    <h3>The data:</h3>
+    <p>
+      Define an array of 20 objects. Each object has three properties:
+    </p>
+    <ul>
+      <li><code>title</code> &mdash; the page title (e.g., &ldquo;How to Bake Chocolate Cake&rdquo;)</li>
+      <li><code>content</code> &mdash; a short description or snippet (1&ndash;2 sentences)</li>
+      <li><code>keywords</code> &mdash; an array of relevant keywords (e.g., <code>["baking", "cake", "chocolate", "recipe"]</code>)</li>
+    </ul>
+
+    <h3>How it works:</h3>
+    <ol>
+      <li>The user types a search query into an <code>&lt;input&gt;</code> and clicks a &ldquo;Search&rdquo; button (or presses Enter).</li>
+      <li>JavaScript splits the query into individual words and checks each page object.</li>
+      <li>For every query word that matches a keyword (case-insensitive), that page earns one relevance point. Also add a point if the word appears in the title or content.</li>
+      <li>Pages with zero points are hidden. The rest are sorted from highest to lowest score.</li>
+      <li>Each result is displayed as a card showing the title, a snippet of the content, and the relevance score.</li>
+      <li>If no pages match, show a friendly &ldquo;No results found&rdquo; message.</li>
+    </ol>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>A search bar styled to look like a real search engine (centered input + button)</li>
+      <li>Results styled as cards with a title link (blue), a URL-like line (green), and a description (dark gray) &mdash; mimicking real search results</li>
+      <li>The relevance score shown as a small badge on each card</li>
+      <li>A &ldquo;Clear&rdquo; button to reset the search</li>
+      <li>At least 20 webpage objects covering varied topics (food, science, music, sports, etc.)</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'c', q3: 'c', q4: 'b', q5: 'c' };
+  var videoAnswers = { vq1: 'b', vq2: 'b', vq3: 'b', vq4: 'c', vq5: 'b', vq6: 'c' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

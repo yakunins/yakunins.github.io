@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 16: The Algorithms Behind Your Feed &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">Advanced Web Concepts</p>
+  <h1 class="lesson-title">The Algorithms Behind Your Feed</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=rE3j_RHkqJc" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          This Video Will Make You Angry (CGP Grey, 7 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=uaaC57tcci0" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          The Social Dilemma &mdash; Official Trailer (Netflix, 3 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=nfczi2cI6Cs" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          How TikTok&rsquo;s Algorithm Figures You Out (Wall Street Journal, 8 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In CGP Grey&rsquo;s &ldquo;This Video Will Make You Angry,&rdquo; he explains that ideas spread online like germs. What kind of content does he say spreads fastest?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> Calm, well-researched articles</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> Content that triggers outrage and strong emotional reactions</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> Long-form educational videos</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> Posts with lots of hashtags</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In CGP Grey&rsquo;s video, he uses a diagram of connected groups to show how angry content travels. What does he call the groups that form around shared beliefs online?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> Data clusters</label></li>
+          <li><label><input type="radio" name="vq2" value="b"> Thought germs that infect like-minded groups</label></li>
+          <li><label><input type="radio" name="vq2" value="c"> Algorithm pods</label></li>
+          <li><label><input type="radio" name="vq2" value="d"> Engagement rings</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In The Social Dilemma trailer, former tech employees warn that social media platforms are designed primarily to do what?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> Educate users about current events</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> Keep users engaged as long as possible to sell their attention to advertisers</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> Help people make new friends</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> Protect user privacy</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In The Social Dilemma trailer, one interviewee summarizes the business model with a famous line. Which one?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> &ldquo;The customer is always right&rdquo;</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> &ldquo;If you&rsquo;re not paying for the product, you are the product&rdquo;</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> &ldquo;Knowledge is power&rdquo;</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> &ldquo;Time is money&rdquo;</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Wall Street Journal TikTok investigation, how did the researchers figure out what the algorithm was doing?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> They asked TikTok&rsquo;s CEO directly</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> They created bot accounts that watched specific types of content and tracked how the feed changed</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> They hacked into TikTok&rsquo;s servers</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> They read TikTok&rsquo;s public source code</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Wall Street Journal video, what single user action did the algorithm rely on most heavily to personalise the feed?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> Liking a video</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> Following a creator</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> How long the user watched (watch time / linger time)</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> Sharing a video with friends</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Social_Network_Diagram_%28segment%29.svg" target="_blank" rel="noopener"><img src="../images/Social_Network_Diagram_(segment).svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/e/e4/Social_Network_Diagram_%28segment%29.svg'" alt="Graph diagram of a social network showing interconnected nodes and clusters">
+        <figcaption>Social network graph. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>How Recommendation Algorithms Work</h3>
+      <p>
+        Every time you open <a href="https://en.wikipedia.org/wiki/TikTok" target="_blank" rel="noopener">TikTok</a>,
+        <a href="https://en.wikipedia.org/wiki/Instagram" target="_blank" rel="noopener">Instagram</a>, or
+        <a href="https://en.wikipedia.org/wiki/YouTube" target="_blank" rel="noopener">YouTube</a>, a
+        <a href="https://en.wikipedia.org/wiki/Recommender_system" target="_blank" rel="noopener">recommendation algorithm</a>
+        decides what you see. It is a set of mathematical instructions that predicts which posts, videos, or stories
+        you are most likely to interact with &mdash; and places those at the top of your feed.
+      </p>
+      <p>
+        The algorithm learns by observing everything you do: what you tap on, how long you watch, what you skip,
+        what you like, and what you share. It feeds all of these signals into a
+        <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener">machine-learning</a> model
+        that builds a profile of your interests. The more you use the app, the sharper the profile becomes &mdash;
+        and the more accurately the algorithm can guess what will keep you scrolling.
+      </p>
+      <p>
+        Importantly, the algorithm does not show you everything that gets posted. It filters out content it thinks
+        you won&rsquo;t engage with, creating a curated experience unique to you. Two people following the exact
+        same accounts can see very different feeds.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Social-network.svg" target="_blank" rel="noopener"><img src="../images/Social-network.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/6/68/Social-network.svg'" alt="Social network diagram showing how users are connected through shared interactions">
+        <figcaption>Connections in a social network. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Engagement Metrics: Likes, Shares, and Watch Time</h3>
+      <p>
+        Algorithms rank content using <a href="https://en.wikipedia.org/wiki/Engagement_metric" target="_blank" rel="noopener">engagement metrics</a> &mdash;
+        measurable signals that indicate how users react to a post. The most common ones are:
+      </p>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Like_button" target="_blank" rel="noopener">Likes</a> and reactions &mdash; a quick signal that someone enjoyed the content</li>
+        <li>Comments &mdash; a stronger signal, because typing takes more effort than tapping</li>
+        <li>Shares and reposts &mdash; the strongest signal, because you are recommending content to others</li>
+        <li><a href="https://en.wikipedia.org/wiki/Watch_time" target="_blank" rel="noopener">Watch time</a> &mdash; how many seconds or minutes you spend on a video before scrolling away</li>
+        <li><a href="https://en.wikipedia.org/wiki/Click-through_rate" target="_blank" rel="noopener">Click-through rate</a> &mdash; how often people tap on a thumbnail or headline to see more</li>
+      </ul>
+      <p>
+        Content that generates high engagement gets pushed to more users, which generates even more engagement &mdash;
+        a <a href="https://en.wikipedia.org/wiki/Positive_feedback" target="_blank" rel="noopener">positive feedback loop</a>.
+        This is why emotionally charged, surprising, or controversial posts tend to spread faster than calm, nuanced ones:
+        they trigger stronger reactions, and the algorithm rewards that.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Social_Network_Diagram_%28large%29.svg" target="_blank" rel="noopener"><img src="../images/Social_Network_Diagram_(large).svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/5/53/Social_Network_Diagram_%28large%29.svg'" alt="Large social network showing clusters of tightly connected groups with few links between them, illustrating echo chambers">
+        <figcaption>Clustered network &mdash; echo chamber effect. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Echo Chambers and Misinformation</h3>
+      <p>
+        Because algorithms show you more of what you already engage with, they can create what
+        <a href="https://en.wikipedia.org/wiki/Eli_Pariser" target="_blank" rel="noopener">Eli Pariser</a> called a
+        <a href="https://en.wikipedia.org/wiki/Filter_bubble" target="_blank" rel="noopener">filter bubble</a> &mdash;
+        a personalized universe of information where you rarely encounter viewpoints that challenge your own.
+        Over time, your feed starts to look like a mirror reflecting your existing beliefs back at you.
+      </p>
+      <p>
+        A related concept is the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)" target="_blank" rel="noopener">echo chamber</a>:
+        a space where people interact mainly with others who share their views, and where opposing ideas are
+        filtered out or dismissed. Inside an echo chamber,
+        <a href="https://en.wikipedia.org/wiki/Misinformation" target="_blank" rel="noopener">misinformation</a> &mdash;
+        false or misleading claims &mdash; can spread quickly, because there are fewer people around to question it.
+      </p>
+      <p>
+        Algorithms don&rsquo;t deliberately spread lies, but they do amplify content that gets engagement. A sensational
+        headline (&ldquo;Doctors Don&rsquo;t Want You to Know This!&rdquo;) will often outperform a careful,
+        fact-checked article, simply because it provokes more clicks and shares. This is one reason why
+        <a href="https://en.wikipedia.org/wiki/Fake_news" target="_blank" rel="noopener">fake news</a> travels
+        roughly six times faster than accurate reporting on social media, according to research published in
+        <a href="https://en.wikipedia.org/wiki/Science_(journal)" target="_blank" rel="noopener">Science</a>.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:The_social_network.svg" target="_blank" rel="noopener"><img src="../images/The_social_network.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/2/2c/The_social_network.svg'" alt="Diagram of a social network with users connected by lines representing relationships">
+        <figcaption>Users connected in a social network. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>The Business Model and Critical Thinking</h3>
+      <p>
+        Most social media platforms are free to use. So how do they make money? Through
+        <a href="https://en.wikipedia.org/wiki/Targeted_advertising" target="_blank" rel="noopener">targeted advertising</a>.
+        The longer you stay on the app, the more ads you see, and the more revenue the company earns. This creates
+        a powerful incentive: the platform&rsquo;s primary goal is not to inform you or connect you with friends &mdash;
+        it is to capture and hold your <a href="https://en.wikipedia.org/wiki/Attention_economy" target="_blank" rel="noopener">attention</a>.
+      </p>
+      <p>
+        As the saying goes: &ldquo;If you&rsquo;re not paying for the product, you are the product.&rdquo; Your attention,
+        your data, and your behavioral profile are what gets sold to advertisers.
+        <a href="https://en.wikipedia.org/wiki/The_Social_Dilemma" target="_blank" rel="noopener">The Social Dilemma</a>,
+        a 2020 documentary, made this argument widely known, featuring former employees of major tech companies who
+        helped build these systems and later raised alarms about them.
+      </p>
+      <p>
+        The good news: once you understand how the machine works, you can push back. Some practical habits that help:
+      </p>
+      <ul>
+        <li>Check who published a story before sharing it &mdash; is the source credible?</li>
+        <li>Search for the same claim on a <a href="https://en.wikipedia.org/wiki/Fact-checking" target="_blank" rel="noopener">fact-checking</a> site</li>
+        <li>Deliberately follow accounts and sources that challenge your usual viewpoint</li>
+        <li>Use your platform&rsquo;s &ldquo;not interested&rdquo; button to break repetitive recommendation loops</li>
+        <li>Set screen-time limits so the algorithm has less data to work with</li>
+      </ul>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Critical_thinking" target="_blank" rel="noopener">Critical thinking</a>
+        is your strongest defense. Every time you pause before liking, sharing, or believing a post, you are taking
+        back a small piece of control from the algorithm.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>What is the main purpose of a recommendation algorithm on social media?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> To show you every post in chronological order</label></li>
+          <li><label><input type="radio" name="q1" value="b"> To predict which content you will engage with and keep you on the platform longer</label></li>
+          <li><label><input type="radio" name="q1" value="c"> To protect you from harmful content</label></li>
+          <li><label><input type="radio" name="q1" value="d"> To help you find new friends</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why does emotionally charged or controversial content tend to spread faster than calm, nuanced articles?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> Because platforms manually promote controversy</label></li>
+          <li><label><input type="radio" name="q2" value="b"> Because it triggers stronger reactions (clicks, shares, comments), and the algorithm rewards high engagement</label></li>
+          <li><label><input type="radio" name="q2" value="c"> Because nuanced articles are banned by most platforms</label></li>
+          <li><label><input type="radio" name="q2" value="d"> Because only journalists can post calm content</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What is the difference between a filter bubble and an echo chamber?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> They are exactly the same thing</label></li>
+          <li><label><input type="radio" name="q3" value="b"> A filter bubble is created by algorithms limiting what you see; an echo chamber is a social space where people reinforce each other&rsquo;s existing beliefs</label></li>
+          <li><label><input type="radio" name="q3" value="c"> A filter bubble only affects search engines, while an echo chamber only affects TV</label></li>
+          <li><label><input type="radio" name="q3" value="d"> An echo chamber is created by algorithms; a filter bubble is a type of spam filter</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>How do most free social media platforms make money?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> By charging a monthly subscription fee</label></li>
+          <li><label><input type="radio" name="q4" value="b"> By selling physical products</label></li>
+          <li><label><input type="radio" name="q4" value="c"> By selling targeted advertising based on user data and attention</label></li>
+          <li><label><input type="radio" name="q4" value="d"> By donations from other companies</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which of these is a practical way to fight back against filter bubbles?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> Share every post you see as quickly as possible</label></li>
+          <li><label><input type="radio" name="q5" value="b"> Only use one social media platform</label></li>
+          <li><label><input type="radio" name="q5" value="c"> Deliberately follow diverse sources, check facts, and use &ldquo;not interested&rdquo; to break recommendation loops</label></li>
+          <li><label><input type="radio" name="q5" value="d"> Delete all your accounts immediately</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: &ldquo;Feed Simulator&rdquo;</h2>
+    <p>
+      Create an HTML/CSS/JS page that simulates how a social media algorithm reshapes your feed based on your behavior:
+    </p>
+    <ol>
+      <li>Display 15 posts one at a time. Each post has a headline, a source label (e.g. &ldquo;Reliable News,&rdquo; &ldquo;Clickbait,&rdquo; &ldquo;Misinformation&rdquo;), and a hidden category tag.</li>
+      <li>For each post, the user can click &ldquo;Like&rdquo; or &ldquo;Skip.&rdquo;</li>
+      <li>After all 15 posts, show a results screen: a bar chart or summary showing how a simple algorithm would rebuild their feed based on what they liked (e.g. &ldquo;Your new feed would be 70% clickbait, 20% misinformation, 10% reliable news&rdquo;).</li>
+      <li>Below the chart, reveal the category of every post (reliable / clickbait / misinfo) and explain how the algorithm used their likes to decide.</li>
+    </ol>
+
+    <h3>Post Data (use this array):</h3>
+    <pre><code>const posts = [
+  { id:1,  text:"New Study: 8 Hours of Sleep Boosts Teen Memory by 20%", cat:"reliable" },
+  { id:2,  text:"You Won't BELIEVE What This Student Found in the Cafeteria!", cat:"clickbait" },
+  { id:3,  text:"Scientists Exposed: They've Been Lying About Climate for Decades", cat:"misinfo" },
+  { id:4,  text:"City Council Votes to Add Protected Bike Lanes Downtown", cat:"reliable" },
+  { id:5,  text:"This One Trick Lets You Pass Any Exam Without Studying", cat:"misinfo" },
+  { id:6,  text:"10 Celebrities Who Look COMPLETELY Different Without Makeup", cat:"clickbait" },
+  { id:7,  text:"Local Library Launches Free Coding Workshops for Teens", cat:"reliable" },
+  { id:8,  text:"SHOCKING: Phones Are Secretly Recording Everything You Say", cat:"misinfo" },
+  { id:9,  text:"She Quit Social Media for 30 Days - What Happened Next Is Wild", cat:"clickbait" },
+  { id:10, text:"International Space Station Crew Completes 6-Month Mission", cat:"reliable" },
+  { id:11, text:"Exposed: The Government Puts Tracking Chips in School Lunches", cat:"misinfo" },
+  { id:12, text:"This Dog's Reaction to Its Owner Will Make You CRY", cat:"clickbait" },
+  { id:13, text:"UN Report: Global Literacy Rate Reaches All-Time High", cat:"reliable" },
+  { id:14, text:"Doctors Are HIDING This Miracle Cure From You", cat:"misinfo" },
+  { id:15, text:"We Tried the Viral Food Hack - The Results Were INSANE", cat:"clickbait" }
+];</code></pre>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>Show one post at a time with &ldquo;Like&rdquo; and &ldquo;Skip&rdquo; buttons</li>
+      <li>Track the category of every liked post</li>
+      <li>After post 15, calculate what percentage of a &ldquo;new feed&rdquo; would come from each category (liked categories get boosted, skipped categories get reduced)</li>
+      <li>Display results as colored bars or a simple chart (use CSS widths &mdash; no chart library needed)</li>
+      <li>Reveal all 15 posts with their true category labels (color-coded: green for reliable, orange for clickbait, red for misinformation)</li>
+      <li>Add a short explanation paragraph: &ldquo;A real algorithm would use your likes to show you more content like the posts you engaged with. Here&rsquo;s what your feed would look like.&rdquo;</li>
+      <li>Add a &ldquo;Try Again&rdquo; button to reset</li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+      Paste your HTML into the HTML panel, CSS into the CSS panel, and JS into the JavaScript panel. Click &ldquo;Run&rdquo; to see the result!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'b', q3: 'b', q4: 'c', q5: 'c' };
+  var videoAnswers = { vq1: 'b', vq2: 'c', vq3: 'b', vq4: 'b', vq5: 'b', vq6: 'c' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>

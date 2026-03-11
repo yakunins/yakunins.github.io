@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 7: Cascading Style Sheets &mdash; Making the Web Beautiful &mdash; Internet &amp; Web Course</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<div class="lesson">
+
+  <p class="lesson-subtitle">The Web Up Close</p>
+  <h1 class="lesson-title">Making the Web Beautiful</h1>
+
+  <!-- ===== 1. VIDEO SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Watch &amp; Learn</h2>
+
+    <ul class="video-list">
+      <li>
+        <a href="https://www.youtube.com/watch?v=1PnVor36_40" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Learn CSS in 20 Minutes (Web Dev Simplified, 20 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=rIO5326FgPE" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          CSS Box Model Tutorial for Beginners (Dave Gray, 10 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=u044iM9xsWU" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Learn Flexbox the Easy Way (Kevin Powell, 15 min)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=bn-DQCifeQQ" target="_blank" rel="noopener">
+          <svg class="yt-icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 2.8C23.2 1.7 22.3 0.8 21.2 0.5 19.3 0 12 0 12 0S4.7 0 2.8 0.5C1.7 0.8 0.8 1.7 0.5 2.8 0 4.7 0 9 0 9s0 4.3 0.5 6.2c0.3 1.1 1.2 2 2.3 2.3C4.7 18 12 18 12 18s7.3 0 9.2-0.5c1.1-0.3 2-1.2 2.3-2.3C24 13.3 24 9 24 9s0-4.3-0.5-6.2z" fill="#FF0000"/>
+            <path d="M9.6 12.8L15.8 9 9.6 5.2v7.6z" fill="#FFFFFF"/>
+          </svg>
+          Responsive Design Made Easy (Kevin Powell, 13 min)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Video Quiz</h3>
+
+    <div class="quiz-container" id="videoQuiz">
+
+      <div class="quiz-question">
+        <p>In the Web Dev Simplified &ldquo;Learn CSS in 20 Minutes&rdquo; video, what are the three places you can write CSS?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq1" value="a"> In a JavaScript file, in a JSON file, and in the browser console</label></li>
+          <li><label><input type="radio" name="vq1" value="b"> Inline on the element, inside a <code>&lt;style&gt;</code> tag, and in an external <code>.css</code> file</label></li>
+          <li><label><input type="radio" name="vq1" value="c"> Only in an external <code>.css</code> file</label></li>
+          <li><label><input type="radio" name="vq1" value="d"> In the HTML <code>&lt;head&gt;</code> and nowhere else</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the Web Dev Simplified video, which CSS selector targets elements by their class name?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq2" value="a"> A hash sign followed by the name, e.g. <code>#name</code></label></li>
+          <li><label><input type="radio" name="vq2" value="b"> A dot followed by the name, e.g. <code>.name</code></label></li>
+          <li><label><input type="radio" name="vq2" value="c"> The element tag itself, e.g. <code>div</code></label></li>
+          <li><label><input type="radio" name="vq2" value="d"> An asterisk, e.g. <code>*</code></label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Dave Gray&rsquo;s CSS Box Model video, what does he say the <code>box-sizing: border-box</code> property changes about how width is calculated?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq3" value="a"> It makes the width include padding and border, not just the content</label></li>
+          <li><label><input type="radio" name="vq3" value="b"> It doubles the width of every element</label></li>
+          <li><label><input type="radio" name="vq3" value="c"> It removes all margins from elements</label></li>
+          <li><label><input type="radio" name="vq3" value="d"> It only affects the height, not the width</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Kevin Powell&rsquo;s &ldquo;Learn Flexbox the Easy Way&rdquo; video, what does the <code>justify-content</code> property control?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq4" value="a"> The font size of flex items</label></li>
+          <li><label><input type="radio" name="vq4" value="b"> How items are distributed along the main axis</label></li>
+          <li><label><input type="radio" name="vq4" value="c"> The background color of the flex container</label></li>
+          <li><label><input type="radio" name="vq4" value="d"> Whether items are visible or hidden</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Kevin Powell&rsquo;s &ldquo;Responsive Design Made Easy&rdquo; video, what approach does he recommend for building responsive layouts?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq5" value="a"> Start with a desktop layout and shrink it down</label></li>
+          <li><label><input type="radio" name="vq5" value="b"> Use only fixed pixel widths everywhere</label></li>
+          <li><label><input type="radio" name="vq5" value="c"> Let the content and flexible units do most of the work, and use media queries only when needed</label></li>
+          <li><label><input type="radio" name="vq5" value="d"> Create a completely separate page for mobile</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In Dave Gray&rsquo;s video, which part of the box model sits between the content and the border?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="vq6" value="a"> Margin</label></li>
+          <li><label><input type="radio" name="vq6" value="b"> Outline</label></li>
+          <li><label><input type="radio" name="vq6" value="c"> Padding</label></li>
+          <li><label><input type="radio" name="vq6" value="d"> Shadow</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkVideoQuiz()">Check Video Answers</button>
+      <div class="quiz-result" id="videoQuizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 2. THEORY SECTION (with quiz) ===== -->
+  <div class="section">
+    <h2>Theory</h2>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:CSS3_logo_and_wordmark.svg" target="_blank" rel="noopener"><img src="../images/CSS3_logo_and_wordmark.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg'" alt="The official CSS3 logo and wordmark">
+        <figcaption>CSS3 logo. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Selectors, Properties, and Values</h3>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener">Cascading Style Sheets</a> (CSS)
+        is the language that controls how a web page looks. HTML gives a page its structure; CSS gives it
+        color, spacing, fonts, and layout. Every CSS rule has three parts: a
+        <a href="https://en.wikipedia.org/wiki/CSS#Selector" target="_blank" rel="noopener">selector</a> that picks which
+        HTML elements to style, a <a href="https://en.wikipedia.org/wiki/CSS#Declaration_block" target="_blank" rel="noopener">property</a>
+        that names what you want to change, and a value that says how to change it.
+      </p>
+      <p>
+        For example, <code>h1 { color: navy; }</code> targets every <code>&lt;h1&gt;</code> element (the selector),
+        sets the text color (the property), and chooses navy blue (the value). You can group multiple properties inside
+        the same curly braces, and you can target elements by their tag name, by a
+        <a href="https://en.wikipedia.org/wiki/CSS#Class_and_ID_selectors" target="_blank" rel="noopener">class</a>
+        (using a dot, like <code>.intro</code>), or by an
+        <a href="https://en.wikipedia.org/wiki/CSS#Class_and_ID_selectors" target="_blank" rel="noopener">ID</a>
+        (using a hash, like <code>#header</code>).
+      </p>
+      <p>
+        The word &ldquo;cascading&rdquo; matters: when two rules conflict, the browser follows a set of priority rules
+        called <a href="https://en.wikipedia.org/wiki/CSS#Specificity" target="_blank" rel="noopener">specificity</a>.
+        An ID selector beats a class selector, a class selector beats a tag selector, and
+        <a href="https://en.wikipedia.org/wiki/CSS#Inheritance" target="_blank" rel="noopener">inline styles</a>
+        beat almost everything. Understanding this cascade is the key to avoiding mysterious styling bugs.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Box-model.svg" target="_blank" rel="noopener"><img src="../images/Box-model.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/e/ed/Box-model.svg'" alt="Diagram of the CSS box model showing content, padding, border, and margin">
+        <figcaption>CSS box model. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>The Box Model: Margin, Border, Padding, Content</h3>
+      <p>
+        Every element on a web page is an invisible rectangle &mdash; a &ldquo;box.&rdquo; The
+        <a href="https://en.wikipedia.org/wiki/CSS_box_model" target="_blank" rel="noopener">CSS box model</a>
+        describes the four layers that make up each box, from inside to outside:
+      </p>
+      <ul>
+        <li>Content &mdash; the text, image, or other media inside the element</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank" rel="noopener">Padding</a> &mdash; transparent space between the content and the border</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank" rel="noopener">Border</a> &mdash; a visible (or invisible) line around the padding</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank" rel="noopener">Margin</a> &mdash; transparent space outside the border that pushes other elements away</li>
+      </ul>
+      <p>
+        By default, when you set an element&rsquo;s <code>width</code>, the browser only counts the content area.
+        Padding and border get added on top, making the element wider than you expected. The fix is one line:
+        <code>box-sizing: border-box;</code>. With <code>border-box</code>, the width you set includes content,
+        padding, and border all together &mdash; much easier to manage.
+      </p>
+      <p>
+        Open your browser&rsquo;s
+        <a href="https://en.wikipedia.org/wiki/Web_development_tools" target="_blank" rel="noopener">developer tools</a>
+        (press <code>F12</code>), click any element, and look at the box model diagram. You can see exactly how
+        much space each layer takes up. This is the fastest way to debug layout problems.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus right">
+        <a href="https://commons.wikimedia.org/wiki/File:Boxmodell-detail.svg" target="_blank" rel="noopener"><img src="../images/Boxmodell-detail.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/3/36/Boxmodell-detail.svg'" alt="Detailed box model diagram showing element sizing">
+        <figcaption>Layout model detail. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Layout with Flexbox</h3>
+      <p>
+        Before <a href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout" target="_blank" rel="noopener">Flexbox</a>,
+        lining up elements side by side required hacks like
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank" rel="noopener">floats</a> or
+        inline-block tricks. Flexbox replaced all of that with a clean, one-dimensional layout system.
+      </p>
+      <p>
+        To use it, set <code>display: flex;</code> on a parent container. Its direct children become
+        &ldquo;flex items&rdquo; that automatically line up in a row. From there you have powerful controls:
+      </p>
+      <ul>
+        <li><code>flex-direction</code> &mdash; choose row (left to right) or column (top to bottom)</li>
+        <li><code>justify-content</code> &mdash; distribute items along the main axis (<code>center</code>, <code>space-between</code>, <code>space-around</code>)</li>
+        <li><code>align-items</code> &mdash; align items along the cross axis (<code>center</code>, <code>stretch</code>, <code>flex-start</code>)</li>
+        <li><code>gap</code> &mdash; add even spacing between items without extra margins</li>
+        <li><code>flex-wrap</code> &mdash; let items wrap to a new line when the container gets too narrow</li>
+      </ul>
+      <p>
+        Flexbox is perfect for navigation bars, card grids, centering content, and any layout where items
+        flow in one direction. For two-dimensional layouts (rows and columns at the same time), there is also
+        <a href="https://en.wikipedia.org/wiki/CSS_grid_layout" target="_blank" rel="noopener">CSS Grid</a>,
+        but Flexbox alone will handle most everyday tasks.
+      </p>
+    </div>
+
+    <div class="theory-block">
+      <figure class="theory-illus left">
+        <a href="https://commons.wikimedia.org/wiki/File:Responsive_Web_Design_Logo.svg" target="_blank" rel="noopener"><img src="../images/Responsive_Web_Design_Logo.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/7/7f/Responsive_Web_Design_Logo.svg'" alt="Responsive Web Design logo showing screens of different sizes">
+        <figcaption>Responsive web design. Wikimedia Commons</figcaption></a>
+      </figure>
+      <h3>Responsive Design with Media Queries</h3>
+      <p>
+        People browse the web on phones, tablets, laptops, and giant monitors. A layout that looks great on a
+        wide desktop can be unreadable on a narrow phone screen.
+        <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank" rel="noopener">Responsive web design</a>
+        solves this by making a single page adapt to any screen size.
+      </p>
+      <p>
+        The main tool for this is the
+        <a href="https://en.wikipedia.org/wiki/Media_queries" target="_blank" rel="noopener">media query</a>.
+        A media query wraps CSS rules in a condition &mdash; usually a minimum or maximum screen width.
+        For example:
+      </p>
+      <pre><code>@media (max-width: 600px) {
+  .cards { flex-direction: column; }
+}</code></pre>
+      <p>
+        This rule says: &ldquo;When the screen is 600 pixels wide or less, stack the cards vertically instead
+        of side by side.&rdquo; You can have as many media queries as you like, each one adjusting different
+        parts of your design at different
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries#choosing_breakpoints" target="_blank" rel="noopener">breakpoints</a>.
+      </p>
+      <p>
+        A common approach is to design &ldquo;mobile first&rdquo; &mdash; start with styles for small screens, then add
+        media queries with <code>min-width</code> to layer on styles for wider screens. This keeps small-screen users
+        from downloading extra styles they don&rsquo;t need and encourages simpler, content-focused layouts.
+      </p>
+      <p>
+        Don&rsquo;t forget the
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag" target="_blank" rel="noopener">viewport meta tag</a>
+        in your HTML <code>&lt;head&gt;</code>:
+        <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>.
+        Without it, mobile browsers zoom the page out to fit a desktop-sized layout, and media queries won&rsquo;t
+        work as expected.
+      </p>
+    </div>
+
+    <h3>Theory Quiz</h3>
+
+    <div class="quiz-container" id="quiz">
+
+      <div class="quiz-question">
+        <p>A CSS rule has three parts. Which answer lists them correctly?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q1" value="a"> Tag, attribute, text content</label></li>
+          <li><label><input type="radio" name="q1" value="b"> Selector, property, value</label></li>
+          <li><label><input type="radio" name="q1" value="c"> Header, body, footer</label></li>
+          <li><label><input type="radio" name="q1" value="d"> Class, ID, inline</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>In the CSS box model, what is the correct order from innermost to outermost layer?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q2" value="a"> Margin, border, padding, content</label></li>
+          <li><label><input type="radio" name="q2" value="b"> Content, margin, border, padding</label></li>
+          <li><label><input type="radio" name="q2" value="c"> Content, padding, border, margin</label></li>
+          <li><label><input type="radio" name="q2" value="d"> Border, content, padding, margin</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Which CSS property turns a container&rsquo;s children into a horizontal row with even spacing?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q3" value="a"> <code>display: block;</code> with <code>text-align: center;</code></label></li>
+          <li><label><input type="radio" name="q3" value="b"> <code>display: flex;</code> with <code>justify-content: space-between;</code></label></li>
+          <li><label><input type="radio" name="q3" value="c"> <code>float: left;</code> on every child</label></li>
+          <li><label><input type="radio" name="q3" value="d"> <code>position: absolute;</code> on the container</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>What does <code>@media (max-width: 600px) { &hellip; }</code> do?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q4" value="a"> Applies the rules inside only when the screen is wider than 600 pixels</label></li>
+          <li><label><input type="radio" name="q4" value="b"> Applies the rules inside only when the screen is 600 pixels wide or narrower</label></li>
+          <li><label><input type="radio" name="q4" value="c"> Hides all content on screens smaller than 600 pixels</label></li>
+          <li><label><input type="radio" name="q4" value="d"> Changes the page language to match the user&rsquo;s device</label></li>
+        </ul>
+      </div>
+
+      <div class="quiz-question">
+        <p>Why is <code>box-sizing: border-box;</code> useful?</p>
+        <ul class="quiz-options">
+          <li><label><input type="radio" name="q5" value="a"> It removes all borders from elements</label></li>
+          <li><label><input type="radio" name="q5" value="b"> It makes the declared width include padding and border, so elements don&rsquo;t end up larger than expected</label></li>
+          <li><label><input type="radio" name="q5" value="c"> It automatically centers every element on the page</label></li>
+          <li><label><input type="radio" name="q5" value="d"> It converts pixel values to percentages</label></li>
+        </ul>
+      </div>
+
+      <button class="quiz-btn" onclick="checkQuiz()">Check Answers</button>
+      <div class="quiz-result" id="quizResult"></div>
+    </div>
+  </div>
+
+  <!-- ===== 3. PRACTICE SECTION ===== -->
+  <div class="section practice-task">
+    <span class="task-badge">Practice Task</span>
+    <h2>Build: Style Your &ldquo;About Me&rdquo; Page</h2>
+    <p>
+      Take the &ldquo;About Me&rdquo; HTML page you built in Lesson 6 and transform it with CSS. Your goal is to turn
+      a plain, unstyled page into something that looks polished and works on both wide and narrow screens.
+    </p>
+
+    <h3>Requirements:</h3>
+    <ul>
+      <li>Pick a custom color scheme &mdash; set <code>background-color</code>, <code>color</code>, and at least one
+        accent color for headings or links</li>
+      <li>Use <a href="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout" target="_blank" rel="noopener">Flexbox</a>
+        to lay out at least one section (for example, a row of hobby cards or a navigation bar)</li>
+      <li>Add at least one <code>@media</code> query that changes the layout on small screens &mdash; for example,
+        switching a Flexbox row to a column when the screen is narrower than 600 pixels</li>
+      <li>Style your links with a <code>:hover</code> effect (change color, add an underline, or shift the element slightly)</li>
+      <li>Use <code>box-sizing: border-box;</code> on all elements so padding doesn&rsquo;t break your widths</li>
+      <li>Make sure text is readable &mdash; set a reasonable <code>max-width</code> on the main content area and center it with <code>margin: 0 auto;</code></li>
+    </ul>
+
+    <h3>Bonus challenges:</h3>
+    <ul>
+      <li>Add a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions" target="_blank" rel="noopener">CSS transition</a> so hover effects animate smoothly</li>
+      <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties" target="_blank" rel="noopener">CSS custom properties</a> (variables) for your colors, e.g. <code>--accent: #e63946;</code></li>
+      <li>Style a &ldquo;dark mode&rdquo; version using a second media query: <code>@media (prefers-color-scheme: dark)</code></li>
+    </ul>
+
+    <h3>Solve it in JSFiddle:</h3>
+    <a class="jsfiddle-link" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="20" height="20" rx="4" fill="#4A90D9"/>
+        <text x="3" y="15" fill="white" font-size="12" font-weight="bold">JS</text>
+      </svg>
+      Open JSFiddle
+    </a>
+    <p style="margin-top: 12px; font-size: 0.9rem; color: var(--c-ink-50);">
+      Paste your HTML into the HTML panel and your CSS into the CSS panel. Click &ldquo;Run&rdquo; to see the result. Try resizing the result pane to test your media query!
+    </p>
+  </div>
+
+</div>
+
+<!-- Shared header -->
+<script src="../js/header.js"></script>
+<script src="../js/header-gradients.js"></script>
+<script src="../js/tooltip.js"></script>
+<script src="../js/external-links.js"></script>
+<script src="../js/scroll-restore.js"></script>
+<script src="../js/lesson-nav.js"></script>
+
+<script src="../js/quiz-store.js"></script>
+<script src="../js/quiz.js"></script>
+<script>
+  var theoryAnswers = { q1: 'b', q2: 'c', q3: 'b', q4: 'b', q5: 'b' };
+  var videoAnswers = { vq1: 'b', vq2: 'b', vq3: 'a', vq4: 'b', vq5: 'c', vq6: 'c' };
+  function checkQuiz() { scoreQuiz(theoryAnswers, 'quizResult'); }
+  function checkVideoQuiz() { scoreQuiz(videoAnswers, 'videoQuizResult'); }
+</script>
+
+</body>
+</html>
