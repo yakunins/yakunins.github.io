@@ -9,6 +9,12 @@
         </svg>
         Internet &amp; Web Course
       </a>
+      <button class="header-menu-btn" aria-label="Menu">
+        <span class="header-menu-lesson"></span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="5" x2="17" y2="5"/><line x1="3" y1="10" x2="17" y2="10"/><line x1="3" y1="15" x2="17" y2="15"/>
+        </svg>
+      </button>
       <ul class="header-nav">
         <li><a href="../lessons/lesson-01.html" data-tooltip="What Is the Internet?">1</a></li>
         <li><a href="../lessons/lesson-02.html" data-tooltip="IP Addresses, DNS & How Data Finds Its Way">2</a></li>
@@ -42,7 +48,17 @@
 
   document.body.prepend(header);
 
-  // Highlight current lesson
+  // Hamburger menu toggle
+  var menuBtn = header.querySelector('.header-menu-btn');
+  var navList = header.querySelector('.header-nav');
+  menuBtn.addEventListener('click', function () {
+    navList.classList.toggle('open');
+  });
+  navList.addEventListener('click', function (e) {
+    if (e.target.closest('a')) navList.classList.remove('open');
+  });
+
+  // Highlight current lesson + set mobile menu label
   const path = window.location.pathname;
   const match = path.match(/lesson-(\d+)/);
   if (match) {
@@ -50,7 +66,9 @@
     const links = header.querySelectorAll('.header-nav li a');
     if (links[num - 1]) {
       links[num - 1].classList.add('active');
+      links[num - 1].removeAttribute('href');
     }
+    header.querySelector('.header-menu-lesson').textContent = num;
   }
 
 })();

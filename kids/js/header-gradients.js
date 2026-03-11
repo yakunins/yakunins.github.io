@@ -30,7 +30,7 @@
   var gradients = picked.map(function (c) {
     var x = (rand() * 100).toFixed(0);
     var y = (rand() * 100).toFixed(0);
-    var size = (130 + rand() * 40).toFixed(0);
+    var size = (200 + rand() * 40).toFixed(0);
     return 'radial-gradient(circle ' + size + 'px at ' + x + '% ' + y + '%, ' + c + ', transparent)';
   });
 
