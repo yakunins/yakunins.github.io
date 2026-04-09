@@ -12,7 +12,8 @@
   --c-paper: white;
   --c-accent: red;
 
-  --c-tan: color-mix(in srgb, tan 25%, transparent 75%);
+  --c-tan: color-mix(in srgb, tan, white 75%);
+  --c-green: color-mix(in srgb, green, transparent 92.5%);
   --c-ink-10: color-mix(in srgb, var(--c-ink) 10%, transparent 90%);
   --c-ink-50: color-mix(in srgb, var(--c-ink) 50%, transparent 50%);
   --c-accent-10: color-mix(in srgb, var(--c-accent) 10%, transparent 90%);
@@ -30,12 +31,20 @@ a {
 }
 
 pre, code {
-  font-size: 1.3em;
+  font-size: 1.05rem;
   letter-spacing: -0.01em;
+  background-color: var(--c-tan);
+
+  & > code {
+    background-color: transparent;
+  }
 }
-code {
-  background: var(--c-tan);
-}
+
+pre {
+  overflow: auto;
+  padding-inline: 0.5rem;
+  margin-inline: -0.5rem;
+} 
 
 input[type="radio"] {
   transform: scale(1.35);
@@ -291,12 +300,14 @@ input[type="radio"] {
   &:before,
   &:after {
     content: '';
-    background-color: var(--c-tan);
+    background-color: var(--c-green);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    pointer-events: none;
+    z-index: -1;
   }
   &:after {
     background-color: transparent;
@@ -305,14 +316,14 @@ input[type="radio"] {
   }
 
   .task-badge {
-  display: block;
-  color: var(--c-accent);
-  font-size: 0.85rem;
-  font-weight: 700;
-  border-radius: 20px;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    display: block;
+    color: var(--c-accent);
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
 }
 
