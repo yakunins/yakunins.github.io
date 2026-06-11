@@ -1,12 +1,13 @@
-@import url("beem-regular.css");
-@import url("beem-bold.css");
+@import url('beem-regular.css');
+@import url('beem-bold.css');
 
 :root {
     --font-scale: 0.88;
+    --font-scale: 0.77;
     --dvmin: min(1dvh, 1dvw);
     --fs-rel: calc(var(--dvmin) * 2);
-    --fs-abs: calc(16px * 1.5);
-    --font-size: calc(max(var(--fs-abs), var(--fs-rel)) * var(--font-scale));
+    --fs-min: calc(16px * 1.5);
+    --font-size: calc(max(var(--fs-min), var(--fs-rel)) * var(--font-scale));
 
     font-size: var(--font-size);
 }
@@ -20,11 +21,11 @@ body {
 body {
     --cv-bg: #e6e1dc;
     --v-grid: 1.5;
-    --v-grid-em: calc(var(--v-grid) * 1rem);
+    --v-grid-rem: calc(var(--v-grid) * 1rem);
 
-    font-family: "Beem", Consolas, monospace;
+    font-family: 'Beem', Consolas, monospace;
     font-size: 1rem;
-    line-height: var(--v-grid);
+    line-height: var(--v-grid-rem);
     letter-spacing: -0.035em;
 
     box-sizing: border-box;
@@ -33,7 +34,7 @@ body {
 }
 
 .show-grid {
-    --step: var(--v-grid-em);
+    --step: var(--v-grid-rem);
     --line-color: pink;
     --line-width: 1px;
     --line-start: calc(var(--step) - var(--line-width));
@@ -70,15 +71,21 @@ h6 {
 }
 p,
 ul {
+    letter-spacing: -0.04em;
     margin-block-start: 0;
-    margin-block-end: var(--v-grid-em);
+    margin-block-end: var(--v-grid-rem);
+    word-spacing: -0.135em;
 }
 ul {
     list-style-type: none;
     padding-inline-start: 1.2em;
 
     li {
-        margin-block-end: calc(var(--v-grid-em) / 2);
+        margin-block-end: calc(var(--v-grid-rem) / 2);
+    }
+
+    &.no-gap li {
+        margin-block-end: 0;
     }
 }
 
@@ -92,6 +99,9 @@ a {
     text-decoration-color: var(--line-color);
     text-decoration-skip-ink: none;
 
+    &:link {
+        color: rgba(0, 32, 192, 1);
+    }
     &:focus-visible {
         background-color: var(--line-color);
         outline-color: var(--line-color);
@@ -105,7 +115,7 @@ h1 {
     font-size: 156%;
     font-weight: bold;
     letter-spacing: -0.035em;
-    margin-block: calc(var(--v-grid-em) * 2.85);
+    margin-block: calc(var(--v-grid-rem) * 2.85);
     word-spacing: -0.1em;
 
     i {
@@ -129,6 +139,35 @@ h1 {
     i:nth-child(5) {
         margin-left: 0.015em;
         margin-right: 0.03em;
+    }
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: -0.015rem;
+
+    i {
+        font-style: normal;
+    }
+
+    &.h2-dev i:nth-child(1) {
+        margin-right: -0.05em;
+    }
+    &.h2-dev i:nth-child(2) {
+        margin-right: -0.03em;
+    }
+    &.h2-des i:nth-child(1) {
+        margin-right: -0.05em;
+    }
+    &.h2-des i:nth-child(2) {
+        margin-right: -0.02em;
+    }
+    &.h2-tnk i:nth-child(1) {
+        margin-right: -0.02em;
+    }
+    &.h2-- {
+        letter-spacing: -0.05em;
     }
 }
 
